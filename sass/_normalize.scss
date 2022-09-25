@@ -1,6 +1,4 @@
-@import "variables";
-@import "mixin";
-@import "normalize";
-@import "devices/mobile";
-@import "devices/tablet";
-@import "devices/desktop";
+* {
+  margin: 0;
+  padding: 0;
+}
