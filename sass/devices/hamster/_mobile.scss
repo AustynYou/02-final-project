@@ -1,0 +1,8 @@
+/* MOBILE DEVICE VERSION */
+@media (min-width: $smBreakpoint) {
+  nav {
+    > ul {
+      display: none;
+    }
+  }
+}
