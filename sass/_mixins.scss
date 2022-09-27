@@ -1,0 +1,23 @@
+@mixin flexBoxColumn {
+    display: flex;
+    flex-direction: column;
+ }
+ 
+//  @mixin flexBox($direction){
+//     display: flex;
+//     flex-direction: $direction;
+//  }
+
+@mixin bgPic(
+    $url,
+    $width : 20vh,
+    $height : 20vh,
+    $size : cover
+ ){
+    background-image: url($url);
+    background-position: center;
+    background-size: $size;
+    background-repeat: no-repeat;
+    width: $width;
+    height: $height;
+ }
