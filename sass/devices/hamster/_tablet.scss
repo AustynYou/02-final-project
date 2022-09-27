@@ -1,3 +1,56 @@
 /* TABLET DEVICE VERSION */
 @media (min-width: $mdBreakpoint) {
+  header {
+    padding-top: 9vw;
+    > article {
+      @include bgPic("/img/hamster/bg-header.png", left, cover, 70vw);
+      a {
+        width: 49%;
+        column-gap: 1vh;
+        padding: 3%;
+      }
+    }
+  }
+
+  main {
+    > section {
+      padding-top: 9vw;
+    }
+  }
+  .species {
+    > section {
+      @include flexRowGap(5vh);
+      padding: 0;
+      > article {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    figure {
+      width: 33%;
+      align-self: center;
+    }
+    aside {
+      width: 63%;
+    }
+    a {
+      width: 25%;
+      padding: 2% 0;
+    }
+  }
+
+  .card {
+    width: 60%;
+  }
+
+  .chronology {
+    li {
+      width: 50%;
+    }
+    time {
+      width: 9vw;
+      height: 9vw;
+      transform: translateY(4vw);
+    }
+  }
 }
