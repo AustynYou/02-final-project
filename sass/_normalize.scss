@@ -1,6 +1,23 @@
-@import "variables";
-@import "mixin";
-@import "normalize";
-@import "devices/mobile";
-@import "devices/tablet";
-@import "devices/desktop";
+// @import "variables";
+// @import "mixins";
+// @import "normalize";
+// @import "devices/mobile";
+// @import "devices/tablet";
+// @import "devices/desktop";
+*{
+    padding: 0;
+    margin: 0;
+}
+.headerF,.mainF, .footerF{
+    font-family: 'Raleway', sans-serif;
+}
+.headerF p,.mainF p,.footerF p{
+    color: $textColor;
+    font-weight: 300;
+    text-align: justify;
+}
+.mainF{
+    padding: 5vh 0%;
+    @include dspyBox(column,unset, center);
+    row-gap: 5vh;
+}
