@@ -1,8 +1,200 @@
 /* MOBILE DEVICE VERSION */
 @media (min-width: $smBreakpoint) {
-  nav {
-    > ul {
-      display: none;
+  /* HEADER SECTION */
+  header {
+    > article {
+      @include bgPic("/img/hamster/bg-mobile-header.png", bottom, cover, 152vw);
     }
   }
+  h1 {
+    > span {
+      color: mediumseagreen;
+    }
+    i {
+      color: #797979;
+    }
+  }
+
+  header {
+    padding-top: 18vw;
+    > article {
+      padding: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h1 {
+        font-family: $h1FontFamily;
+        justify-self: center;
+        color: white;
+        font-size: 42px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+      }
+      li {
+        display: flex;
+        width: 100%;
+      }
+      a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        column-gap: 2.5vh;
+        background-color: rgba(170, 170, 170, 0.4);
+        // border-radius: 5px;
+        padding: 4%;
+        color: white;
+        text-transform: capitalize;
+      }
+    }
+  }
+  /*  HEADER SECTION END */
+  /* MAIN SECTION */
+
+  main {
+    padding: 0 5%;
+    > section {
+      @include flexRowGap(3vh);
+      padding-top: 18vw;
+    }
+  }
+  .title {
+    h2 {
+      color: rgb(60, 179, 113);
+    }
+    p {
+      text-align: center;
+    }
+  }
+  h3 {
+    text-align: center;
+  }
+
+  /* CARE SECTION */
+  .care {
+    > figure {
+      @include bgPic("/img/hamster/bg-care.png", center, cover, 23vw);
+    }
+    > section {
+      figure {
+        display: flex;
+        justify-content: space-between;
+      }
+      img {
+        width: 49%;
+      }
+    }
+  }
+  /* CARE SECTION END */
+  /* BEHAVIOR SECTION */
+
+  .behavior {
+    img {
+      height: 55vw;
+    }
+  }
+  /* BEHAVIOR SECTION END */
+
+  /* SPECIES SECTION */
+  .species {
+    img {
+      width: 100%;
+    }
+    > section {
+      padding: 0 10%;
+      @include flexRowGap(3vh);
+    }
+    aside {
+      @include flexRowGap(1vh);
+    }
+    h3 {
+      text-align: left;
+    }
+    a {
+      color: darkgray;
+      border: 1px solid darkgray;
+      text-align: center;
+      padding: 5% 0;
+      width: 40%;
+      text-transform: capitalize;
+      background-color: white;
+    }
+  }
+  /* SPECIES SECTION END */
+  /* FOOD SECTION*/
+  .food {
+    > section {
+      @include flexRowGap(3vh);
+      align-items: center;
+    }
+  }
+
+  .card {
+    border: none;
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-img-top {
+    height: 35vh;
+    padding-top: 3%;
+    width: fit-content;
+  }
+  .btn-secondary {
+    border-radius: 0;
+  }
+  /* FOOD SECTION END */
+  /* HISTORY SECTION */
+  .history {
+    > section {
+      > figure {
+        @include bgPic("/img/hamster/bg-history.png", top, cover, 42vw);
+      }
+    }
+  }
+  .chronology {
+    ul {
+      margin: 0;
+      padding: 0;
+      @include flexRowGap(3vh);
+      align-items: center;
+    }
+    li {
+      margin: 0;
+      padding: 0;
+      width: 70%;
+      @include flexRowGap(0vh);
+      align-items: center;
+    }
+
+    article {
+      padding-top: 5vh;
+      border-top: 2px solid #d85a71;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 17vw;
+    height: 17vw;
+    border: none;
+    background-color: #d85a71;
+    color: white;
+    transform: translateY(7vw);
+  }
+
+  /* HISTORY SECTION END */
 }
