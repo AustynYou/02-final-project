@@ -1,3 +1,65 @@
 /* DESKTOP DEVICE VERSION */
 @media (min-width: $lgBreakpoint) {
+  header {
+    padding-top: 9vh;
+    > article {
+      @include bgPic("/img/hamster/bg-header.png", left, cover, 90vh);
+      a {
+        width: 40%;
+        column-gap: 1vh;
+        padding: 3%;
+      }
+    }
+  }
+  main {
+    > section {
+      padding-top: 9vh;
+    }
+  }
+  .behavior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    > .title {
+      width: 100%;
+    }
+    img {
+      height: 40vh;
+    }
+  }
+  .carousel {
+    width: 49%;
+  }
+  .accordion {
+    width: 49%;
+  }
+  .species {
+    > section {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      > article {
+        width: 48%;
+        flex-direction: column;
+        justify-content: unset;
+      }
+    }
+    figure {
+      width: 100%;
+    }
+    aside {
+      width: 100%;
+    }
+  }
+  .food {
+    > section {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .card {
+    width: 32%;
+    height: 72vh;
+  }
 }
