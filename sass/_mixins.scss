@@ -1,0 +1,47 @@
+@mixin flexBoxColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexRowGap($rowGap) {
+  display: flex;
+  flex-direction: column;
+  row-gap: $rowGap;
+}
+
+@mixin bgPic($url, $position, $size, $height) {
+  background-image: url($url);
+  background-position: $position;
+  background-size: $size;
+  background-repeat: no-repeat;
+  height: $height;
+}
+
+@mixin flexMenu {
+  display: flex;
+  li {
+    display: flex;
+    width: 100%;
+  }
+  a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@mixin socialMediaHover {
+  padding: 10%;
+  transition: 0.4s;
+
+  &:hover {
+    color: #d85a71;
+  }
+}
+
+@mixin navHoverChange {
+  text-transform: capitalize;
+  transition: $second;
+  &:hover {
+    color: mediumseagreen;
+  }
+}

@@ -1,0 +1,26 @@
+/* TABLET DEVICE VERSION */
+@media (min-width: $mdBreakpoint) {
+  /* HEADER SECTION */
+  header {
+    > article {
+      justify-content: center;
+      @include bgPic("/img/index/bg-header.jpg", left, cover, 70vw);
+      a {
+        width: 49%;
+        column-gap: 1vh;
+        padding: 3%;
+        transition: $second;
+        &:hover {
+          filter: brightness(1.25);
+          color: white;
+        }
+      }
+    }
+  }
+  .offcanvas-body {
+    a {
+      @include navHoverChange;
+    }
+  }
+  /* HEADER SECTION END */
+}
