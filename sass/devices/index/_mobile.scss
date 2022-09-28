@@ -47,8 +47,10 @@
         
         img{
             border-radius: 85%;
-            width: 65vh;
+            width: 50vh;
             height: 30vh;
+            align-items: center;
+
         }
     }
 
@@ -56,12 +58,25 @@
         width: 35%;
 
         h5{
-            font-size: 16px;
-            font-weight: 300;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: left;
             text-transform: uppercase;
             color: rgb(154, 145, 145);
         }
 
+    }
+
+    blockquote{
+        width: 90%;
+    }
+
+    .card-text{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 2;
+        text-align: center;
+        color: rgb(84, 55, 112);
     }
     
 }
