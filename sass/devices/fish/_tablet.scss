@@ -1,0 +1,134 @@
+@media (min-width:600px){
+    .headerF{
+        @include dspyBox(row);
+        flex-wrap: wrap;
+        > nav{
+            width: 96%;
+        }
+        > article{
+            width: 50%;
+            justify-content: right;
+        }
+        details{
+            width: 15%;
+        }
+        > section{
+            width: 48%;
+            @include dspyBox(row, center, center);
+            ul{
+                flex-direction: column;
+                width: 60%;
+            }
+            i{
+                display: block;
+                width: 10%;
+            }
+            a{
+                width: 100%;
+                display: flex;
+            }
+        }
+        h1{
+            font-size: 72px;
+            // border: 1px solid red;
+            width: 60%;
+            text-align: center;
+        }
+
+    }
+    .mainF{
+        .aboutF{
+            @include dspyBox(row, center, center);
+        }
+        .foodF{
+            justify-content: center;
+        }
+        .historyF{
+            @include dspyBox(row);
+        }
+    }
+    .aboutF{
+        column-gap: 2vh;
+        > aside:last-child, > aside:first-child{
+            width: 30%;
+            height: 15vh;
+        }
+        > article{
+            width: 40%;
+        }
+    }
+    .careF{
+        > aside:last-child{
+            height: 25vh;
+        }
+        li{
+            row-gap: 1vh;
+        }
+    }
+    .behaviourF{
+        ul{
+            padding: 4%;
+            row-gap: 2vh;
+        }
+        li{
+            row-gap: 1vh;
+        }
+    }
+    .speciesF{
+
+       > section{
+        justify-content: center;
+        flex-direction: row;
+        column-gap: 5%;
+        flex-wrap: wrap;
+
+       }
+       img{
+        height: 15vh;
+        width: 80%;
+       }
+       figure{
+            padding: 5% 3%;
+            height: 50vh;
+            width: 40%;
+            
+       } 
+    }
+    .foodF{
+        height: 80vh;
+        flex-wrap: wrap;
+        
+        > article, > aside{
+            height: 40%;
+            width: 50%;
+        }
+        > section{
+            width: 45%;
+            height: 100%;
+            justify-content: center;
+        }
+        ul{
+            row-gap: 1vh;
+            // height: 100%;
+        }
+    }
+    .historyF{
+        flex-wrap: wrap;
+        column-gap: 10%;
+
+        > article{
+            width: 100%;
+        }
+        > aside:nth-child(3),
+        > aside:last-child {
+            width: 45%;
+            height: 30vh;
+        }
+        > h3{
+            width: 96%;
+        }
+    }
+    .footerF{
+        height: 15vh;
+    }
+}
