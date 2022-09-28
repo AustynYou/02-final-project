@@ -1,0 +1,27 @@
+/* DESKTOP DEVICE VERSION */
+@media (min-width: $lgBreakpoint) {
+  /* HEADER SECTION */
+  header {
+    > article {
+      height: 90vh;
+      a {
+        width: 40%;
+        column-gap: 1vh;
+        padding: 3vh;
+      }
+    }
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  .container-fluid {
+    ul {
+      width: 30%;
+      @include flexMenu;
+      a {
+        @include navHoverChange;
+      }
+    }
+  }
+  /* HEADER SECTION END */
+}
