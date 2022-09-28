@@ -3,11 +3,13 @@
     .headerF{
         background-color: black;
         > nav{
-            padding: 1%;
+            padding: 2%;
             @include dspyBox(row, space-between, center);
             background-color: whitesmoke;
             ul{
-                width: 60%
+                justify-content: space-between;
+                width: 45%;
+                column-gap: 0vh;
             }
             a{
                 color: $navColor;
@@ -49,7 +51,14 @@
             text-decoration: none;
         }
         h2{
-            font-size: 30px;
+            font-size: 24px;
+            // border: 1px solid red;
+            > a{
+                color: $textColor;
+            }
+            span{
+                color: green;
+            }
         }
         > section{
             padding: 1%;
@@ -59,6 +68,9 @@
             }
             a:hover{
                 color: $headerAhover;
+            }
+            i{
+                display: none
             }
         }
     }
@@ -74,6 +86,15 @@
             @include dspyBox(column);
             width: 80%;
             row-gap: 3vh;
+        }
+        h3{
+            text-align: center;
+            font-size: 24px;
+            text-transform: capitalize;
+            background-color: $niceBlue;
+            width: 100%;
+            color: whitesmoke;
+            padding: 2%;
         }
     }
     .aboutF{
@@ -92,13 +113,20 @@
             );
         }
         > article{
-        @include dspyBox(column, unset, center);
-        row-gap: 2vh;
-    }
+            @include dspyBox(column, unset, center);
+            row-gap: 2vh;
+        }
 
     }
     .careF{
         align-items: center;
+        > article{
+            @include dspyBox(column, unset, center);
+            row-gap: 2vh;
+            > p{
+                width: 90%;
+            }
+        }
         > section{
             @include dspyBox(row, center);
 
@@ -122,9 +150,18 @@
         a{
             text-decoration: none;
             color: $aHover;
+            font-weight: 400;
+            &:hover{
+                color: $niceBlue;
+                text-decoration: underline;
+                font-weight: 500
+            }
         }
     }
     .behaviourF{
+        > article{
+            @include dspyBox(row, center);
+        }
         > section, ul{
             @include dspyBox(column);
             row-gap: 3vh;
@@ -133,7 +170,7 @@
             align-items: center;
         }
         ul{
-            width: 80%;
+            width: 85%;
             padding: 7%;
             background-color: $ulBg;
         }
@@ -157,11 +194,109 @@
         img{
             width: 100%
         }
+        > article{
+            @include dspyBox(row, center);
+        }
         > section{
             @include dspyBox(column, unset, center);
             row-gap: 3vh;
         }
-        
+        figure{
+            @include dspyBox(column, unset, center);
+            row-gap: 3vh;
+            padding: 10%;
+            &:nth-child(even){
+                background-color: $figEven;
+            }
+            &:nth-child(odd){
+                background-color: $figOdd;
+            }
+        }
+        figure:nth-child(odd){
+            p{
+                color: gainsboro;
+            }
+        }
+        figcaption{
+            @include dspyBox(column, unset, center);
+            row-gap: 3vh;
+        }
+        a{
+            @include dspyBox(row, center, center);
+            background-color: $navColor;
+            width: 100%;
+            height: 5vh;
+            text-decoration: none;
+            color: $headerAhover;
+            &:hover{
+                background-color: $asideBg;
+                color: $sectionColor;
+            }
+        }
+        h4{
+            font-size: 24px;
+            
+        }
     }
-    
+    .foodF{
+       > article, > section{
+            @include dspyBox(column, unset, center);
+            row-gap: 2vh;
+       }
+       aside{
+        @include imgBg(
+                "/img/fish-4.jpg",
+                100%,
+                40vh
+            );
+       }
+       ul{
+        @include dspyBox(column);
+        row-gap: 3vh;
+        width: 90%;
+
+       }
+       span{
+        font-weight: 600;
+       }
+    }
+    .historyF{
+        > h3{
+            align-self: center
+        }
+        > article{
+            @include dspyBox(column);
+            row-gap: 3vh;
+        }
+        > aside:nth-child(3){
+            @include imgBg(
+                "/img/historyF-1.jpg",
+                100%,
+                40vh
+            );
+        }
+        > aside:last-child{
+            @include imgBg(
+                "/img/historyF-2.jpg",
+                100%,
+                40vh
+            );
+        }
+    }
+    .footerF{
+        @include dspyBox(row, space-between, center);
+        background-color: $footerBg;
+        height: 30vh;
+        padding: 2%;
+        > article{
+            width: 50%;
+        }
+        a{
+            text-decoration: none;
+            color: $headerAhover;
+        }
+        ul{
+            padding-left: 14%;
+        }
+    }
 }
