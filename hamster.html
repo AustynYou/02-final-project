@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Hamster as a pet</title>
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <!-- FontAwesome CSS -->
+    <!-- FontAwesome CSS CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -23,62 +23,129 @@
     <link rel="stylesheet" href="./css/hamster.css" />
   </head>
   <body>
+    <!-- HEADER SECTION -->
     <header>
-      <nav>
-        <h1><i class="fa-solid fa-paw"></i><span>about pets</span></h1>
-        <details>
-          <summary><i class="fa-solid fa-bars"></i></summary>
+      <nav class="navbar bg-light fixed-top">
+        <section class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h1><i class="fa-solid fa-paw"></i> About <span>Pets</span></h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <article
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <aside class="offcanvas-header">
+              <h1 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <i class="fa-solid fa-paw"></i> About <span>Pets</span>
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </aside>
+            <aside class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="cat.html">cat</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="hamster.html"
+                    >hamster</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="fish.html">fish</a>
+                </li>
+              </ul>
+            </aside>
+          </article>
           <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#cat">cat</a></li>
-            <li><a href="#hamster">hamster</a></li>
-            <li><a href="#fish">fish</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cat.html">cat</a></li>
+            <li><a href="hamster.html">hamster</a></li>
+            <li><a href="fish.html">fish</a></li>
           </ul>
-        </details>
-        <ul>
-          <li><a href="#">home</a></li>
-          <li><a href="#cat">cat</a></li>
-          <li><a href="#hamster">hamster</a></li>
-          <li><a href="#fish">fish</a></li>
-        </ul>
+        </section>
       </nav>
       <article>
-        <ul>
-          <li><a href="#care">how to take care</a></li>
-          <li><a href="#behavior">their behavior</a></li>
-          <li><a href="#species">most common species</a></li>
-          <li><a href="#food">recommended food</a></li>
-          <li><a href="#history">history between human and hamster</a></li>
-        </ul>
         <aside>
-          <h1>About Hamster as a pet</h1>
+          <h1>Hamster</h1>
         </aside>
+        <ul>
+          <li>
+            <a href="#care"
+              ><i class="fa-solid fa-check"></i>how to take care</a
+            >
+          </li>
+          <li>
+            <a href="#behavior"
+              ><i class="fa-solid fa-check"></i>their behavior</a
+            >
+          </li>
+          <li>
+            <a href="#species"
+              ><i class="fa-solid fa-check"></i>most common species</a
+            >
+          </li>
+          <li>
+            <a href="#food"
+              ><i class="fa-solid fa-check"></i>recommended food</a
+            >
+          </li>
+          <li>
+            <a href="#history"
+              ><i class="fa-solid fa-check"></i>history between human and
+              hamster</a
+            >
+          </li>
+        </ul>
       </article>
     </header>
+    <!-- HEADER SECTION END -->
+    <!-- MAIN SECTION -->
     <main>
+      <!-- CARE SECTION -->
       <section class="care" id="care">
         <article class="title">
           <h2>how to take care</h2>
           <p>
-            Hamsters are small, stocky rodents that can make excellent pets if
-            given appropriate care and veterinary treatment. The average hamster
-            lifespan is relatively short, around 1-2 years, but they can live up
-            to 5 years.
+            The average hamster lifespan is relatively short, around 1-2 years,
+            but they can live up to 5 years. Hamsters are typically nocturnal
+            animals that like to burrow and hoard <a href="#food">food</a>.
           </p>
-          <figure></figure>
         </article>
-        <h3>How to Give a Hamster a Bath</h3>
+        <figure></figure>
         <section>
-          <figure>
-            <img src="/img/hamster/care-01.png" alt="Care-01" />
-            <img src="/img/hamster/care-02.png" alt="Care-02" />
-          </figure>
+          <h3>How to Give a Hamster a Bath</h3>
+          <p>
+            If your vet instructs you to give your hamster a true soap-and-water
+            bath, keep the following tips in mind:
+          </p>
           <article>
-            <p>
-              If your vet instructs you to give your hamster a true
-              soap-and-water bath, keep the following tips in mind:
-            </p>
-            <ul>
+            <figure>
+              <img src="/img/hamster/care-01.png" alt="Care-01" />
+              <img src="/img/hamster/care-02.png" alt="Care-02" />
+            </figure>
+            <ol>
               <li>
                 Ensure the water temperature is warm enough to not cause
                 hypothermia, but it should not be scalding. Test the water on
@@ -97,21 +164,88 @@
                 Use an easy-to-clean waterproof container, such as Tupperware,
                 that has high sides to avoid your hamster escaping.
               </li>
-            </ul>
+            </ol>
           </article>
         </section>
       </section>
+      <!-- CARE SECTION END -->
+      <!-- BEHAVIOR SECTION -->
       <section class="behavior" id="behavior">
         <article class="title">
           <h2>their behavior</h2>
           <p>
             Hamsters use body language much as we do. They can display a range
             of emotions that include being: happy, afraid, threatened, curious,
-            startled, angry, and many other emotions. They even use sign
-            language to a small extent when conversing with others.
+            startled, angry, and many other emotions.
           </p>
         </article>
-        <h3>meanings inside of thier common gesture</h3>
+        <section
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <article class="carousel-inner">
+            <aside class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="/img/hamster/behavior-01.png"
+                class="d-block w-100"
+                alt="Behavior-01"
+              />
+            </aside>
+            <aside class="carousel-item" data-bs-interval="2000">
+              <img
+                src="/img/hamster/behavior-02.png"
+                class="d-block w-100"
+                alt="Behavior-02"
+              />
+            </aside>
+            <aside class="carousel-item">
+              <img
+                src="/img/hamster/behavior-03.png"
+                class="d-block w-100"
+                alt="Behavior-03"
+              />
+            </aside>
+            <aside class="carousel-item">
+              <img
+                src="/img/hamster/behavior-04.png"
+                class="d-block w-100"
+                alt="Behavior-04"
+              />
+            </aside>
+            <aside class="carousel-item">
+              <img
+                src="/img/hamster/behavior-05.png"
+                class="d-block w-100"
+                alt="Behavior-05"
+              />
+            </aside>
+          </article>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </section>
+        <h3>meanings inside of gestures</h3>
+        <p>
+          They even use sign language to a small extent when conversing with
+          others. Babies use ultrasonic sounds to call for their mothers,
+          females have mating calls to attract a mate.
+        </p>
         <section class="accordion accordion-flush" id="accordionFlushExample">
           <article class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
@@ -123,7 +257,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-                Burrowing in bedding
+                <i class="fa-solid fa-plus"></i>Burrowing in bedding
               </button>
             </h2>
             <aside
@@ -154,7 +288,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
               >
-                Chattering teeth
+                <i class="fa-solid fa-plus"></i>Chattering teeth
               </button>
             </h2>
             <aside
@@ -186,7 +320,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseThree"
               >
-                Stuffing their cheeks
+                <i class="fa-solid fa-plus"></i>Stuffing their cheeks
               </button>
             </h2>
             <aside
@@ -216,7 +350,8 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseFour"
               >
-                Quickly emptying food from cheek pouches
+                <i class="fa-solid fa-plus"></i>Quickly emptying food from cheek
+                pouches
               </button>
             </h2>
             <aside
@@ -244,7 +379,8 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseFive"
               >
-                Creeping along the sides of a cage
+                <i class="fa-solid fa-plus"></i>Creeping along the sides of a
+                cage
               </button>
             </h2>
             <aside
@@ -265,6 +401,8 @@
           </article>
         </section>
       </section>
+      <!-- BEHAVIOR SECTION END -->
+      <!-- SPECIES SECTION -->
       <section class="species" id="species">
         <article class="title">
           <h2>most common species</h2>
@@ -281,15 +419,31 @@
               <img src="/img/hamster/species-01.png" alt="Species-01" />
             </figure>
             <aside>
-              <h5>Syrian Hamster</h5>
+              <h3>Syrian Hamster</h3>
+              <h4>The lifespan is typically 2-3 years.</h4>
               <p>
-                A Syrian hamster's lifespan is typically 2-3 years. They are a
-                larger breed of pet hamster, reaching 6-7 inches in length and
-                weighing 90-140 grams. Their larger size can make Syrian
-                hamsters ideal for handling by parents and children. They
+                They are a larger breed of pet hamster, reaching 6-7 inches in
+                length and weighing 90-140 grams. Their larger size can make
+                Syrian hamsters ideal for handling by parents and children. They
                 typically are friendly to people and will warm up to your family
                 with time and gentle contact.
               </p>
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=9aV8X3-1d_o"
+                    class="fa-brands fa-youtube social"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Golden_hamster"
+                    class="fa-brands fa-wikipedia-w social"
+                  ></a>
+                </li>
+              </ul>
             </aside>
           </article>
           <article>
@@ -297,13 +451,30 @@
               <img src="/img/hamster/species-02.png" alt="Species-02" />
             </figure>
             <aside>
-              <h5>Chinese Hamster</h5>
+              <h3>Chinese Hamster</h3>
+              <h4>They should also be housed</h4>
               <p>
                 Like the Syrian hamster, Chinese hamsters should also be housed
                 alone and kept as a solo pet. This breed does take a little time
                 to warm up to new owners, but once accustomed, they can be
                 easily handled.
               </p>
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=JHUsF4FHbdY"
+                    class="fa-brands fa-youtube social"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Chinese_hamster"
+                    class="fa-brands fa-wikipedia-w social"
+                  ></a>
+                </li>
+              </ul>
             </aside>
           </article>
           <article>
@@ -311,12 +482,29 @@
               <img src="/img/hamster/species-03.png" alt="Species-03" />
             </figure>
             <aside>
-              <h5>Winter White Russian Dwarf Hamster</h5>
+              <h3>Winter White Russian Dwarf Hamster</h3>
+              <h4>From the Siberian region of Russia</h4>
               <p>
                 The Winter White Russian Dwarf Hamster comes from the Siberian
                 region of Russia and is a smaller hamster. It is also known as
                 the Djungarian hamster or striped dwarf hamster.
               </p>
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=xpis7h2dRGE"
+                    class="fa-brands fa-youtube social"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Winter_white_dwarf_hamster"
+                    class="fa-brands fa-wikipedia-w social"
+                  ></a>
+                </li>
+              </ul>
             </aside>
           </article>
           <article>
@@ -324,7 +512,8 @@
               <img src="/img/hamster/species-04.png" alt="Species-0" />
             </figure>
             <aside>
-              <h5>Campbell's Russian Dwarf Hamster</h5>
+              <h3>Campbell's Russian Dwarf Hamster</h3>
+              <h4>One of the first to report</h4>
               <p>
                 The Campbell's Russian Dwarf Hamster is named after explorer
                 C.W. Campbell, who was one of the first to report this species
@@ -333,10 +522,28 @@
                 that runs down their back, though their stripe is generally
                 darker and shorter.
               </p>
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=3DIn54_XWfM"
+                    class="fa-brands fa-youtube social"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Campbell%27s_dwarf_hamster"
+                    class="fa-brands fa-wikipedia-w social"
+                  ></a>
+                </li>
+              </ul>
             </aside>
           </article>
         </section>
       </section>
+      <!-- SPECIES SECTION END -->
+      <!-- FOOD SECTION -->
       <section class="food" id="food">
         <article class="title">
           <h2>recommended food</h2>
@@ -347,32 +554,60 @@
             protein-packed treats like mealworms.
           </p>
         </article>
-        <section>
-          <article class="card" style="width: 18rem">
+        <figure></figure>
+        <ul>
+          <li>
+            <i class="fa-solid fa-carrot"></i>
+            <p>
+              Carrot contains a chemical called beta-carotene. Beta-carotene
+              might act as an antioxidant and help to prevent cancer.Carrot also
+              contains dietary fiber.
+            </p>
+            <a href="#apple">view more</a>
+          </li>
+          <li id="apple">
+            <i class="fa-solid fa-apple-whole"></i>
+            <p>
+              Eating them is linked to a lower risk of many chronic conditions,
+              including diabetes, heart disease, and cancer. Apples may also
+              promote weight loss and improve gut and brain health.
+            </p>
+            <a href="#seed">view more</a>
+          </li>
+          <li id="seed">
+            <i class="fa-solid fa-seedling"></i>
+            <p>
+              Feeding seeds that are packaged for humans can lead to health
+              problems like obesity and diabetes in hamsters, because additives
+              such as salt and sugar are often present.
+            </p>
+            <a href="#shop">view more</a>
+          </li>
+        </ul>
+        <h3>shop hamster food</h3>
+        <section id="shop">
+          <article class="card">
             <img
               src=" /img/hamster/food-01.png"
               class="card-img-top"
               alt=" Food-01"
             />
             <aside class="card-body">
-              <h5 class="card-title">
-                Science Selective Hamster Food | Size: 350 g
-              </h5>
+              <h5 class="card-title">Science Selective Hamster Food</h5>
               <p class="card-text">
                 Selective Science Hamster Food is a unique, baked product,
                 specially formulated for a hamster's nutritional needs. Made
-                from high-quality natural ingredients, it contains a mix of
-                wheat, oats and barley.
+                from high-quality natural ingredients.
               </p>
               <a
                 target="_blank"
                 href="https://www.petvalu.ca/product/science-selective- food/SCM09437CA?force_store=ON"
-                class="btn btn-primary"
-                >Read More</a
+                class="btn btn-secondary"
+                >Go Shop</a
               >
             </aside>
           </article>
-          <article class="card" style="width: 18rem">
+          <article class="card">
             <img
               src=" /img/hamster/food-02.png"
               class="card-img-top"
@@ -385,42 +620,42 @@
               <p class="card-text">
                 Hamsters and gerbils love this blend of timothy hay, oats and
                 barley. Healthy Handfuls - Hamster and Gerbil Food is a
-                complete, stabilized feed with optimally balanced nutrients that
-                help maintain proper nutrition, weight, digestive function,
-                dental health and quality of life for active pets.
+                complete, stabilized feed.
               </p>
               <a
                 target="_blank"
                 href="https://www.petsmart.ca/small-pet/food-treats-and-hay/food/oxbow-essentials- and-gerbil-food-5173696.html"
-                class="btn btn-primary"
-                >Read More</a
+                class="btn btn-secondary"
+                >Go Shop</a
               >
             </aside>
           </article>
-          <article class="card" style="width: 18rem">
+          <article class="card">
             <img
               src=" /img/hamster/food-03.png"
               class="card-img-top"
               alt=" Food-01"
             />
             <aside class="card-body">
-              <h5 class="card-title">Hamster Food | Nature</h5>
+              <h5 class="card-title">Nature</h5>
               <p class="card-text">
                 Versele-Laga Hamster Nature is a balanced diet adapted to the
                 nutritional needs of all hamsters. It includes all the essential
                 nutrients, vitamins, minerals and amino acids to provide your
-                pet with a healthy life.
+                pet.
               </p>
               <a
                 target="_blank"
                 href="https://ca.miscota.com/small-animals/versele-laga/versele-laga-mixture-for-hamsters- nature?r=5410340614181"
-                class="btn btn-primary"
-                >Read More</a
+                class="btn btn-secondary"
+                >Go Shop</a
               >
             </aside>
           </article>
         </section>
       </section>
+      <!-- FOOD SECTION END -->
+      <!-- HISTORY SECTION -->
       <section class="history" id="history">
         <article class="title">
           <h2>history between human and hamster</h2>
@@ -445,52 +680,70 @@
         <section class="chronology">
           <ul>
             <li>
-              <aside>1839</aside>
-              <figure>
-                <img src="/img/hamster/chronology-01.png" alt="Chronology-01" />
-              </figure>
-              <p>
-                Although the Syrian hamster or golden hamster (Mesocricetus
-                auratus) was first described scientifically by George Robert
-                Waterhouse in 1839
-              </p>
+              <time>1839</time>
+              <article>
+                <figure>
+                  <img
+                    src="/img/hamster/chronology-01.png"
+                    alt="Chronology-01"
+                  />
+                </figure>
+                <p>
+                  Although the Syrian hamster or golden hamster (Mesocricetus
+                  auratus) was first described scientifically by George Robert
+                  Waterhouse in 1839
+                </p>
+              </article>
             </li>
             <li>
-              <aside>1930</aside>
-              <figure>
-                <img src="/img/hamster/chronology-02.png" alt="Chronology-02" />
-              </figure>
-              <p>
-                The entire laboratory and pet populations of Syrian hamsters
-                appear to be descendants of a single brother-sister pairing.
-                These littermates were captured and imported in 1930 from Aleppo
-                in Syria by Israel Aharoni, a zoologist of the University of
-                Jerusalem.
-              </p>
+              <time>1930</time>
+              <article>
+                <figure>
+                  <img
+                    src="/img/hamster/chronology-02.png"
+                    alt="Chronology-02"
+                  />
+                </figure>
+                <p>
+                  The entire laboratory and pet populations of Syrian hamsters
+                  appear to be descendants of a single brother-sister pairing.
+                  These littermates were captured and imported in 1930 from
+                  Aleppo in Syria by Israel Aharoni, a zoologist of the
+                  University of Jerusalem.
+                </p>
+              </article>
             </li>
             <li>
-              <aside>1939</aside>
-              <figure>
-                <img src="/img/hamster/chronology-03.png" alt="Chronology-03" />
-              </figure>
-              <p>
-                In Jerusalem, researchers were able to successfully breed and
-                domesticate hamsters in 1939. Years later, animals of this
-                original breeding colony were exported to the United States,
-                where Syrian hamsters became a common pet and laboratory animal.
-                Comparative studies of domestic and wild Syrian hamsters have
-                shown reduced genetic variability in the domestic strain.
-                However, the differences in behavioral, chronobiological,
-                morphometrical, hematological, and biochemical parameters are
-                relatively small and fall into the expected range of interstrain
-                variations in other laboratory animals.
-              </p>
+              <time>1939</time>
+              <article>
+                <figure>
+                  <img
+                    src="/img/hamster/chronology-03.png"
+                    alt="Chronology-03"
+                  />
+                </figure>
+                <p>
+                  In Jerusalem, researchers were able to successfully breed and
+                  domesticate hamsters in 1939. Years later, animals of this
+                  original breeding colony were exported to the United States,
+                  where Syrian hamsters became a common pet and laboratory
+                  animal. Comparative studies of domestic and wild Syrian
+                  hamsters have shown reduced genetic variability in the
+                  domestic strain.
+                </p>
+              </article>
             </li>
           </ul>
         </section>
       </section>
+      <!-- HISTORY SECTION END -->
     </main>
-    <footer></footer>
+    <!-- MAIN SECTION END -->
+    <!-- FOOTER SECTION -->
+    <footer>
+      <p>Copyright © 2022 About Hamster | Design: Austyn</p>
+    </footer>
+    <!-- FOOTER SECTION END -->
     <!-- Bootstrap JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"

@@ -1,65 +1,104 @@
 /* DESKTOP DEVICE VERSION */
 @media (min-width: $lgBreakpoint) {
+  /* HEADER SECTION */
   header {
-    padding-top: 9vh;
     > article {
       @include bgPic("/img/hamster/bg-header.png", left, cover, 90vh);
       a {
         width: 40%;
         column-gap: 1vh;
-        padding: 3%;
+        padding: 3vh;
       }
     }
   }
-  main {
-    > section {
-      padding-top: 9vh;
+  .navbar-toggler {
+    display: none;
+  }
+  .container-fluid {
+    ul {
+      width: 30%;
+      @include flexMenu;
+      a {
+        @include navHoverChange;
+      }
     }
   }
+  /* HEADER SECTION END */
+
+  /* MAIN SECTION */
+  main {
+    @include flexRowGap(5vh);
+    > section {
+      @include flexRowGap(5vh);
+    }
+  }
+  /* CARE SECTION */
+  .care {
+    > section {
+      figure {
+        width: fit-content;
+      }
+    }
+
+    li {
+      line-height: 3;
+    }
+  }
+  /* CARE SECTION END */
+  /* BEHAVIOR SECTION */
   .behavior {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    > .title {
-      width: 100%;
-    }
+    align-items: center;
     img {
-      height: 40vh;
+      height: 60vh;
     }
   }
   .carousel {
-    width: 49%;
+    width: 80%;
   }
   .accordion {
-    width: 49%;
+    width: 80%;
   }
+  /* BEHAVIOR SECTION END */
+  /* SPECIES SECTION */
   .species {
-    > section {
+  }
+  /* SPECIES SECTION END */
+  /* FOOD SECTION */
+  .food {
+    > ul {
       flex-direction: row;
-      flex-wrap: wrap;
       justify-content: space-between;
-      > article {
-        width: 48%;
-        flex-direction: column;
-        justify-content: unset;
+      li {
+        width: 30%;
+      }
+      a {
+        font-size: 14px;
+        padding: 4% 9%;
       }
     }
-    figure {
-      width: 100%;
-    }
-    aside {
-      width: 100%;
+    > section {
+      width: 80%;
     }
   }
-  .food {
-    > section {
+
+  /* FOOD SECTION END */
+  /* HISTORY SECTION */
+  .chronology {
+    ul {
       flex-direction: row;
+      align-items: flex-start;
       justify-content: space-between;
     }
+    li {
+      width: 32%;
+    }
+    time {
+      width: 9vh;
+      height: 9vh;
+      transform: translateY(4vh);
+    }
   }
-  .card {
-    width: 32%;
-    height: 72vh;
-  }
+  /* HISTORY SECTION END */
+  /* MAIN SECTION END */
 }

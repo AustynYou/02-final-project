@@ -2,22 +2,9 @@
 @media (min-width: $smBreakpoint) {
   /* HEADER SECTION */
   header {
+    padding-top: $navFixedGap;
     > article {
       @include bgPic("/img/hamster/bg-mobile-header.png", bottom, cover, 152vw);
-    }
-  }
-  h1 {
-    > span {
-      color: mediumseagreen;
-    }
-    i {
-      color: #797979;
-    }
-  }
-
-  header {
-    padding-top: 18vw;
-    > article {
       padding: 5%;
       display: flex;
       flex-direction: column;
@@ -45,24 +32,49 @@
         align-items: center;
         column-gap: 2.5vh;
         background-color: rgba(170, 170, 170, 0.4);
-        // border-radius: 5px;
         padding: 4%;
         color: white;
         text-transform: capitalize;
+        &:hover {
+          color: white;
+        }
       }
     }
   }
+  h1 {
+    > span {
+      color: mediumseagreen;
+    }
+    i {
+      color: #797979;
+    }
+  }
+  .container-fluid {
+    > ul {
+      display: none;
+    }
+  }
+  .offcanvas-body {
+    a {
+      text-transform: capitalize;
+    }
+  }
   /*  HEADER SECTION END */
-  /* MAIN SECTION */
 
+  /* MAIN SECTION */
   main {
     padding: 0 5%;
+    padding-bottom: 5vh;
     > section {
-      @include flexRowGap(3vh);
-      padding-top: 18vw;
+      @include flexRowGap(5vh);
+      padding-top: $navFixedGap;
+      > section {
+        @include flexRowGap(3vh);
+      }
     }
   }
   .title {
+    @include flexRowGap(3vh);
     h2 {
       color: rgb(60, 179, 113);
     }
@@ -74,12 +86,22 @@
     text-align: center;
   }
 
+
   /* CARE SECTION */
   .care {
+    > .title {
+      a {
+        color: cornflowerblue;
+        text-decoration: underline;
+      }
+    }
     > figure {
       @include bgPic("/img/hamster/bg-care.png", center, cover, 23vw);
     }
     > section {
+      article {
+        @include flexRowGap(3vh);
+      }
       figure {
         display: flex;
         justify-content: space-between;
@@ -88,17 +110,39 @@
         width: 49%;
       }
     }
+    li {
+      line-height: 2;
+    }
   }
   /* CARE SECTION END */
   /* BEHAVIOR SECTION */
-
   .behavior {
+    > section {
+      @include flexRowGap(0vh);
+    }
     img {
       height: 55vw;
     }
+    > p {
+      text-align: center;
+    }
   }
-  /* BEHAVIOR SECTION END */
+  .accordion {
+    --bs-accordion-btn-focus-border-color: rgb(231, 138, 155);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(217, 76, 102, 0.5);
+    --bs-accordion-btn-icon: none;
+    --bs-accordion-btn-active-icon: none;
+  }
+  .accordion-button {
+    display: flex;
+    column-gap: 1.5vh;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: rgb(250, 217, 223);
+    color: #e04e69;
+  }
 
+  /* BEHAVIOR SECTION END */
   /* SPECIES SECTION */
   .species {
     img {
@@ -106,35 +150,86 @@
     }
     > section {
       padding: 0 10%;
-      @include flexRowGap(3vh);
+      article {
+        @include flexRowGap(2vh);
+      }
     }
     aside {
       @include flexRowGap(1vh);
     }
     h3 {
       text-align: left;
+      margin: 0;
+    }
+    h4 {
+      color: #d85a71;
+      font-size: 18px;
+      margin: 0;
+    }
+    ul {
+      @include flexMenu;
+      width: fit-content;
+      padding-left: 2%;
+      column-gap: 2vh;
+    }
+    li {
     }
     a {
-      color: darkgray;
-      border: 1px solid darkgray;
       text-align: center;
+      color: dimgray;
       padding: 5% 0;
+      font-size: 24px;
       width: 40%;
       text-transform: capitalize;
       background-color: white;
     }
   }
   /* SPECIES SECTION END */
-  /* FOOD SECTION*/
+  /* FOOD SECTION */
   .food {
     > section {
-      @include flexRowGap(3vh);
       align-items: center;
+    }
+    > figure {
+      @include bgPic("/img/hamster/bg-food.png", center, cover, 15vh);
+    }
+    > ul {
+      padding: 0;
+      @include flexBoxColumn;
+      li {
+        @include flexBoxColumn;
+
+        align-items: center;
+        text-align: center;
+      }
+      i {
+        padding: 20%;
+        font-size: 72px;
+        color: darkgrey;
+      }
+      p {
+        padding-bottom: 3vh;
+      }
+
+      a {
+        padding: 3% 8%;
+        font-size: 18px;
+        color: white;
+        text-transform: capitalize;
+      }
+    }
+    [href="#apple"] {
+      background-color: dodgerblue;
+    }
+    [href="#seed"] {
+      background-color: darkcyan;
+    }
+    [href="#shop"] {
+      background-color: darkred;
     }
   }
 
   .card {
-    border: none;
     width: 90%;
     overflow: hidden;
     display: flex;
@@ -147,6 +242,7 @@
     padding-top: 3%;
     width: fit-content;
   }
+
   .btn-secondary {
     border-radius: 0;
   }
@@ -197,4 +293,13 @@
   }
 
   /* HISTORY SECTION END */
+  /* MAIN SECTION END */
+
+  /* FOOTER SECTION END */
+  footer {
+    text-align: center;
+    font-size: 18px;
+    padding: 5%;
+  }
+  /* FOOTER SECTION END */
 }

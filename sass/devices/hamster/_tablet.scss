@@ -1,48 +1,120 @@
 /* TABLET DEVICE VERSION */
 @media (min-width: $mdBreakpoint) {
+  /* HEADER SECTION */
   header {
-    padding-top: 9vw;
     > article {
       @include bgPic("/img/hamster/bg-header.png", left, cover, 70vw);
       a {
         width: 49%;
         column-gap: 1vh;
         padding: 3%;
+        transition: $second;
+        &:hover {
+          filter: brightness(1.25);
+          color: white;
+        }
       }
     }
   }
-
-  main {
-    > section {
-      padding-top: 9vw;
+  .offcanvas-body {
+    a {
+      @include navHoverChange;
     }
   }
+  /* HEADER SECTION END */
+
+  /* MAIN SECTION */
+  .title {
+    width: 80%;
+    align-self: center;
+  }
+
+  .social {
+    @include socialMediaHover;
+  }
+  /* CARE SECTION */
+  .care {
+    > section {
+      article {
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      figure {
+        flex-direction: column;
+        row-gap: 1vh;
+        justify-content: space-around;
+        width: 34%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    ol {
+      width: 64%;
+    }
+  }
+  /* CARE SECTION END */
+  /* SPECIES SECTION */
   .species {
     > section {
       @include flexRowGap(5vh);
       padding: 0;
       > article {
-        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
       }
     }
     figure {
-      width: 33%;
-      align-self: center;
+      width: 37%;
     }
     aside {
-      width: 63%;
+      width: 60%;
     }
     a {
       width: 25%;
-      padding: 2% 0;
+      padding: 1vw;
     }
   }
+  /* SPECIES SECTION END */
+  /* FOOD SECTION */
 
-  .card {
-    width: 60%;
+  .food {
+    > section {
+      align-self: center;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    > figure {
+      height: 20vh;
+    }
+    > ul {
+      i {
+        padding: 7%;
+      }
+      a {
+        font-size: $defaultFontSize;
+        padding: 2% 5%;
+        transition: $second;
+        &:hover {
+          filter: brightness(0.8);
+        }
+      }
+    }
   }
-
+  .card {
+    width: 32%;
+  }
+  /* FOOD SECTION END */
+  /* HISTORY SECTION */
+  .history {
+    > section {
+      > figure {
+        height: 30vw;
+      }
+    }
+  }
   .chronology {
     li {
       width: 50%;
@@ -53,4 +125,6 @@
       transform: translateY(4vw);
     }
   }
+  /* HISTORY SECTION END */
+  /* MAIN SECTION END */
 }
