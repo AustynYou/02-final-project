@@ -22,6 +22,9 @@
             a:hover{
                 color: $aHover;
             }
+            > ul{
+                display: none
+            }
         }
         ul{
             @include dspyBox(row,center);
