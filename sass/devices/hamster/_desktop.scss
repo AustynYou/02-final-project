@@ -3,7 +3,7 @@
   /* HEADER SECTION */
   header {
     > article {
-      @include bgPic("/img/hamster/bg-header.png", left, cover, 90vh);
+      height: $desktopBgHeaderHeight;
       a {
         width: 40%;
         column-gap: 1vh;
@@ -27,11 +27,16 @@
 
   /* MAIN SECTION */
   main {
-    @include flexRowGap(5vh);
+    padding-top: 7vh;
+    row-gap: 7vh;
     > section {
-      @include flexRowGap(5vh);
+      row-gap: 10vh;
+      > section {
+        row-gap: 7vh;
+      }
     }
   }
+
   /* CARE SECTION */
   .care {
     > section {
@@ -47,10 +52,9 @@
   /* CARE SECTION END */
   /* BEHAVIOR SECTION */
   .behavior {
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
     img {
-      height: 60vh;
+      height: fit-content;
     }
   }
   .carousel {
@@ -61,14 +65,12 @@
   }
   /* BEHAVIOR SECTION END */
   /* SPECIES SECTION */
-  .species {
-  }
   /* SPECIES SECTION END */
   /* FOOD SECTION */
   .food {
     > ul {
-      flex-direction: row;
-      justify-content: space-between;
+      @include flexDirRowJustifyBetween(nowrap);
+
       li {
         width: 30%;
       }
@@ -76,22 +78,31 @@
         font-size: 14px;
         padding: 4% 9%;
       }
-    }
-    > section {
-      width: 80%;
+      p {
+        height: 20vh;
+      }
     }
   }
-
+  .name {
+    height: 8vh;
+    overflow-y: hidden;
+  }
+  .description {
+    height: 23vh;
+    overflow-y: hidden;
+  }
   /* FOOD SECTION END */
   /* HISTORY SECTION */
   .chronology {
     ul {
-      flex-direction: row;
+      @include flexDirRowJustifyBetween(nowrap);
       align-items: flex-start;
-      justify-content: space-between;
     }
     li {
-      width: 32%;
+      width: 30%;
+    }
+    article {
+      row-gap: 2vh;
     }
     time {
       width: 9vh;
