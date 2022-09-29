@@ -22,11 +22,15 @@
       ul {
         margin: 0;
         padding: 0;
-        @include flexMenu;
         @include flexRowGap(1vh);
+      }
+      li {
+        display: flex;
+        width: 100%;
       }
 
       a {
+        width: 100%;
         @include flexAlignCenter;
         column-gap: 2.5vh;
         background-color: $headerBgMenuColor;
@@ -78,6 +82,7 @@
     }
     p {
       text-align: center;
+      line-height: 2;
     }
   }
   h3 {
@@ -320,6 +325,12 @@
       width: 70%;
       @include flexRowGap(0vh);
       align-items: center;
+      &:first-child {
+        figure {
+          height: 50vh;
+          overflow-y: hidden;
+        }
+      }
     }
     article {
       padding-top: 5vh;
@@ -329,6 +340,9 @@
 
     img {
       width: 100%;
+    }
+    p {
+      line-height: 2;
     }
   }
   time {

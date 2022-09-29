@@ -99,7 +99,10 @@
       align-items: flex-start;
     }
     li {
-      width: 32%;
+      width: 30%;
+    }
+    article {
+      row-gap: 2vh;
     }
     time {
       width: 9vh;
