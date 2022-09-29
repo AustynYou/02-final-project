@@ -122,7 +122,6 @@
 
     label{
         text-transform: uppercase;
-        text-align: left;
         font-size: 16px;
         font-weight: 600;
     }
@@ -164,16 +163,16 @@
 
     .mb-3{
         align-items: baseline;
-        height: 90vh;
-        margin-top: 10vh;
+        margin-top: 3vh;
 
 
-        >h5{
-            height: 10vh;
+        >h4{
+            font-size: 36px;
+            font-weight: 600;
         }
 
         >iframe{
-            width: 53vh;
+            width: 95%;
             height: 40vh;
             
         }
