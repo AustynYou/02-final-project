@@ -38,18 +38,18 @@ h2 {
 }
 
 h3 {
-  color: steelblue;
+  color: $subTitleBlueColor;
   text-transform: capitalize;
   font-size: 22px;
 }
 
 a {
-  color: #333;
+  color: $darkGrayColor;
   text-decoration: none;
   line-height: 1.5;
 }
 
 p {
-  color: #333;
+  color: $darkGrayFontColor;
   line-height: 1.5;
 }
