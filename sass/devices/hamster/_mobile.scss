@@ -66,10 +66,10 @@
     padding: 0 5%;
     padding-bottom: 5vh;
     > section {
-      @include flexRowGap(5vh);
+      @include flexRowGap(7vh);
       padding-top: $navFixedGap;
       > section {
-        @include flexRowGap(3vh);
+        @include flexRowGap(5vh);
       }
     }
   }
@@ -85,7 +85,6 @@
   h3 {
     text-align: center;
   }
-
 
   /* CARE SECTION */
   .care {
@@ -172,8 +171,6 @@
       padding-left: 2%;
       column-gap: 2vh;
     }
-    li {
-    }
     a {
       text-align: center;
       color: dimgray;
@@ -229,23 +226,82 @@
     }
   }
 
+  /* CARD SLIDER SECTION */
+  /* CSS Reference: https://www.codinglabweb.com/2022/05/responsive-card-slider-javascript.html */
+  .slide-container {
+    max-width: 1120px;
+    width: 55vw;
+    padding-bottom: 40px;
+  }
   .card {
-    width: 90%;
-    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    h2,
+    p {
+      text-align: left;
+      width: 100%;
+    }
+  }
+  .image-content,
+  .card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px 14px;
+  }
+  .image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+  .card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+  }
+  .card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  .description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+  }
+  .button {
+    border: none;
+    font-size: 16px;
+    color: #d85a71;
+    padding: 8px 16px;
+    background-color: #d85a71;
+    background-color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+  }
+  .button:hover {
+    background: #d85a71;
+    color: #fff;
+  }
+  .swiper-initialized,
+  .swiper-pagination,
+  .swiper-navBtn {
+    display: none;
   }
 
-  .card-img-top {
-    height: 35vh;
-    padding-top: 3%;
-    width: fit-content;
-  }
-
-  .btn-secondary {
-    border-radius: 0;
-  }
+  /* CSS Reference: https://www.codinglabweb.com/2022/05/responsive-card-slider-javascript.html */
+  /* CARD SLIDER SECTION END */
   /* FOOD SECTION END */
   /* HISTORY SECTION */
   .history {

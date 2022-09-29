@@ -27,11 +27,16 @@
 
   /* MAIN SECTION */
   main {
-    @include flexRowGap(5vh);
+    padding-top: 7vh;
+    @include flexRowGap(7vh);
     > section {
-      @include flexRowGap(5vh);
+      @include flexRowGap(10vh);
+      > section {
+        @include flexRowGap(7vh);
+      }
     }
   }
+
   /* CARE SECTION */
   .care {
     > section {
@@ -50,7 +55,7 @@
     display: flex;
     align-items: center;
     img {
-      height: 60vh;
+      height: fit-content;
     }
   }
   .carousel {
@@ -61,8 +66,6 @@
   }
   /* BEHAVIOR SECTION END */
   /* SPECIES SECTION */
-  .species {
-  }
   /* SPECIES SECTION END */
   /* FOOD SECTION */
   .food {
@@ -76,12 +79,19 @@
         font-size: 14px;
         padding: 4% 9%;
       }
-    }
-    > section {
-      width: 80%;
+      p {
+        height: 20vh;
+      }
     }
   }
-
+  .name {
+    height: 8vh;
+    overflow-y: hidden;
+  }
+  .description {
+    height: 23vh;
+    overflow-y: hidden;
+  }
   /* FOOD SECTION END */
   /* HISTORY SECTION */
   .chronology {
