@@ -1,0 +1,46 @@
+@media(min-width:1000px){
+
+    // Start of the benefits section
+    .benefits {
+
+        h2{
+            font-size: 68px;
+        }
+
+        small{
+            padding: 5%;
+        }
+        
+    }
+    
+    .benefitsTitle{
+        
+        > figure {
+            padding-top: 1vh;
+        }
+    }
+
+     
+    .mb-3 {
+        display: none;
+    }
+
+    .withPet {
+        display: flex;
+        border: 10px solid dimgrey;
+
+        img{
+            width: 50vh;
+            height: 40vh;
+            padding: 5%;
+        }
+    }
+    
+
+    .card-text{
+        font-size: 46px;
+        padding: 3%;
+    }
+    // End of the benefits section
+    
+}

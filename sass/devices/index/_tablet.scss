@@ -21,7 +21,7 @@
         
         > figure {
 
-            padding-top: 25vh;
+            padding-top: 5vh;
             
             > img {
                 width: 55vh;
@@ -37,13 +37,17 @@
 
         }
     }
-    
+     
     .col-md-8{
 
         h5{
             font-size: 24px;
         }
 
+    }
+
+    .withPet {
+        display: none;
     }
 
     .card-text{
