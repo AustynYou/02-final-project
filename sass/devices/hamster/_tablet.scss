@@ -3,7 +3,12 @@
   /* HEADER SECTION */
   header {
     > article {
-      @include bgPic("/img/hamster/bg-header.png", left, cover, 70vw);
+      @include bgPic(
+        "/img/hamster/bg-header.png",
+        left,
+        cover,
+        $tabletBgHeaderHeight
+      );
       a {
         width: 49%;
         column-gap: 1vh;
@@ -27,9 +32,9 @@
   main {
     @include flexRowGap(5vh);
     > section {
-      @include flexRowGap(7vh);
+      row-gap: 7vh;
       > section {
-        @include flexRowGap(5vh);
+        row-gap: 5vh;
       }
     }
   }
@@ -66,12 +71,10 @@
   /* SPECIES SECTION */
   .species {
     > section {
-      @include flexRowGap(5vh);
+      row-gap: 5vh;
       padding: 0;
       > article {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        @include flexDirRowJustifyBetween(wrap);
       }
     }
     figure {
@@ -91,16 +94,13 @@
   .food {
     > section {
       align-self: center;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      @include flexDirRowJustifyBetween(wrap);
     }
     > figure {
       height: 20vh;
     }
     > ul {
-      @include flexRowGap(5vh);
-
+      row-gap: 5vh;
       i {
         padding: 7%;
       }
@@ -149,11 +149,11 @@
     overflow-y: hidden;
   }
   .swiper-navBtn {
-    color: #acacac;
+    color: $lightNavBtnColor;
     transition: color 0.3s ease;
   }
   .swiper-navBtn:hover {
-    color: #777;
+    color: $darkNavBtnColor;
   }
   .swiper-navBtn::before,
   .swiper-navBtn::after {
@@ -166,11 +166,11 @@
     left: 0;
   }
   .swiper-pagination-bullet {
-    background-color: #d85a71;
+    background-color: $regularPinkColor;
     opacity: 1;
   }
   .swiper-pagination-bullet-active {
-    background-color: #e33857;
+    background-color: $darkPinkColor;
   }
   /* CSS Reference: https://www.codinglabweb.com/2022/05/responsive-card-slider-javascript.html */
   /* CARD SLIDER SECTION END */

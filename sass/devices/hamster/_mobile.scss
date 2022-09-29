@@ -4,10 +4,14 @@
   header {
     padding-top: $navFixedGap;
     > article {
-      @include bgPic("/img/hamster/bg-mobile-header.png", bottom, cover, 152vw);
+      @include bgPic(
+        "/img/hamster/bg-mobile-header.png",
+        bottom,
+        cover,
+        $mobileBgHeaderHeight
+      );
       padding: 5%;
-      display: flex;
-      flex-direction: column;
+      @include flexBoxColumn;
       justify-content: space-between;
       h1 {
         font-family: $h1FontFamily;
@@ -18,20 +22,14 @@
       ul {
         margin: 0;
         padding: 0;
-        display: flex;
-        flex-direction: column;
-        row-gap: 1vh;
+        @include flexMenu;
+        @include flexRowGap(1vh);
       }
-      li {
-        display: flex;
-        width: 100%;
-      }
+
       a {
-        width: 100%;
-        display: flex;
-        align-items: center;
+        @include flexAlignCenter;
         column-gap: 2.5vh;
-        background-color: rgba(170, 170, 170, 0.4);
+        background-color: $headerBgMenuColor;
         padding: 4%;
         color: white;
         text-transform: capitalize;
@@ -43,10 +41,10 @@
   }
   h1 {
     > span {
-      color: mediumseagreen;
+      color: $titleGreenColor;
     }
     i {
-      color: #797979;
+      color: $darkIconColor;
     }
   }
   .container-fluid {
@@ -76,7 +74,7 @@
   .title {
     @include flexRowGap(3vh);
     h2 {
-      color: rgb(60, 179, 113);
+      color: $titleGreenColor;
     }
     p {
       text-align: center;
@@ -90,7 +88,7 @@
   .care {
     > .title {
       a {
-        color: cornflowerblue;
+        color: $aFontColor;
         text-decoration: underline;
       }
     }
@@ -127,7 +125,6 @@
     }
   }
   .accordion {
-    --bs-accordion-btn-focus-border-color: rgb(231, 138, 155);
     --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(217, 76, 102, 0.5);
     --bs-accordion-btn-icon: none;
     --bs-accordion-btn-active-icon: none;
@@ -137,8 +134,8 @@
     column-gap: 1.5vh;
   }
   .accordion-button:not(.collapsed) {
-    background-color: rgb(250, 217, 223);
-    color: #e04e69;
+    background-color: $lightPinkColor;
+    color: $darkPinkColor;
   }
 
   /* BEHAVIOR SECTION END */
@@ -161,7 +158,7 @@
       margin: 0;
     }
     h4 {
-      color: #d85a71;
+      color: $regularPinkColor;
       font-size: 18px;
       margin: 0;
     }
@@ -202,7 +199,7 @@
       i {
         padding: 20%;
         font-size: 72px;
-        color: darkgrey;
+        color: $lightIconColor;
       }
       p {
         padding-bottom: 3vh;
@@ -216,13 +213,13 @@
       }
     }
     [href="#apple"] {
-      background-color: dodgerblue;
+      background-color: $buttonBlueColor;
     }
     [href="#seed"] {
-      background-color: darkcyan;
+      background-color: $buttonGreenColor;
     }
     [href="#shop"] {
-      background-color: darkred;
+      background-color: $buttonRedColor;
     }
   }
 
@@ -235,8 +232,8 @@
   }
   .card {
     border-radius: 10px;
-    background-color: #fff;
-    border: 1px solid #dbdbdb;
+    background-color: white;
+    border: 1px solid $cardBorderColor;
     h2,
     p {
       text-align: left;
@@ -245,8 +242,7 @@
   }
   .image-content,
   .card-content {
-    display: flex;
-    flex-direction: column;
+    @include flexBoxColumn;
     align-items: center;
     padding: 10px 14px;
   }
@@ -260,7 +256,7 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background: #fff;
+    background: white;
     padding: 3px;
   }
   .card-image .card-img {
@@ -271,28 +267,28 @@
   .name {
     font-size: 18px;
     font-weight: 500;
-    color: #333;
+    color: $darkGrayFontColor;
   }
   .description {
     font-size: 14px;
-    color: #707070;
+    color: $lightGrayFontColor;
     text-align: center;
   }
   .button {
     border: none;
     font-size: 16px;
-    color: #d85a71;
+    color: $darkPinkColor;
     padding: 8px 16px;
-    background-color: #d85a71;
-    background-color: #fff;
+    background-color: $regularPinkColor;
+    background-color: white;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
     align-self: flex-start;
   }
   .button:hover {
-    background: #d85a71;
-    color: #fff;
+    background: $regularPinkColor;
+    color: white;
   }
   .swiper-initialized,
   .swiper-pagination,
@@ -325,10 +321,10 @@
       @include flexRowGap(0vh);
       align-items: center;
     }
-
     article {
       padding-top: 5vh;
-      border-top: 2px solid #d85a71;
+      border-top: 2px solid $regularPinkColor;
+      @include flexRowGap(1vh);
     }
 
     img {
@@ -336,14 +332,13 @@
     }
   }
   time {
-    display: flex;
+    @include flexAlignCenter;
     justify-content: center;
-    align-items: center;
     border-radius: 50%;
     width: 17vw;
     height: 17vw;
     border: none;
-    background-color: #d85a71;
+    background-color: $regularPinkColor;
     color: white;
     transform: translateY(7vw);
   }

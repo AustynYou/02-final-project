@@ -3,7 +3,7 @@
   /* HEADER SECTION */
   header {
     > article {
-      @include bgPic("/img/hamster/bg-header.png", left, cover, 90vh);
+      height: $desktopBgHeaderHeight;
       a {
         width: 40%;
         column-gap: 1vh;
@@ -28,11 +28,11 @@
   /* MAIN SECTION */
   main {
     padding-top: 7vh;
-    @include flexRowGap(7vh);
+    row-gap: 7vh;
     > section {
-      @include flexRowGap(10vh);
+      row-gap: 10vh;
       > section {
-        @include flexRowGap(7vh);
+        row-gap: 7vh;
       }
     }
   }
@@ -52,8 +52,7 @@
   /* CARE SECTION END */
   /* BEHAVIOR SECTION */
   .behavior {
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
     img {
       height: fit-content;
     }
@@ -70,8 +69,8 @@
   /* FOOD SECTION */
   .food {
     > ul {
-      flex-direction: row;
-      justify-content: space-between;
+      @include flexDirRowJustifyBetween(nowrap);
+
       li {
         width: 30%;
       }
@@ -96,9 +95,8 @@
   /* HISTORY SECTION */
   .chronology {
     ul {
-      flex-direction: row;
+      @include flexDirRowJustifyBetween(nowrap);
       align-items: flex-start;
-      justify-content: space-between;
     }
     li {
       width: 32%;
