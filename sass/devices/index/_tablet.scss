@@ -21,7 +21,7 @@
         
         > figure {
 
-            padding-top: 25vh;
+            padding-top: 5vh;
             
             > img {
                 width: 55vh;
@@ -37,7 +37,7 @@
 
         }
     }
-    
+     
     .col-md-8{
 
         h5{
@@ -46,10 +46,61 @@
 
     }
 
-    .card-text{
+    .withPet {
+        display: none;
+    }
+
+    .card-text, address{
         font-size: 26px;
         font-weight: 400;
     }
     // End of the benefits section
+
+    // Start of the contact section
+    .contact {
+        
+        h2{
+            font-size: 42px;
+        }
+
+    }
+
+    form{
+        width: 95%;
+    }
+
+    label{
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] 
+    {
+        width: 50vh;
+        height: 7vh;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    textarea{
+        width: 50vh;
+    }
+
+    input[type="submit"]    
+    {
+        width: 40vh;
+        height: 7vh;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+
+    h4{
+        font-size: 56px;
+        font-weight: 600;
+    }
+    // End of the contact section
     
 }

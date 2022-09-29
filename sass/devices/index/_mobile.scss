@@ -34,6 +34,10 @@
         
     }
 
+    .withPet {
+        display: none;
+    }
+
     .g-0 {
         @include flexBoxColumn;
         flex-direction: row;
@@ -118,7 +122,6 @@
 
     label{
         text-transform: uppercase;
-        text-align: left;
         font-size: 16px;
         font-weight: 600;
     }
@@ -153,11 +156,43 @@
         font-size: 14px;
         font-weight: 400;
         row-gap: 2vh;
-        padding-left: 2%;
-        padding-top: 2%;
+        padding: 2%;
         background-color: rgb(98, 6, 98);
         color: whitesmoke;
     }
+
+    .mb-3{
+        align-items: baseline;
+        margin-top: 3vh;
+
+
+        >h4{
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        >iframe{
+            width: 95%;
+            height: 40vh;
+            
+        }
+
+        >aside{
+            color: white;
+            border: 1px solid white;
+
+            p{
+                color: whitesmoke;
+                text-align: left;
+            }
+
+            i{
+                padding: 2%;
+            }
+
+        }
+    }
+
 
 
     // End of the contact section
