@@ -15,7 +15,7 @@
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-          <div class="container-fluid">
+          <section class="container-fluid">
             <button
               class="navbar-toggler"
               type="button"
@@ -27,7 +27,7 @@
             >
               <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarExample01">
+            <article class="collapse navbar-collapse" id="navbarExample01">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item active">
                   <a class="nav-link" aria-current="page" href="#How">How</a>
@@ -45,13 +45,13 @@
                   <a class="nav-link" href="#history">history</a>
                 </li>
               </ul>
-            </div>
-          </div>
+            </article>
+          </section>
         </nav>
         <!-- Navbar -->
       
         <!-- Background image -->
-        <div
+        <aside
           class="p-5 text-center bg-image"
           style="
             background-image: url('/img/cat/cat_bg_header.jpg');
@@ -59,18 +59,18 @@
             margin-top: 58px;
           "
         >
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white">
-                <h1 class="mb-3">Heading</h1>
-                <h4 class="mb-3">Subheading</h4>
+          <section class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <article class="d-flex justify-content-center align-items-center h-100">
+              <aside class="text-white">
+                <h1 class="mb-3">Cats</h1>
+                <h4 class="mb-3">Information</h4>
                 <a class="btn btn-outline-light btn-lg" href="#!" role="button"
-                >Call to action</a
+                >Do I need to make this button</a
                 >
-              </div>
-            </div>
-          </div>
-        </div>
+              </aside>
+            </article>
+          </section>
+        </aside>
         <!-- Background image -->
       </header>
       <!-- ◎  temporary bootstrap header ◎  -->
@@ -78,24 +78,451 @@
     <!-- main -->
     <main>
         <!-- how section -->
+        <!-- Reference1. https://www.valleywestvets.com/services/cats/blog/7-tips-raising-healthy-cat-honor-national-adopt-cat-month -->
+        <!-- Reference2. https://be.chewy.com/7-things-to-do-when-raising-a-kitten/ -->
         <section class="how" id="how">
-            <h2>how to take care</h2>
+            <h2>7 Things to Do When Raising a Kitten</h2>
+            <!-- ◎ Bootstrap ◎ -->
+            <section class="accordion" id="accordionPanelsStayOpenExample">
+              <article class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    1. Wait to Bring Him Home
+                  </button>
+                </h2>
+                <article id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <aside class="accordion-body">
+                    <strong>Never take a kitten away from his mother and siblings before he is 8 weeks old.</strong> 
+                    <p>
+                      The early months are fundamental in starting his life off healthy and naturally.
+                    </p>
+                    <p>
+                      Kittens receive some protection against disease from their mothers through nursing, according to the American Animal Hospital Association. Experts recommend kittens stay with their mothers until they are weaned, which is around 8 weeks.
+                    </p>
+                    <p>
+                      They also learn how to socialize with each other by interacting with their mother and littermates. Proper socialization can help prevent behavioral issues down the road. More on that later.
+                    </p>
+                  </aside>
+                </article>
+              </article>
+              <article class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    2. Provide Proper Nutrition
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <aside class="accordion-body">
+                    <strong>During your kitten’s third month, refrain from feeding him anything but veterinarian-approved kitten food and kitten wet food.</strong>
+                    <p>
+                      Kitten food is specially formulated to provide kittens with the extra nutrients they need to grow into healthy cats. Most experts recommend feeing your kitten specially formulated kitten food until the age of 1.
+                    </p>
+                    <em>
+                      Don’t forget to provide your kitten with plenty of fresh water.
+                    </em>
+                  </aside>
+                </div>
+              </article>
+              <article class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    3. Socialize Your Kitten
+                  </button>
+                </h2>
+                <article id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <aside class="accordion-body">
+                    <strong>When raising a kitten, socialization is crucial in providing proper kitten care.</strong>
+                    <p>
+                      Exposing your kitten to new people, animals and experiences will help build a foundation for a lifetime of positive behavior. A kitten who hasn’t been properly socialized may develop fear aggression and avoid human contact.
+                    </p>
+                    <p>
+                      The main socialization period for kittens occurs between 3 and 9 weeks of age, but socialization opportunities should continue to be provided through the first year of life, according to the American Veterinary Medical Association. During this time, safely and gradually expose your kitten to people within your household, as well as friends and family members who do not live with you, to other pets and to general life experiences, such as being groomed or going to the vet.
+                    </p>
+                  </aside>
+                </article>
+              </article>
+              <article class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    4. Use Cat Toys, Not Hands
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                  <aside class="accordion-body">
+                    <strong>To prevent cats from attacking human hands later in life, teach kittens that hands are not playthings.</strong>
+                    <p>
+                      “Do not play with the kitten with your hands, allowing him to claw or bite them,” says Jamie Thomas, executive director of Motley Zoo Animal Rescue in Washington. “Kittens learn to play rough, if you allow it, and they will not just grow out of it. You should use only toys to play with your kittens and have a zero-tolerance policy for your kitten putting his mouth on you.”
+                    </p>
+                    <p>
+                      If you do allow this behavior, you will have a kitten that bites and scratches—both for fun and out of frustration or anger. If you have a single kitten, he will overuse his mouth and claws because he has not experienced the other side of it since he has no siblings. This bad habit also can cause problems with vet visits as well as introducing children or new people to the pet.
+                    </p>
+                  </aside>
+                </div>
+              </article>
+              <article class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                    5. Handle Your Kitten Regularly
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                  <aside class="accordion-body">
+                    <strong>Kittens who receive human contact around 10 to 12 weeks old are more likely to get along well with people than kittens who don’t receive regular contact, according to the American Animal Hospital Association.</strong> 
+                    <p>
+                      Help your new kitten get used to being patted, groomed and picked up. Do not shy away from holding and grooming your kitten, even if he appears skittish. With regular, gentle practice, he will grow comfortable with the handling.
+                    </p>
+                  </aside>
+                </div>
+              </article>
+              <article class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                    6. Avoid Overprotection
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                  <aside class="accordion-body">
+                    <strong>Sounds, movement and new surroundings initially might frighten your fur baby. </strong> 
+                    <p>
+                      However, it’s important to gradually introduce your kitten to new sounds, sights and smells so he will grow to be comfortable around any sensory stimuli, says Pam Johnson-Bennett, owner of Cat Behavior Associates in Nashville, Tennessee.
+                    </p>
+                    <p>
+                      Expose your kitten to different environments, including a variety of floors such as wood, tile and carpet. Your kitten also should be familiarized with a mix of cat toys offering various textures, colors and shapes.
+                    </p>
+                  </aside>
+                </div>
+              </article>
+              <article class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                    7. Restrict Your Kitten’s Space
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+                  <aside class="accordion-body">
+                    <em>“Do not give a new kitten free reign of the entire house right away,”</em>
+                    <p>
+                      Thomas says. “Kittens are easily overwhelmed, and giving them space stresses them out.
+                    </p>
+                    <p>
+                      “What they actually prefer is a very small world to start, until they adjust, and then you can increase their range,” she continues. “If you give them too much space too soon, they will be stressed, hide and can even develop litter box issues as a result.”
+                    </p>
+                    <p>
+                      Instead, Thomas recommends the “slow release plan.” This means the kitten is stationed in one room where he has everything he needs: food, water, litter box, toys, scratcher, etc. Let your new kitten mingle or wander from the room with supervision, but when you leave or are sleeping, return him to the room and close the door.
+                    </p>
+                    <p>
+                      After a short time—usually a week or two depending on the cat—the kitten can navigate a bit more and know where his “safe place” is, Thomas says. Should he become overwhelmed or stressed over something, he can return to that safe place when on his own as needed. All cats need a safe place where they can go to adjust and feel safe, and where no other animals will intrude.
+                    </p>
+                    <p>
+                      Kittens can be raised to be well-adjusted, kind and sociable pets with the right guidance from knowledgeable owners. Start training as early as possible to project them in a promising direction for years to come.
+                    </p>
+                  </aside>
+                </div>
+              </article>
+            </section>
+            <!-- ◎ Bootstrap ◎ -->
         </section>
         <!-- behavior section -->
+        <!-- Reference : https://www.aspca.org/pet-care/cat-care/common-cat-behavior-issues -->
         <section class="behavior" id="behavior">
-            <h2>their behavior</h2>
+          <h2>Common Cat Behavior Issues</h2>
+          <!-- ◎ Bootstrap ◎  -->
+          <article class="alert alert-secondary" role="alert">
+            <h5>1. Aggression in Cats</h5>
+            <figure>
+              <img src="/img/alert/02.JPG" alt="">
+            </figure>
+            <blockquote>
+              If your cat seems overly aggressive, there could be several reasons for his or her behavior.
+            </blockquote>
+          </article>
+          <article class="alert alert-primary" role="alert">
+            <h5>2. Aggression Between Cats in Your Household</h5>
+            <figure>
+              <img src="/img/alert/01.JPG" alt="">
+            </figure>
+            <blockquote>
+              Feline aggression and find out how to create peace between your cats
+            </blockquote>
+          </article>
+          <article class="alert alert-success" role="alert">
+            <h5>3. Destructive Scratching</h5>
+            <figure>
+              <img src="/img/alert/03.JPG" alt="">
+            </figure>
+            <blockquote>
+              Cats enjoy scratching for many reasons, including stretching, arking their territory and playing
+            </blockquote>
+          </article>
+          <article class="alert alert-danger" role="alert">
+            <h5>4. Litter Box Problems</h5>
+            <figure>
+              <img src="/img/alert/04.JPG" alt="">
+            </figure>
+            <blockquote>
+              Litter box problems sfor cats can be diverse and complex, but treatments can be very effective.
+            </blockquote>
+          </article>
+          <article class="alert alert-warning" role="alert">
+            <h5>5. Meowing and Yowling</h5>
+            <figure>
+              <img src="/img/alert/05.JPG" alt="">
+            </figure>
+            <blockquote>
+              Learn more about why cats meow, and what to do if your cat's meowing becomes excessive.
+            </blockquote>
+          </article>
+          <article class="alert alert-info" role="alert">
+            <h5>6. Older Cats with Behavior Problems</h5>
+            <figure>
+              <img src="/img/alert/06.JPG" alt="">
+            </figure>
+            <blockquote>
+              As your cat ages, he or she may experience a decline in cognitive functioning.
+            </blockquote>
+          </article>
+          <!-- ◎ Bootstrap ◎  -->
         </section>
         <!-- species section -->
+        <!-- Reference1. https://www.thesprucepets.com/personalities-of-popular-cat-breeds-554219 -->
         <section class="species" id="species">
-            <h2>most common species</h2>
+            <h2>10 Most Popular Cat Breeds</h2>
+          <!-- ◎ Bootstrap ◎  -->
+          <section id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <article class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9" aria-label="Slide 10"></button>
+            </article>
+            <article class="carousel-inner">
+
+              <aside class="carousel-item active" data-bs-interval="10000">
+                <img src="/img/12breeds/siamese.JPG" class="d-block w-100" alt="Siamese">
+                <article class="carousel-caption d-none d-md-block">
+                  <h5>1. Siamese</h5>
+                  <p>Popular since the 19th century, this cat breed originated in Thailand (formerly known as Siam). </p>
+                </article>
+              </aside> 
+              <article class="carousel-item" data-bs-interval="2000">
+                <img src="/img/12breeds/persian.JPG" class="d-block w-100" alt="2Persian">
+                <article class="carousel-caption d-none d-md-block">
+                  <h5>2.Persian</h5>
+                  <p>Also lovingly referred to as one of the "smushed-face" cats, the Iranian cat or Shiraz cat (named for a city in Iran), Persians have beautiful, long fur coats.</p>
+                </article>
+              </article>
+
+              <article class="carousel-item">
+                <img src="/img/12breeds/coon.JPG" class="d-block w-100" alt="3Coon">
+                <article class="carousel-caption d-none d-md-block">
+                  <h5>3.Maine Coon</h5>
+                  <p>Known for its large stature and thick fur coat, the Maine coon is a cat that is difficult to ignore.</p>
+                </article>
+              </article>
+
+              <article class="carousel-item">
+                <img src="/img/12breeds/ragdoll.JPG" class="d-block w-100" alt="4Ragdoll">
+                <article class="carousel-caption d-none d-md-block">
+                  <h5>4.Ragdoll</h5>
+                  <p>Ragdoll cats get their name from their docile temperament. </p>
+                </article>
+              </article>
+
+              <article class="carousel-item">
+                <img src="/img/12breeds/bengal.JPG" class="d-block w-100" alt="5Bengal">
+                <article class="carousel-caption d-none d-md-block">
+                  <h5>5.Bengal</h5>
+                  <p>They are talkative and require a lot of exercise.</p>
+                </article>
+              </article>
+
+              <article class="carousel-item">
+                <img src="/img/12breeds/abyssinian.JPG" class="d-block w-100" alt="6Abyssinian">
+                <article class="carousel-caption d-none d-md-block">
+                  <h5>6.Abyssinian</h5>
+                  <p>It has tall, pointy ears; a wedge-shaped head; and a slender and muscular body. </p>
+                </article>
+              </article>
+
+              <article class="carousel-item">
+                <img src="/img/12breeds/birman.JPG" class="d-block w-100" alt="7Birman">
+                <article class="carousel-caption d-none d-md-block">
+                  <h5>7.Birman</h5>
+                  <p>Birmans are another color-pointed cat like the Siamese and ragdoll.</p>
+                </article>
+              </article>
+
+              <article class="carousel-item">
+                <img src="/img/12breeds/orientalShorthair.JPG" class="d-block w-100" alt="8Oriental Shorthair">
+                <article class="carousel-caption d-none d-md-block">
+                  <h5>8.Oriental Shorthair</h5>
+                  <p>They usually have green eyes and many color patterns and colors. </p>
+                </article>
+              </article>
+
+              <article class="carousel-item">
+                <img src="/img/12breeds/sphynx.JPG" class="d-block w-100" alt="9Sphynx">
+                <article class="carousel-caption d-none d-md-block">
+                  <h5>09.Sphynx</h5>
+                  <p>If you are looking for a cat that doesn't shed, then the sphynx is for you.</p>
+                </article>
+              </article>
+
+              <article class="carousel-item">
+                <img src="/img/12breeds/devonRex.JPG" class="d-block w-100" alt="10Devon Rex">
+                <article class="carousel-caption d-none d-md-block">
+                  <h5>10. Devon Rex</h5>
+                  <p>Devon rex cats have wavy, soft short hair and slender bodies with enormous ears. </p>
+                </article>
+              </article>
+
+            </article>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </section>
+          <!-- ◎ Bootstrap ◎  -->
+
+
         </section>
         <!-- recommend section -->
+        <!-- Reference1. https://www.self.com/story/best-cat-food-brands -->
         <section class="recommend" id="recommend">
-            <h2>recommend good food</h2>
-        </section>
-        <!-- history section -->
-        <section class="history" id="history">
-            <h2>history with people</h2>
+            <h2>Best Vet Recommended Cat Food</h2>
+
+        <!-- ◎ Bootstrap ◎  -->
+        <article class="card" style="width: 18rem;">
+          <img src="/img/8food/01hill.JPG" class="card-img-top" alt="01hill">
+          <aside class="card-body">
+            <h5 class="card-title">1. Hill’s Science Diet</h5>
+            <p class="card-text">This brand is a standard-bearer when it comes to AAFCO- and WSAVA-compliant foods, and it employs over 200 scientists at its Global Pet Nutrition Center.</p>
+            <a href="#" class="btn btn-primary">$33 At Amazon</a>
+          </aside>
+        </article>
+        <article class="card" style="width: 18rem;">
+          <img src="/img/8food/02royal.JPG" class="card-img-top" alt="02royal">
+          <aside class="card-body">
+            <h5 class="card-title">2. Royal Canin</h5>
+            <p class="card-text">Among its special offerings you can find kitten food and meals made especially for older and senior cats, plus recipes rich in omega-3 and omega-6 fatty acids for shinier coats.</p>
+            <a href="#" class="btn btn-primary">$53 At Amazon</a>
+          </aside>
+        </article>
+        <article class="card" style="width: 18rem;">
+          <img src="/img/8food/03purina.JPG" class="card-img-top" alt="03purina">
+          <aside class="card-body">
+            <h5 class="card-title">3.Purina Pro Plan</h5>
+            <p class="card-text">For science-backed recipes packed with healthy proteins and carbs that won’t put a huge dent in your wallet, Purina Pro Plan is an excellent choice.</p>
+            <a href="#" class="btn btn-primary">$39 At Amazon</a>
+          </aside>
+        </article>
+        <article class="card" style="width: 18rem;">
+          <img src="/img/8food/04merrick.JPG" class="card-img-top" alt="04merrick">
+          <aside class="card-body">
+            <h5 class="card-title">4.Merrick</h5>
+            <p class="card-text">The line features salmon, beef, and chicken recipes that are made to promote hairball control and healthy skin and coats.</p>
+            <a href="#" class="btn btn-primary">$33 At Amazon</a>
+          </aside>
+        </article>
+        <article class="card" style="width: 18rem;">
+          <img src="/img/8food/05fermina.JPG" class="card-img-top" alt="05fermina">
+          <aside class="card-body">
+            <h5 class="card-title">5.Farmina</h5>
+            <p class="card-text">This brand isn’t on the same name-recognition level as, say, Purina, but its nutritional chops put it on the map all the same.</p>
+            <a href="#" class="btn btn-primary">$65 At Amazon</a>
+          </aside>
+        </article>
+        <article class="card" style="width: 18rem;">
+          <img src="/img/8food/06vetdiet.JPG" class="card-img-top" alt="06vetdiet">
+          <aside class="card-body">
+            <h5 class="card-title">6.VetDiet</h5>
+            <p class="card-text">It even makes healthy cat treats, for when your cat has been an especially good girl or boy (in other words, always).  </p>
+            <a href="#" class="btn btn-primary">$17 At Amazon</a>
+          </aside>
+        </article>
+        <article class="card" style="width: 18rem;">
+          <img src="/img/8food/07nature.JPG" class="card-img-top" alt="07nature">
+          <aside class="card-body">
+            <h5 class="card-title">7.Nature’s Logic</h5>
+            <p class="card-text"> it tests every batch of food that come out of its U.S.-based manufacturing locations. </p>
+            <a href="#" class="btn btn-primary">$32 At Amazon</a>
+          </aside>
+        </article>
+        <article class="card" style="width: 18rem;">
+          <img src="/img/8food/08earthborn.JPG" class="card-img-top" alt="08earthborn">
+          <aside class="card-body">
+            <h5 class="card-title">8.Earthborn Holistic</h5>
+            <p class="card-text">It offers both whole-grain and grain-free dry cat food, as well as grain- and gluten-free wet food made with hearty proteins like chicken liver. </p>
+            <a href="#" class="btn btn-primary">$32 At Amazon</a>
+          </aside>
+        </article>
+        <!-- ◎ Bootstrap ◎  -->
+        
+      </section>
+      <!-- history section -->
+      <!-- Reference : https://www.boehringer-ingelheim.com/animal-health/animal-health-news/history-cats -->
+      <section class="history" id="history">
+        <h2>The history of Cats with humans</h2>
+        <!-- ◎ Bootstrap ◎  -->
+        <table class="table table-hover">
+          <thead>
+            <tr class="table-primary">
+              <th scope="col">#</th>
+              <th scope="col">Region</th>
+              <th scope="col">contents</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-secondary">
+              <th scope="row">1</th>
+              <td>Middle East</td>
+              <td>
+                Researchers recently discovered that, in the Mesopotamia region and Turkey, and on the Mediterranean island of Cyprus, cats were living with among people thousands of years before they existed in Egypt. In fact, evidence suggests that people domesticated cats in the Middle East more than 10,000 years ago, and cats were revered in many of the region’s traditions. Researchers consider the Middle East the place where people first domesticated cats. Additionally, the first evidence of the “blotched“ or “tabby“ coat pattern cat, which commonly appears in domesticated cats, appeared in Turkey during the 14th century. 
+              </td>
+            </tr>
+            <tr class="table-success">
+              <th scope="row">2</th>
+              <td>Africa</td>
+              <td>
+                The ancient Egyptians began domesticating the African wildcat as early as 4,000 years ago. In ancient Egypt, people believed that cats were magical, divine and godlike. In fact, ancient Egyptians worshipped a feline goddess named Bastet, who was depicted as half-feline, half-woman. Throughout the artifacts from ancient Egypt, cats are a symbolic fixture, illustrating their value, popularity and companionship with humans. Even in death, people immortalized the cats of ancient Egypt as mummies. 
+              </td>
+            </tr>
+            <tr class="table-danger">
+              <th scope="row">3</th>
+              <td>Asia</td>
+              <td>
+                Around 3,000 B.C., the people of China began to domesticate the leopard cat and the western wildcat for pest control. During the Sung Dynasty (960 – 1279), people cherished cats as loyal pets. Artists depicted them in paintings and sculptures. The Chinese culture considered the cat as a symbol of good luck. 
+              </td>
+            </tr>
+            <tr class="table-warning">
+              <th scope="row">4</th>
+              <td>Europe</td>
+              <td>
+                During the Middle Ages, many people considered cats demonic and associated them with darkness and witchcraft. As a result, popes and high-ranking officials condemned cats, and the animals were often tortured and killed. In more modern times, especially the Age of Enlightenment in the 17th and 18th century, cats began to shed their negative reputation and regained popularity as a loyal pet. Today, cats are one of the most popular and cherished pets in Europe. A recent Boehringer Ingelheim and IPSOS joint study found that over 91 percent of cat owners say their cat has a positive effect on their lives. 
+              </td>
+            </tr>
+            <tr class="table-info">
+              <th scope="row">5</th>
+              <td>North and South America</td>
+              <td>
+                Cats arrived in North and South America with European settlers. As the settlers began to cultivate the land, cats helped establish the unique human-animal bond through their natural ability to hunt, drive away rodents and serve as loyal companion pets. Today, the domestic cat is the most popular household pet in the U.S., with nearly 74 million cats living in homes.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- ◎ Bootstrap ◎  -->
+
+
         </section>
     </main>
     <!-- ◎ temporary Bootstrap Footer ◎  -->
@@ -134,87 +561,86 @@
         <!-- Section: Social media -->
     
         <!-- Section: Links  -->
-        <section class="">
-        <article class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <article class="row mt-3">
-            <!-- Grid column -->
-            <article class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Content -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>Pet's World
-                </h6>
-                <p>
-                This homepage gives a lot of information of the pet like cats, fish and hamsters. Sub contents are like this lists that how to take care, their behavior, most common species, recommend good food and history with people.
-                </p>
-            </article>
-            <!-- Grid column -->
-    
-            <!-- Grid column -->
-            <article class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                Contents
-                </h6>
-                <p>
-                <a href="#!" class="text-reset">Take care</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Behavior</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Species</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Food</a>
-                </p>
-            </article>
-            <!-- Grid column -->
-    
-            <!-- Grid column -->
-            <article class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                Useful links
-                </h6>
-                <p>
-                <a href="#!" class="text-reset">Pricing</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Settings</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Orders</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Help</a>
-                </p>
-            </article>
-            <!-- Grid column -->
-    
-            <!-- Grid column -->
-            <article class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                <p><i class="fas fa-home me-3"></i> 889 W Pender St #200, Vancouver, BC V6C 3B2</p> 
-                <p>
-                <i class="fas fa-envelope me-3"></i>
-                info@pets.com
-                </p>
-                <p><i class="fas fa-phone me-3"></i> + 01 234 567 1234</p>
-                <p><i class="fas fa-print me-3"></i> + 01 234 567 1234</p>
-            </article>
-            <!-- Grid column -->
-            </article>
-            <!-- Grid row -->
-        </article>
+        <section class="big_bottom">
+          <article class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <article class="row mt-3">
+              <!-- Grid column -->
+              <article class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Pet's World
+                  </h6>
+                  <p>
+                  This homepage gives a lot of information of the pet like cats, fish and hamsters. Sub contents are like this lists that how to take care, their behavior, most common species, recommend good food and history with people.
+                  </p>
+              </article>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <article class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                  Contents
+                  </h6>
+                  <p>
+                  <a href="#!" class="text-reset">Take care</a>
+                  </p>
+                  <p>
+                  <a href="#!" class="text-reset">Behavior</a>
+                  </p>
+                  <p>
+                  <a href="#!" class="text-reset">Species</a>
+                  </p>
+                  <p>
+                  <a href="#!" class="text-reset">Food</a>
+                  </p>
+              </article>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <article class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                  Useful links
+                  </h6>
+                  <p>
+                  <a href="#!" class="text-reset">Pricing</a>
+                  </p>
+                  <p>
+                  <a href="#!" class="text-reset">Settings</a>
+                  </p>
+                  <p>
+                  <a href="#!" class="text-reset">Orders</a>
+                  </p>
+                  <p>
+                  <a href="#!" class="text-reset">Help</a>
+                  </p>
+              </article>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <article class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                  <p><i class="fas fa-home me-3"></i> 889 W Pender St #200, Vancouver, BC V6C 3B2</p> 
+                  <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  info@pets.com
+                  </p>
+                  <p><i class="fas fa-phone me-3"></i> + 01 234 567 1234</p>
+              </article>
+              <!-- Grid column -->
+              </article>
+              <!-- Grid row -->
+          </article>
         </section>
         <!-- Section: Links  -->
     
         <!-- Copyright -->
         <article class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2022 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">pet.com</a>
+          © 2022 Copyright:
+          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">pet.com</a>
         </article>
         <!-- Copyright -->
     </footer>

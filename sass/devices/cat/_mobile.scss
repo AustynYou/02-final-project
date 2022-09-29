@@ -1,82 +1,12 @@
 @media (min-width: 300px) {
 
-    // benefits section
-    .benefits {
+   .big_bottom {
+        display: none;
+        border: 10px solid red;
+   }
 
-        >section {
-            @include flexBoxColumn;
-            align-items: center;
-        }
-
-        h2{
-            font-size: 22px;
-            font-weight: 600;
-            text-transform: capitalize;
-            text-align: center;
-            color: dimgray;
-        }
-        
-    }
-    
-    .benefitsTitle{
-        width: 90%;
-
-        > figure {
-            @include flexBoxColumn;
-            
-            > img {
-                width: 45vh;
-                height: 25vh;
-                align-items: center;
-            }
-        }
-        
-    }
-
-    .g-0 {
-        @include flexBoxColumn;
-        flex-direction: row;
-        width: 95%;
-        align-items: center;
-    }
-    
-    .col-md-4{
-        width: 65%;
-        flex-direction: row;
-        justify-content: left;
-        
-        img{
-            border-radius: 85%;
-            width: 50vh;
-            height: 30vh;
-            align-items: center;
-
-        }
-    }
-
-    .col-md-8{
-        width: 35%;
-
-        h5{
-            font-size: 14px;
-            font-weight: 600;
-            text-align: left;
-            text-transform: uppercase;
-            color: rgb(154, 145, 145);
-        }
-
-    }
-
-    blockquote{
-        width: 90%;
-    }
-
-    .card-text{
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 2;
-        text-align: center;
-        color: rgb(84, 55, 112);
-    }
+   .p-4{
+    border: 10px solid green;
+   }
     
 }

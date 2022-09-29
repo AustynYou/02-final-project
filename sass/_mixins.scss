@@ -1,7 +1,17 @@
 @mixin flexBoxColumn {
     display: flex;
     flex-direction: column;
-
-
  }
+
+ @mixin topBgImg(
+    $img,
+    $imgPosition : center,
+    $imgSize : cover,
+    $imgRepeat : no-repeat
+){
+    background: url($img);
+    background-position: $imgPosition;
+    background-size: $imgSize;
+    background-repeat: $imgRepeat;
+}
  
