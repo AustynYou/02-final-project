@@ -3,7 +3,12 @@
   /* HEADER SECTION */
   header {
     > article {
-      @include bgPic("/img/hamster/bg-header.png", left, cover, 70vw);
+      @include bgPic(
+        "/img/hamster/bg-header.png",
+        left,
+        cover,
+        $tabletBgHeaderHeight
+      );
       a {
         width: 49%;
         column-gap: 1vh;
@@ -24,6 +29,15 @@
   /* HEADER SECTION END */
 
   /* MAIN SECTION */
+  main {
+    @include flexRowGap(5vh);
+    > section {
+      row-gap: 7vh;
+      > section {
+        row-gap: 5vh;
+      }
+    }
+  }
   .title {
     width: 80%;
     align-self: center;
@@ -57,12 +71,10 @@
   /* SPECIES SECTION */
   .species {
     > section {
-      @include flexRowGap(5vh);
+      row-gap: 5vh;
       padding: 0;
       > article {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        @include flexDirRowJustifyBetween(wrap);
       }
     }
     figure {
@@ -82,14 +94,13 @@
   .food {
     > section {
       align-self: center;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      @include flexDirRowJustifyBetween(wrap);
     }
     > figure {
       height: 20vh;
     }
     > ul {
+      row-gap: 5vh;
       i {
         padding: 7%;
       }
@@ -103,9 +114,66 @@
       }
     }
   }
-  .card {
-    width: 32%;
+
+  /* CARD SLIDER SECTION */
+  /* CSS Reference: https://www.codinglabweb.com/2022/05/responsive-card-slider-javascript.html */
+  .slide-container > .card {
+    display: none;
   }
+  .swiper-initialized,
+  .swiper-pagination,
+  .swiper-navBtn {
+    display: initial;
+  }
+  .slide-container {
+    max-width: 1120px;
+    width: 100%;
+    padding-bottom: 40px;
+    h3 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .name {
+    height: 8vh;
+    overflow-y: hidden;
+  }
+  .description {
+    height: 20vh;
+    overflow-y: hidden;
+  }
+  .swiper-navBtn {
+    color: $lightNavBtnColor;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover {
+    color: $darkNavBtnColor;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 35px;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-pagination-bullet {
+    background-color: $regularPinkColor;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $darkPinkColor;
+  }
+  /* CSS Reference: https://www.codinglabweb.com/2022/05/responsive-card-slider-javascript.html */
+  /* CARD SLIDER SECTION END */
   /* FOOD SECTION END */
   /* HISTORY SECTION */
   .history {
