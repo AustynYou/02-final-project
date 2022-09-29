@@ -9,12 +9,15 @@
   row-gap: $rowGap;
 }
 
-@mixin bgPic($url, $position, $size, $height) {
-  background-image: url($url);
-  background-position: $position;
-  background-size: $size;
-  background-repeat: no-repeat;
-  height: $height;
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexDirRowJustifyBetween($isWrap) {
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: $isWrap;
 }
 
 @mixin flexMenu {
@@ -29,12 +32,20 @@
   }
 }
 
+@mixin bgPic($url, $position, $size, $height) {
+  background-image: url($url);
+  background-position: $position;
+  background-size: $size;
+  background-repeat: no-repeat;
+  height: $height;
+}
+
 @mixin socialMediaHover {
   padding: 10%;
   transition: 0.4s;
 
   &:hover {
-    color: #d85a71;
+    color: $darkPinkColor;
   }
 }
 
@@ -42,6 +53,6 @@
   text-transform: capitalize;
   transition: $second;
   &:hover {
-    color: mediumseagreen;
+    color: $titleGreenColor;
   }
 }
