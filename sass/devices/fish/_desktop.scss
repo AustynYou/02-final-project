@@ -71,17 +71,24 @@
 
     }
     .speciesF{
-        height: 90vh;
+        height: 110vh;
         > section{
             column-gap: 2%;
+            height: 100%;
         }
         figure{
             width: 17%;
-            height: 85%;
+            height: 75%;
         }
         img{
             width: 20vh;
             height: 10vh;
+        }
+        figure{
+            align-self: flex-end;
+            &:hover{
+                align-self: flex-start;
+            }
         }
     }
     .foodF{
