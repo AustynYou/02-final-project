@@ -1,0 +1,165 @@
+@media (min-width: 300px) {
+
+    // Start of the benefits section
+    .benefits {
+
+        >section {
+            @include flexBoxColumn;
+            align-items: center;
+        }
+
+        h2{
+            font-size: 22px;
+            font-weight: 600;
+            padding: 2%;
+            text-transform: capitalize;
+            text-align: center;
+            color: dimgray;
+        }
+        
+    }
+    
+    .benefitsTitle{
+        width: 90%;
+
+        > figure {
+            @include flexBoxColumn;
+            
+            > img {
+                width: 45vh;
+                height: 25vh;
+                align-items: center;
+            }
+        }
+        
+    }
+
+    .g-0 {
+        @include flexBoxColumn;
+        flex-direction: row;
+        width: 95%;
+        align-items: center;
+    }
+    
+    .col-md-4{
+        width: 65%;
+        flex-direction: row;
+        justify-content: left;
+        
+        img{
+            border-radius: 85%;
+            width: 50vh;
+            height: 30vh;
+            align-items: center;
+
+        }
+    }
+
+    .col-md-8{
+        width: 35%;
+
+        h5{
+            font-size: 14px;
+            font-weight: 600;
+            text-align: left;
+            text-transform: uppercase;
+            color: rgb(154, 145, 145);
+        }
+
+    }
+
+    blockquote{
+        width: 90%;
+    }
+
+    .card-text{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 2;
+        text-align: center;
+        color: rgb(72, 16, 125);
+    }
+    // End of the benefits section
+
+    // Start of the contact section
+
+    .contact {
+        
+        article{
+            @include flexBoxColumn;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 15vh;
+            
+        }
+        
+        h2{
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: capitalize;
+            text-align: center;
+            line-height: 2;
+            color: dimgray;
+        }
+
+    }
+
+    form{
+        @include flexBoxColumn;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+        line-height: 2;
+
+        aside{
+            margin-top: 2vh;
+        }
+    }
+
+    label{
+        text-transform: uppercase;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] 
+    {
+        width: 31vh;
+        height: 5vh;
+        font-size: 14px;
+        font-weight: 400;
+        column-gap: 2;
+        line-height: 2;
+        padding-left: 2%;
+        padding-top: 2%;
+        border: 1px solid rgb(69, 1, 69);
+    }
+
+    textarea{
+        width: 31vh;
+        height: 30vh;
+        padding-left: 2%;
+        padding-top: 2%;
+        border: 1px solid rgb(69, 1, 69);
+    }
+
+    input[type="submit"]    
+    {
+        width: 20vh;
+        height: 5vh;
+        font-size: 14px;
+        font-weight: 400;
+        row-gap: 2vh;
+        padding-left: 2%;
+        padding-top: 2%;
+        background-color: rgb(98, 6, 98);
+        color: whitesmoke;
+    }
+
+
+    // End of the contact section
+    
+}

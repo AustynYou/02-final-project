@@ -4,8 +4,229 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About pets</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <nav class="navbar bg-light fixed-top">
+        <section class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h1><i class="fa-solid fa-paw"></i> About <span>Pets</span></h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <article
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <aside class="offcanvas-header">
+              <h1 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <i class="fa-solid fa-paw"></i> About <span>Pets</span>
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </aside>
+            <aside class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="cat.html">cat</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="hamster.html"
+                    >hamster</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="fish.html">fish</a>
+                </li>
+              </ul>
+            </aside>
+          </article>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cat.html">cat</a></li>
+            <li><a href="hamster.html">hamster</a></li>
+            <li><a href="fish.html">fish</a></li>
+          </ul>
+        </section>
+      </nav>
+      <article>
+        <ul>
+          <li>
+            <a href="#what"><i class="fa-solid fa-check"></i>what is a pet?</a>
+          </li>
+          <li>
+            <a href="#pets"><i class="fa-solid fa-check"></i>the pets</a>
+          </li>
+          <li>
+            <a href="#benefits"
+              ><i class="fa-solid fa-check"></i>benefits of having a pet</a
+            >
+          </li>
+          <li>
+            <a href="#adopt"
+              ><i class="fa-solid fa-check"></i>how to adopt pet</a
+            >
+          </li>
+          <li>
+            <a href="#contact"><i class="fa-solid fa-check"></i>contact</a>
+          </li>
+        </ul>
+      </article>
+    </header>
+    <!-- HEADER SECTION END -->
+    <main>
+      <section>
+        <!--Austyn  -->
+      </section>
+      <section>
+        <!-- Angel -->
+      </section>
+      <!-- Tina: benefits section start -->
+      <!-- This section will be explained about benefits of living with a pet  -->
+      <!-- Reference.1 : https://www.helpguide.org/articles/mental-health/mood-boosting-power-of-dogs.htm -->
+      <!-- Reference.2 : https://wellbeingmagazine.com/health/health-benefits-pet/clear -->
+      <section class="benefits" id="benefits">
+        <section>
+          <!-- benefits Title article -->
+          <article class="benefitsTitle" id="benefitsTitle">
+            <figure>
+              <img src="/img/pets.JPG" alt="benefit_pets">
+            </figure>
+            <h2>benefits of living with a pet</h2>
+          </article>
+          <!-- bootstrap card1  -->
+          <section class="card mb-3" style="max-width: 540px;">
+            <article class="row g-0">
+              <figure class="col-md-4">
+                <img src="/img/physical_pet.jpg" class="img-fluid rounded-start" alt="physically">
+              </figure>
+              <article class="col-md-8">
+                <aside class="card-body">
+                  <figure>
+                    <img src="/img/muscle.png" alt="physically">
+                    <h5 class="card-title">Physical</h5>
+                  </figure>
+                </aside>
+              </article>
+            </article>
+          </section>
+          <blockquote>
+            <p class="card-text">Most pet owners are clear about the immediate joys that come with sharing their lives with companion animals. However, many of us remain unaware of the physical and mental health benefits that can also accompany the pleasure of snuggling up to a furry friend. It’s only recently that studies have begun to scientifically explore the benefits of the human-animal bond.</p>
+            <p class="card-text"><small class="text-muted">HelpGuide updated September 6, 2022</small></p>
+          </blockquote>
+          <!-- bootstrap card2  -->
+          <section class="card mb-3" style="max-width: 540px;">
+            <article class="row g-0">
+              <figure class="col-md-4">
+                <img src="/img/mental_pet.jpg" class="img-fluid rounded-start" alt="Mentally">
+              </figure>
+              <article class="col-md-8">
+                <aside class="card-body">
+                  <figure>
+                    <img src="/img/mental.png" alt="mentally">
+                    <h5 class="card-title">Mental</h5>
+                  </figure>
+                </aside>
+              </article>
+            </section>
+            <blockquote>
+              <p class="card-text">Pets have evolved to become acutely attuned to humans and our behavior and emotions. Dogs, for example, are able to understand many of the words we use, but they’re even better at interpreting our tone of voice, body language, and gestures. And like any good human friend, a loyal dog will look into your eyes to gauge your emotional state and try to understand what you’re thinking and feeling (and to work out when the next walk or treat might be coming, of course).</p>
+              <p class="card-text"><small class="text-muted">HelpGuide updated September 6, 2022</small></p>
+            </blockquote>
+            </article>
+          <!-- bootstrap card3  -->
+          <section class="card mb-3" style="max-width: 540px;">
+            <article class="row g-0">
+              <figure class="col-md-4">
+                <img src="/img/emotion_pet.jpg" class="img-fluid rounded-start" alt="Emotionally">
+              </figure>
+              <article class="col-md-8">
+                <aside class="card-body">
+                  <figure>
+                    <img src="/img/emoticons.png" alt="emotionally">
+                    <h5 class="card-title">Emotional</h5>
+                  </figure>
+                </aside>
+              </article>
+            </article>
+          </section>
+          <blockquote>
+            <p class="card-text">Pets, especially dogs and cats, can reduce stress, anxiety, and depression, ease loneliness, encourage exercise and playfulness, and even improve your cardiovascular health. Caring for an animal can help children grow up more secure and active. Pets also provide valuable companionship for older adults. Perhaps most importantly, though, a pet can add real joy and unconditional love to your life.</p>
+            <p class="card-text"><small class="text-muted">HelpGuide updated September 6, 2022</small></p>
+          </blockquote>
+        </section>
+      </section>
+      <!-- benefits section end -->
+      <section>
+        <!-- Angel -->
+      </section>
+      <!-- Tina contact section start -->
+      <section class="contact" id="contact">
+        <article>
+          <h2>contact us</h2>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your Name">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Your email">
+            <label for="company">Company</label>
+            <input type="text" name="company" id="company" placeholder="Company name">
+            <label for="phone">Phone</label>
+            <input type="tel" name="tel" id="tel" placeholder="Phone">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <aside>
+              <input type="submit" value="SEND MESSAGE">
+            </aside>
+          </form>
+        </article>
+      </section>
+      <!-- contact section end -->
+    </main>
+    <footer>
+      <p>Copyright © 2022 About Pet | Design: Angel, Austyn, Tina</p>
+    </footer>
+    <!--This is Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
