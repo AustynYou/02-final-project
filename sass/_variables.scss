@@ -1,6 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Combo&family=Open+Sans:wght@400;600&display=swap');
+
+
+/* HAMSTER PAGE VARIABLES */
+$defaultFontFamily: "Open Sans", sans-serif;
+$h1FontFamily: "Aref Ruqaa Ink", serif;
+
+$smBreakpoint: 200px;
+$mdBreakpoint: 600px;
+$lgBreakpoint: 1000px;
+
+$defaultFontSize: 16px;
+
+$light: 300;
+$regular: 400;
+$semiBold: 600;
+$bold: 700;
+
+$navFixedGap: 8vh;
+
+$second: 0.4s;
+
+$mobileBgHeaderHeight: 152vw;
+$tabletBgHeaderHeight: 70vw;
+$desktopBgHeaderHeight: 90vh;
+
+$headerBgMenuColor: rgba(170, 170, 170, 0.4);
+
+$darkIconColor: #797979;
+$lightIconColor: darkgray;
+
+$titleGreenColor: mediumseagreen;
+$subTitleBlueColor: steelblue;
+
+$darkPinkColor: #e33857;
+$regularPinkColor: #d85a71;
+$lightPinkColor: #fad9df;
+$focusPinkColor: rgba(217, 76, 102, 0.5);
+
+$aFontColor: cornflowerblue;
+
+$blockquoteFontColor: darkgoldenrod;
+
+$buttonBlueColor: dodgerblue;
+$buttonGreenColor: darkcyan;
+$buttonRedColor: #ae2222;
+
+$cardBorderColor: #dbdbdb;
+
+$darkGrayFontColor: #333;
+$lightGrayFontColor: #707070;
+
+$darkNavBtnColor: #777;
+$lightNavBtnColor: #acacac;
+/* HAMSTER PAGE VARIABLES END */
+
+/* CAT PAGE VARIABLES */
 // $footerBg           : #20dbce;
 // $contactBg        : #4adf9f;
 // $defaultFontColor : #8a0a16;
 // $defaultOrange    : #a90e0c;
+/* CAT PAGE VARIABLES END */
 

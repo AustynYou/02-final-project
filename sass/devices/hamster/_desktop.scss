@@ -1,0 +1,136 @@
+/* DESKTOP DEVICE VERSION */
+@media (min-width: $lgBreakpoint) {
+  /* HEADER SECTION */
+  header {
+    > article {
+      height: $desktopBgHeaderHeight;
+      a {
+        width: 40%;
+        column-gap: 1vh;
+        padding: 3vh;
+      }
+    }
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  .container-fluid {
+    ul {
+      width: 30%;
+      @include flexMenu;
+      a {
+        @include navHoverChange;
+      }
+    }
+  }
+  /* HEADER SECTION END */
+
+  /* MAIN SECTION */
+  main {
+    padding-top: 7vh;
+    row-gap: 7vh;
+    > section {
+      row-gap: 10vh;
+      > section {
+        row-gap: 7vh;
+      }
+    }
+  }
+
+  /* CARE SECTION */
+  .care {
+    > section {
+      figure {
+        width: fit-content;
+      }
+    }
+
+    li {
+      line-height: 3;
+    }
+  }
+  /* CARE SECTION END */
+  /* BEHAVIOR SECTION */
+  .behavior {
+    @include flexAlignCenter;
+  }
+  .gallery {
+    // row-gap: 5vh;
+    figure {
+      width: 31.5%;
+      height: 16vw;
+      overflow-y: hidden;
+    }
+  }
+  .meaning {
+    width: 100%;
+  }
+  /* BEHAVIOR SECTION END */
+  /* SPECIES SECTION */
+  .species {
+    > section {
+      @include flexDirRowJustifyBetween(wrap);
+      article {
+        flex-direction: column;
+        justify-content: initial;
+        width: 48%;
+      }
+    }
+    figure {
+      width: 100%;
+    }
+    aside {
+      width: 100%;
+      p {
+        text-align: justify;
+      }
+    }
+  }
+  /* SPECIES SECTION END */
+  /* FOOD SECTION */
+  .food {
+    > ul {
+      @include flexDirRowJustifyBetween(nowrap);
+
+      li {
+        width: 30%;
+      }
+      a {
+        font-size: 14px;
+        padding: 4% 9%;
+      }
+      p {
+        height: 20vh;
+      }
+    }
+  }
+  .name {
+    height: 8vh;
+    overflow-y: hidden;
+  }
+  .description {
+    height: 23vh;
+    overflow-y: hidden;
+  }
+  /* FOOD SECTION END */
+  /* HISTORY SECTION */
+  .chronology {
+    ul {
+      @include flexDirRowJustifyBetween(nowrap);
+      align-items: flex-start;
+    }
+    li {
+      width: 30%;
+    }
+    article {
+      row-gap: 2vh;
+    }
+    time {
+      width: 9vh;
+      height: 9vh;
+      transform: translateY(4vh);
+    }
+  }
+  /* HISTORY SECTION END */
+  /* MAIN SECTION END */
+}

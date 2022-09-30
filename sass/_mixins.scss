@@ -1,7 +1,58 @@
 @mixin flexBoxColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexRowGap($rowGap) {
+  display: flex;
+  flex-direction: column;
+  row-gap: $rowGap;
+}
+
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexDirRowJustifyBetween($isWrap) {
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: $isWrap;
+}
+
+@mixin flexMenu {
+  display: flex;
+  li {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+  }
+  a {
+    width: 100%;
+    text-align: center;
+  }
+}
 
+@mixin bgPic($url, $position, $size, $height) {
+  background-image: url($url);
+  background-position: $position;
+  background-size: $size;
+  background-repeat: no-repeat;
+  height: $height;
+}
 
- }
- 
+@mixin socialMediaHover {
+  padding: 10%;
+  transition: 0.4s;
+
+  &:hover {
+    color: $darkPinkColor;
+  }
+}
+
+@mixin navHoverChange {
+  text-transform: capitalize;
+  transition: $second;
+  &:hover {
+    color: $titleGreenColor;
+  }
+}
