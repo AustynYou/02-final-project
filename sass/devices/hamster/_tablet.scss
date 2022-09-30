@@ -46,6 +46,10 @@
   .social {
     @include socialMediaHover;
   }
+  .fa-angle-down {
+    width: 5vw;
+    height: 5vw;
+  }
   /* CARE SECTION */
   .care {
     > section {
@@ -72,7 +76,7 @@
   .gallery {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 3vh;
+    gap: 2vh;
     figure {
       width: 48%;
       height: 25vw;

@@ -36,7 +36,10 @@
       }
     }
   }
-
+  .fa-angle-down {
+    width: 5vh;
+    height: 5vh;
+  }
   /* CARE SECTION */
   .care {
     > section {
@@ -55,7 +58,6 @@
     @include flexAlignCenter;
   }
   .gallery {
-    // row-gap: 5vh;
     figure {
       width: 31.5%;
       height: 16vw;
