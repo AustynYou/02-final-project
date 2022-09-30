@@ -23,4 +23,45 @@
     }
   }
   /* HEADER SECTION END */
+
+  /* MAIN SECTION */
+  .title {
+    width: 80%;
+  }
+  /* WHAT SECTION */
+  .what {
+    align-items: center;
+    > section {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    figure {
+      width: 49%;
+    }
+    blockquote {
+      width: 49%;
+    }
+    details {
+      width: 100%;
+    }
+    summary {
+      padding: 2%;
+      transition: $second;
+    }
+    summary:hover {
+      box-shadow: 0 0 0 0.25rem $focusPinkColor;
+      color: $regularPinkColor;
+    }
+  }
+  .gallery {
+    figure {
+      width: 32%;
+      height: 20vw;
+    }
+  }
+  /* WHAT SECTION END */
+
+  /* MAIN SECTION END */
 }
