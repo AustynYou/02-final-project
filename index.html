@@ -5,7 +5,399 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About pets</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body></body>
+  <body>
+     <!-- HEADER SECTION -->
+    <header>
+      <nav class="navbar bg-light fixed-top">
+        <section class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h1><i class="fa-solid fa-paw"></i> About <span>Pets</span></h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <article
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <aside class="offcanvas-header">
+              <h1 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <i class="fa-solid fa-paw"></i> About <span>Pets</span>
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </aside>
+            <aside class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" target="_blank" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" target="_blank" href="cat.html"
+                    >cat</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    target="_blank"
+                    href="hamster.html"
+                    >hamster</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" target="_blank" href="fish.html"
+                    >fish</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </article>
+          <ul>
+            <li><a target="_blank" href="index.html">Home</a></li>
+            <li><a target="_blank" href="cat.html">cat</a></li>
+            <li><a target="_blank" href="hamster.html">hamster</a></li>
+            <li><a target="_blank" href="fish.html">fish</a></li>
+          </ul>
+        </section>
+      </nav>
+      <article>
+        <ul>
+          <li>
+            <a href="#what"><i class="fa-solid fa-check"></i>what is a pet?</a>
+          </li>
+          <li>
+            <a href="#pets"><i class="fa-solid fa-check"></i>the pets</a>
+          </li>
+          <li>
+            <a href="#benefits"
+              ><i class="fa-solid fa-check"></i>benefits of having a pet</a
+            >
+          </li>
+          <li>
+            <a href="#adopt"
+              ><i class="fa-solid fa-check"></i>how to adopt pet</a
+            >
+          </li>
+          <li>
+            <a href="#contact"><i class="fa-solid fa-check"></i>contact</a>
+          </li>
+        </ul>
+      </article>
+    </header>
+    <!-- HEADER SECTION END -->
+    <!-- MAIN SECTION -->
+    <main>
+       <!-- WHAT SECTION -->
+      <section class="what" id="what">
+        <article class="title">
+          <h2>What is a Pet?</h2>
+          <p>
+            A pet, or companion animal, is an animal kept primarily for a
+            person's company or entertainment rather than as a working animal,
+            livestock, or a laboratory animal.
+          </p>
+          <!-- Reference: https://en.wikipedia.org/wiki/Pet -->
+        </article>
+        <section class="gallery">
+          <figure>
+            <img
+              src="/img/index/section-01-pet-01.png"
+              alt="Section-01-Pet-01"
+            />
+          </figure>
+          <figure>
+            <img
+              src="/img/index/section-01-pet-02.png"
+              alt="Section-01-Pet-02"
+            />
+          </figure>
+          <figure>
+            <img
+              src="/img/index/section-01-pet-03.png"
+              alt="Section-01-Pet-03"
+            />
+          </figure>
+          <figure>
+            <img
+              src="/img/index/section-01-pet-04.png"
+              alt="Section-01-Pet-04"
+            />
+          </figure>
+          <figure>
+            <img
+              src="/img/index/section-01-pet-05.png"
+              alt="Section-01-Pet-05"
+            />
+          </figure>
+          <figure>
+            <img
+              src="/img/index/section-01-pet-06.png"
+              alt="Section-01-Pet-06"
+            />
+          </figure>
+        </section>
+        <h3>meanings of a pet</h3>
+        <section>
+          <figure class="bg-section-01"></figure>
+          <blockquote>
+            Pets provide their owners (or "guardians") both physical and
+            emotional benefits. Walking a dog can provide both the human and the
+            dog with exercise, fresh air, and social interaction.
+            <!-- Reference: https://en.wikipedia.org/wiki/Pet -->
+          </blockquote>
+          <details>
+            <summary>What is the full meaning of pet?</summary>
+            <ol>
+              <li>
+                n. any domesticated or tamed animal that is kept as a companion
+                and cared for affectionately
+              </li>
+              <li>
+                n. a person especially cherished or indulged; favorite He was
+                the teacher's pet
+              </li>
+              <li>n. a thing particularly cherished</li>
+            </ol>
+            <!-- Reference: https://www.collinsdictionary.com/dictionary/english/pet -->
+          </details>
+          <details>
+            <summary>Why are pets important to families?</summary>
+            <p>
+              They provide lessons about life, including reproduction, birth,
+              illnesses, accidents, death, and bereavement. They can help
+              develop responsible behavior in the children who care for them.
+              They provide a connection to nature. They can teach respect for
+              other living things.
+            </p>
+            <!-- Reference: https://www.aacap.org/AACAP/Families_and_Youth/Facts_for_Families/FFF-Guide/Pets-And-Children-075.aspx -->
+          </details>
+          <details>
+            <summary>Is fish a pet?</summary>
+            <p>
+              Image result Fish can make good pets but buying a fish should be a
+              long term decision as they can live for up to 20 years. Fish need
+              regular maintenance to ensure they kept healthy and their
+              environment is clean. If you no longer want to keep your fish you
+              need to find an alternative home or humanely kill the fish.
+            </p>
+            <!-- Reference: https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/other-pets/caring-for-your-pet-fish -->
+          </details>
+          <details>
+            <summary>
+              What is difference between pet and domestic animals?
+            </summary>
+            <ul>
+              <li>
+                Pets are animals for companionship purposes while domestic
+                animals are kept for their economic benefits.
+              </li>
+              <li>
+                Pets are captured from the wild to serve as companions for
+                owners with no economic benefits whereas domestic animals are
+                mainly captured for economic benefits as food producers or as
+                farm workers
+              </li>
+              <li>
+                Pets include, among others, dogs, cats and snakes whereas
+                domestic animals include cows, goats, sheep, chickens and many
+                more.
+              </li>
+              <li>Pets and domestic animals depend on humans for survival</li>
+            </ul>
+            <!-- Reference: http://www.differencebetween.net/science/nature/difference-between-pet-and-domestic-animals/ -->
+          </details>
+        </section>
+      </section>
+      <!-- WHAT SECTION END -->
+      <section>
+        <!-- Angel -->
+      </section>
+      <!-- Tina: benefits section start -->
+      <!-- This section will be explained about benefits of living with a pet  -->
+      <!-- Reference.1 : https://www.helpguide.org/articles/mental-health/mood-boosting-power-of-dogs.htm -->
+      <!-- Reference.2 : https://wellbeingmagazine.com/health/health-benefits-pet/clear -->
+      <section class="benefits" id="benefits">
+        <section>
+          <!-- benefits Title article -->
+          <article class="benefitsTitle" id="benefitsTitle">
+            <figure>
+              <img src="/img/pets.JPG" alt="benefit_pets">
+            </figure>
+            <h2>benefits of living with a pet</h2>
+          </article>
+          <!-- bootstrap card1  -->
+          <section class="card mb-3" style="max-width: 540px;">
+            <article class="row g-0">
+              <figure class="col-md-4">
+                <img src="/img/physical_pet.jpg" class="img-fluid rounded-start" alt="physically">
+              </figure>
+              <article class="col-md-8">
+                <aside class="card-body">
+                  <figure>
+                    <img src="/img/muscle.png" alt="physically">
+                    <h5 class="card-title">Physical</h5>
+                  </figure>
+                </aside>
+              </article>
+            </article>
+          </section>
+          <!-- Start of the Desktop verdion section  -->
+          <section class="withPet" id="withPet">
+            <figure>
+              <img src="/img/physical_pet.jpg" alt="physical">
+            </figure>
+            
+          </section>
+          <!-- End of the Desktop verdion section  -->
+          <blockquote>
+            <p class="card-text">Most pet owners are clear about the immediate joys that come with sharing their lives with companion animals. However, many of us remain unaware of the physical and mental health benefits that can also accompany the pleasure of snuggling up to a furry friend. It’s only recently that studies have begun to scientifically explore the benefits of the human-animal bond.</p>
+            <p class="card-text"><small class="text-muted">HelpGuide updated September 6, 2022</small></p>
+          </blockquote>
+          <!-- bootstrap card2  -->
+          <section class="card mb-3" style="max-width: 540px;">
+            <article class="row g-0">
+              <article class="col-md-8">
+                <aside class="card-body">
+                  <figure>
+                    <img src="/img/mental.png" alt="mentally">
+                    <h5 class="card-title">Mental</h5>
+                  </figure>
+                </aside>
+              </article>
+              <figure class="col-md-4">
+                <img src="/img/mental_pet.jpg" class="img-fluid rounded-start" alt="Mentally">
+              </figure>
+            </section>
+          <!-- Start of the Desktop verdion section  -->
+          <section class="withPet" id="withPet">
+            <figure>
+              <img src="/img/mental_pet.jpg" alt="mental">
+            </figure>
+            
+          </section>
+          <!-- End of the Desktop verdion section  -->
+            <blockquote>
+              <p class="card-text">Pets have evolved to become acutely attuned to humans and our behavior and emotions. Dogs, for example, are able to understand many of the words we use, but they’re even better at interpreting our tone of voice, body language, and gestures. And like any good human friend, a loyal dog will look into your eyes to gauge your emotional state and try to understand what you’re thinking and feeling (and to work out when the next walk or treat might be coming, of course).</p>
+              <p class="card-text"><small class="text-muted">HelpGuide updated September 6, 2022</small></p>
+            </blockquote>
+            </article>
+          <!-- bootstrap card3  -->
+          <section class="card mb-3" style="max-width: 540px;">
+            <article class="row g-0">
+              <figure class="col-md-4">
+                <img src="/img/emotion_pet.jpg" class="img-fluid rounded-start" alt="Emotionally">
+              </figure>
+              <article class="col-md-8">
+                <aside class="card-body">
+                  <figure>
+                    <img src="/img/emoticons.png" alt="emotionally">
+                    <h5 class="card-title">Emotional</h5>
+                  </figure>
+                </aside>
+              </article>
+            </article>
+          </section>
+          <!-- Start of the Desktop verdion section  -->
+          <section class="withPet" id="withPet">
+            <figure>
+              <img src="/img/emotion_pet.jpg" alt="emotion">
+            </figure>
+          </section>
+          <!-- End of the Desktop verdion section  -->
+          <blockquote>
+            <p class="card-text">Pets, especially dogs and cats, can reduce stress, anxiety, and depression, ease loneliness, encourage exercise and playfulness, and even improve your cardiovascular health. Caring for an animal can help children grow up more secure and active. Pets also provide valuable companionship for older adults. Perhaps most importantly, though, a pet can add real joy and unconditional love to your life.</p>
+            <p class="card-text"><small class="text-muted">HelpGuide updated September 6, 2022</small></p>
+          </blockquote>
+        </section>
+      </section>
+      <!-- benefits section end -->
+      <section>
+        <!-- Angel -->
+      </section>
+      <!-- Tina contact section start -->
+      <section class="contact" id="contact">
+        <article>
+          <h2>contact us</h2>
+          <form>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="Your Name">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="Your email">
+              <label for="company">Company</label>
+              <input type="text" name="company" id="company" placeholder="Company name">
+              <label for="phone">Phone</label>
+              <input type="tel" name="tel" id="tel" placeholder="Phone">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <aside>
+              <input type="submit" value="SEND MESSAGE">
+            </aside>
+          </form>
+        </article>
+        <!-- ◎ Bootstrap card ◎  -->
+        <article class="card text-white bg-dark mb-3" id="map">
+          <h4 class="card-title">Location</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.4920018997295!2d-123.11863058431047!3d49.286022379331584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548671800052dbd1%3A0x2ecd8108fe75abf6!2sTamwood%20Language%20Centres%20-%20Vancouver!5e0!3m2!1sko!2sca!4v1664422019116!5m2!1sko!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <aside class="card-body">
+            <address>
+              <i class="fa-regular fa-map"></i>
+              889 W Pender St, Vancouver, BC V6C 3J1
+            </address>
+            <p class="card-text">
+              <i class="fa-solid fa-phone"></i>
+              +16048994480
+            </p>
+            <p class="card-text">
+              <i class="fa-regular fa-comment-dots"></i>
+              My review is belated,  but I just want to praise this business for saving me during a time when I was dealing with an injury and no car, having someone able to deliver heavy bags to my door with a smile helped more than they can know! The…
+            </p>
+          </aside>
+        </article>
+         <!-- ◎ Bootstrap card ◎  -->
+      </section>
+      <!-- contact section end -->
+    </main>
+    <footer>
+      <p>Copyright © 2022 About Pet | Design: Angel, Austyn, Tina</p>
+    </footer>
+    <!--This is Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
