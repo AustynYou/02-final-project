@@ -20,11 +20,17 @@
   flex-wrap: $isWrap;
 }
 
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin flexMenu {
   display: flex;
   li {
     display: flex;
-    width: 100%;
+     width: 100%;
   }
   a {
     width: 100%;
@@ -32,7 +38,19 @@
   }
 }
 
-@mixin bgPic($url, $position, $size, $height) {
+ @mixin topBgImg(
+    $img,
+    $imgPosition : center,
+    $imgSize : cover,
+    $imgRepeat : no-repeat
+){
+    background: url($img);
+    background-position: $imgPosition;
+    background-size: $imgSize;
+    background-repeat: $imgRepeat;
+}
+
+@mixin bgPicture($url, $position, $size, $height) {
   background-image: url($url);
   background-position: $position;
   background-size: $size;
