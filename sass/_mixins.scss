@@ -20,6 +20,12 @@
   flex-wrap: $isWrap;
 }
 
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin flexMenu {
   display: flex;
   li {
@@ -32,7 +38,7 @@
   }
 }
 
-@mixin bgPic($url, $position, $size, $height) {
+@mixin bgPicture($url, $position, $size, $height) {
   background-image: url($url);
   background-position: $position;
   background-size: $size;
