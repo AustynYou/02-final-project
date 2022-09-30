@@ -27,3 +27,80 @@
 @mixin dspy{
     display: flex;
 }
+
+@mixin flexBoxColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexRowGap($rowGap) {
+  display: flex;
+  flex-direction: column;
+  row-gap: $rowGap;
+}
+
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexDirRowJustifyBetween($isWrap) {
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: $isWrap;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexMenu {
+  display: flex;
+  li {
+    display: flex;
+     width: 100%;
+  }
+  a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+ @mixin topBgImg(
+    $img,
+    $imgPosition : center,
+    $imgSize : cover,
+    $imgRepeat : no-repeat
+){
+    background: url($img);
+    background-position: $imgPosition;
+    background-size: $imgSize;
+    background-repeat: $imgRepeat;
+}
+
+@mixin bgPicture($url, $position, $size, $height) {
+  background-image: url($url);
+  background-position: $position;
+  background-size: $size;
+  background-repeat: no-repeat;
+  height: $height;
+}
+
+@mixin socialMediaHover {
+  padding: 10%;
+  transition: 0.4s;
+
+  &:hover {
+    color: $darkPinkColor;
+  }
+}
+
+@mixin navHoverChange {
+  text-transform: capitalize;
+  transition: $second;
+  &:hover {
+    color: $titleGreenColor;
+  }
+}

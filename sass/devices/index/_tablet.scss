@@ -1,0 +1,168 @@
+/* TABLET DEVICE VERSION */
+@media (min-width: $mdBreakpoint) {
+  /* HEADER SECTION */
+  header {
+    > article {
+      justify-content: center;
+      @include bgPic("/img/index/bg-header.jpg", left, cover, 70vw);
+      a {
+        width: 49%;
+        column-gap: 1vh;
+        padding: 3%;
+        transition: $second;
+        &:hover {
+          filter: brightness(1.25);
+          color: white;
+        }
+      }
+    }
+  }
+  .offcanvas-body {
+    a {
+      @include navHoverChange;
+    }
+  }
+  /* HEADER SECTION END */
+
+  /* MAIN SECTION */
+  .title {
+    width: 80%;
+  }
+  /* WHAT SECTION */
+  .what {
+    align-items: center;
+    > section {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    figure {
+      width: 49%;
+    }
+    blockquote {
+      width: 49%;
+    }
+    details {
+      width: 100%;
+    }
+    summary {
+      padding: 2%;
+      transition: $second;
+    }
+    summary:hover {
+      box-shadow: 0 0 0 0.25rem $focusPinkColor;
+      color: $regularPinkColor;
+    }
+  }
+  .gallery {
+    figure {
+      width: 32%;
+      height: 20vw;
+    }
+  }
+  /* WHAT SECTION END */
+    // Start of the benefits section
+    .benefits {
+
+        h2{
+            font-size: 38px;
+            font-weight: 600;
+            padding: 5%;
+        }
+
+        small{
+            font-size: 26px;
+            font-weight: 400;
+            padding-bottom: 25vh;
+        }
+        
+    }
+
+    .benefitsTitle{
+        
+        > figure {
+
+            padding-top: 5vh;
+            
+            > img {
+                width: 55vh;
+                height: 45vh;
+            }
+        }
+    }
+
+    .col-md-4{
+        
+        img{
+            height: 40vh;
+
+        }
+    }
+     
+    .col-md-8{
+
+        h5{
+            font-size: 24px;
+        }
+
+    }
+
+    .withPet {
+        display: none;
+    }
+
+    .card-text, address{
+        font-size: 26px;
+        font-weight: 400;
+    }
+    // End of the benefits section
+
+    // Start of the contact section
+    .contact {
+        
+        h2{
+            font-size: 42px;
+        }
+
+    }
+
+    form{
+        width: 95%;
+    }
+
+    label{
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] 
+    {
+        width: 50vh;
+        height: 7vh;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    textarea{
+        width: 50vh;
+    }
+
+    input[type="submit"]    
+    {
+        width: 40vh;
+        height: 7vh;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+
+    h4{
+        font-size: 56px;
+        font-weight: 600;
+    }
+    // End of the contact section
+    /* MAIN SECTION END */
+}
