@@ -54,3 +54,17 @@ p {
   color: $darkGrayFontColor;
   line-height: 1.5;
 }
+
+.headerF,.mainF, .footerF{
+    font-family: 'Raleway', sans-serif;
+}
+.headerF p,.mainF p,.footerF p{
+    color: $textColor;
+    font-weight: 300;
+    text-align: justify;
+}
+.mainF{
+    padding: 5vh 0%;
+    @include dspyBox(column,unset, center);
+    row-gap: 5vh;
+}

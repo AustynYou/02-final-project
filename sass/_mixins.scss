@@ -1,3 +1,33 @@
+@mixin imgBg(
+    $url,
+    $width: 20vh,
+    $height:20vh,
+    $size:cover,
+    $position:center
+    
+){
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: $position;
+    background-size: $size;
+    width: $width;
+    height: $height;
+
+}
+@mixin dspyBox (
+    $direction: row,
+    $justify: unset,
+    $align: unset
+){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin dspy{
+    display: flex;
+}
+
 @mixin flexBoxColumn {
   display: flex;
   flex-direction: column;

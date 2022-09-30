@@ -1,0 +1,109 @@
+@media (min-width:1000px){
+    .headerF{
+        > nav{
+            > ul{
+               @include dspyBox(row, space-evenly, center);
+               height: fit-content;
+            }
+            ul{
+                position: relative;
+
+            }
+        }
+        details{
+            display: none;
+        }
+    }
+    .mainF{
+        .careF{
+            @include dspyBox(row, unset, unset);
+        }
+        > section{
+            padding: 3%;
+        }
+        .foodF{
+            @include dspyBox(row, space-between, center);
+        }
+
+    }
+    .aboutF{
+        > aside:last-child, > aside:first-child{
+            width: 30%;
+            height: 25vh;
+        }
+    }
+    .careF{
+        > article{
+            width: 22%;
+        }
+        > section{
+            width: 52%;
+        }
+        > aside:last-child{
+            width: 24%;
+            height: 80vh;
+        }
+        ul{
+            width: 90%;
+        }
+    }
+    .behaviourF{
+
+        > article{
+            width: 98%;
+        }
+        ul{
+            @include dspyBox(column, space-evenly);
+            padding: 3%;
+            width: 40%;
+            height: 90%
+
+        }
+        > section{
+            @include dspyBox(row, space-evenly,center);
+            height: 90vh;
+            > aside{
+                height: 80vh;
+                width: 2vh;
+
+            }
+        }
+
+    }
+    .speciesF{
+        height: 110vh;
+        > section{
+            column-gap: 2%;
+            height: 100%;
+        }
+        figure{
+            width: 17%;
+            height: 75%;
+        }
+        img{
+            width: 20vh;
+            height: 10vh;
+        }
+        figure{
+            align-self: flex-end;
+            &:hover{
+                align-self: flex-start;
+            }
+        }
+    }
+    .foodF{
+
+        > article{
+            width: 22%;
+            height: 100%;
+        }
+        > aside{
+            width: 30%;
+            height: 100%;
+        }
+        > section{
+            width: 42%;
+            justify-content: unset;
+        }
+    }
+}
