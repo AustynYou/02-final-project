@@ -3,7 +3,7 @@
   /* HEADER SECTION */
   header {
     > article {
-      @include bgPic(
+      @include bgPicture(
         "/img/hamster/bg-header.png",
         left,
         cover,
@@ -34,7 +34,7 @@
     > section {
       row-gap: 7vh;
       > section {
-        row-gap: 5vh;
+        // row-gap: 5vh;
       }
     }
   }
@@ -68,6 +68,33 @@
     }
   }
   /* CARE SECTION END */
+  /* BEHAVIOR SECTION */
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3vh;
+    figure {
+      width: 48%;
+      height: 25vw;
+      overflow-y: hidden;
+    }
+    a {
+      transition: $second;
+      &:hover {
+        color: $regularPinkColor;
+      }
+    }
+  }
+  .meaning {
+    @include flexDirRowJustifyBetween(wrap);
+  }
+  .bg-meaning {
+    width: 39%;
+  }
+  .accordion {
+    width: 59%;
+  }
+  /* BEHAVIOR SECTION END */
   /* SPECIES SECTION */
   .species {
     > section {
@@ -86,6 +113,9 @@
     a {
       width: 25%;
       padding: 1vw;
+    }
+    > a {
+      width: 100%;
     }
   }
   /* SPECIES SECTION END */

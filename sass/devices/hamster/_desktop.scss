@@ -53,18 +53,39 @@
   /* BEHAVIOR SECTION */
   .behavior {
     @include flexAlignCenter;
-    img {
-      height: fit-content;
+  }
+  .gallery {
+    // row-gap: 5vh;
+    figure {
+      width: 31.5%;
+      height: 16vw;
+      overflow-y: hidden;
     }
   }
-  .carousel {
-    width: 80%;
-  }
-  .accordion {
-    width: 80%;
+  .meaning {
+    width: 100%;
   }
   /* BEHAVIOR SECTION END */
   /* SPECIES SECTION */
+  .species {
+    > section {
+      @include flexDirRowJustifyBetween(wrap);
+      article {
+        flex-direction: column;
+        justify-content: initial;
+        width: 48%;
+      }
+    }
+    figure {
+      width: 100%;
+    }
+    aside {
+      width: 100%;
+      p {
+        text-align: justify;
+      }
+    }
+  }
   /* SPECIES SECTION END */
   /* FOOD SECTION */
   .food {

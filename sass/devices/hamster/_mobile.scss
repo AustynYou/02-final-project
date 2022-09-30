@@ -4,7 +4,7 @@
   header {
     padding-top: $navFixedGap;
     > article {
-      @include bgPic(
+      @include bgPicture(
         "/img/hamster/bg-mobile-header.png",
         bottom,
         cover,
@@ -70,16 +70,31 @@
     > section {
       @include flexRowGap(7vh);
       padding-top: $navFixedGap;
+      > a {
+        width: 100%;
+        @include flexCenter;
+      }
       > section {
         @include flexRowGap(5vh);
       }
     }
   }
+  .fa-angle-down {
+    @include flexCenter;
+    border: 3px solid $titleGreenColor;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 5vh;
+    height: 5vh;
+    color: $titleGreenColor;
+    transition: $second;
+  }
+  .fa-angle-down:hover {
+    background-color: $titleGreenColor;
+    color: white;
+  }
   .title {
     @include flexRowGap(3vh);
-    h2 {
-      color: $titleGreenColor;
-    }
     p {
       text-align: center;
       line-height: 2;
@@ -98,7 +113,7 @@
       }
     }
     > figure {
-      @include bgPic("/img/hamster/bg-care.png", center, cover, 23vw);
+      @include bgPicture("/img/hamster/bg-care.png", center, cover, 23vw);
     }
     > section {
       article {
@@ -118,15 +133,17 @@
   }
   /* CARE SECTION END */
   /* BEHAVIOR SECTION */
-  .behavior {
-    > section {
-      @include flexRowGap(0vh);
-    }
+  .gallery {
     img {
-      height: 55vw;
+      width: 100%;
     }
-    > p {
-      text-align: center;
+    a {
+      color: $darkGrayFontColor;
+    }
+  }
+  .bg-meaning {
+    img {
+      width: 100%;
     }
   }
   .accordion {
@@ -182,6 +199,9 @@
       text-transform: capitalize;
       background-color: white;
     }
+    > a {
+      width: 100%;
+    }
   }
   /* SPECIES SECTION END */
   /* FOOD SECTION */
@@ -190,7 +210,7 @@
       align-items: center;
     }
     > figure {
-      @include bgPic("/img/hamster/bg-food.png", center, cover, 15vh);
+      @include bgPicture("/img/hamster/bg-food.png", center, cover, 15vh);
     }
     > ul {
       padding: 0;
@@ -308,7 +328,7 @@
   .history {
     > section {
       > figure {
-        @include bgPic("/img/hamster/bg-history.png", top, cover, 42vw);
+        @include bgPicture("/img/hamster/bg-history.png", top, cover, 42vw);
       }
     }
   }
