@@ -1,0 +1,111 @@
+/* TABLET DEVICE VERSION */
+@media (min-width: $mdBreakpoint) {
+  /* HEADER SECTION */
+  header {
+    > article {
+      justify-content: center;
+      @include bgPic("/img/index/bg-header.jpg", left, cover, 70vw);
+      a {
+        width: 49%;
+        column-gap: 1vh;
+        padding: 3%;
+        transition: $second;
+        &:hover {
+          filter: brightness(1.25);
+          color: white;
+        }
+      }
+    }
+  }
+  .offcanvas-body {
+    a {
+      @include navHoverChange;
+    }
+  }
+  /* HEADER SECTION END */
+
+  /* MAIN SECTION */
+  .title {
+    width: 80%;
+  }
+  /* WHAT SECTION */
+  .what {
+    align-items: center;
+    > section {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    figure {
+      width: 49%;
+    }
+    blockquote {
+      width: 49%;
+    }
+    details {
+      width: 100%;
+    }
+    summary {
+      padding: 2%;
+      transition: $second;
+    }
+    summary:hover {
+      box-shadow: 0 0 0 0.25rem $focusPinkColor;
+      color: $regularPinkColor;
+    }
+  }
+  .gallery {
+    figure {
+      width: 32%;
+      height: 20vw;
+    }
+  }
+  /* WHAT SECTION END */
+//  pets section 
+main{
+  .pets{
+    flex-direction: row;
+
+  }
+  .adopt{
+    > section{
+    flex-direction: row;
+    column-gap: 1vh;
+    justify-content: center;
+    }
+  }
+}
+.pets{
+  flex-wrap: wrap;
+  column-gap: 3vh;
+  h2{
+    width: 100%;
+  }
+  > section{
+    justify-content: space-between;
+    width: 18vh;
+    height: 55vh;
+  }
+  article{
+    height: 100%;
+  }
+
+}
+// end of pet section 
+// adopt section 
+  #adopt{
+    h2{
+      width: 100%;
+    }
+    ol{
+      width: 60%;
+    }
+    aside{
+      width: 25vh;
+      height: 60vh;
+    }
+  }
+// end of adopt section 
+  /* MAIN SECTION END */
+}

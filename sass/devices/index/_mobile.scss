@@ -1,0 +1,200 @@
+/* MOBILE DEVICE VERSION */
+@media (min-width: $smBreakpoint) {
+  /* HEADER SECTION */
+  header {
+    padding-top: $navFixedGap;
+    > article {
+      @include bgPic("/img/index/bg-mobile-header.jpg", right, cover, 152vw);
+      padding: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      h1 {
+        font-family: $h1FontFamily;
+        justify-self: center;
+        color: white;
+        font-size: 42px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+      }
+      li {
+        display: flex;
+        width: 100%;
+      }
+      a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        column-gap: 2.5vh;
+        background-color: rgba(170, 170, 170, 0.4);
+        padding: 4%;
+        color: white;
+        text-transform: capitalize;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+  h1 {
+    > span {
+      color: mediumseagreen;
+    }
+    i {
+      color: #797979;
+    }
+  }
+  .container-fluid {
+    > ul {
+      display: none;
+    }
+  }
+  .offcanvas-body {
+    a {
+      text-transform: capitalize;
+    }
+  }
+  /*  HEADER SECTION END */
+  /* MAIN SECTION */
+  main {
+    padding: 0 5%;
+    padding-bottom: 5vh;
+    > section {
+      @include flexRowGap(5vh);
+      padding-top: $navFixedGap;
+      > section {
+        @include flexRowGap(3vh);
+      }
+    }
+  }
+  .title {
+    @include flexRowGap(3vh);
+    h2 {
+      color: $titleGreenColor;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  h3 {
+    text-align: center;
+  }
+  /* WHAT SECTION */
+  .what {
+    blockquote {
+      color: $blockquoteFontColor; 
+      font-style: italic;
+      font-weight: $semiBold;
+      text-align: center;
+    }
+    summary {
+      border: 1px solid $cardBorderColor;
+      padding: 3%;
+      border-radius: 6px;
+    }
+    details {
+      > *:not(:first-child) {
+        padding: 3%;
+      }
+    }
+    ul {
+      li {
+        list-style-type: square;
+      }
+    }
+  }
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    figure {
+      width: 49%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .bg-section-01 {
+    @include bgPic("/img/index/bg-section-01.jpg", center, cover, 20vh);
+  }
+
+  /* WHAT SECTION END */
+  // pets section 
+  .pets{
+    align-items: center;
+    > section{
+      border-radius: 6px;
+      width: 70%;
+      
+    }
+    p{
+      color: $sectionColor;
+      text-align: justify;
+    }
+    article{
+      padding: 15%;
+      @include dspyBox(column, space-between, center);
+      row-gap:2vh;
+      height: 100%;
+    }
+    h3{
+      color: mediumseagreen;
+    }
+    a{
+      background-color: $buttonRedColor;
+      padding: 4%;
+      color: $sectionColor;
+    }
+ 
+  }
+  #squareC{
+    background-color: $niceBrown;
+  }
+  #squareH{
+    background-color: $darkGreen;
+  }
+  #squareF{
+    background-color: $deepBlue;
+  }
+  
+
+
+  // end of pet section 
+  // adopt section 
+  #adopt{
+    > section{
+      align-items: center
+    }
+    li{
+      width: 90%  
+    }
+    ol{
+      @include dspyBox(column, unset, center);
+      row-gap: 3vh;
+      border: 1px solid $cardBorderColor;
+      border-radius: 6px;
+      padding: 2%;
+    }
+    h3{
+      padding-bottom: 2%;
+    }
+    aside{
+      @include imgBg(
+        "/img/index/adopt-i.jpg",
+        35vh,
+        50vh,
+      );
+      border-radius: 6px;
+    }
+  }
+
+  
+  // end of section 
+  /* MAIN SECTION END */
+}

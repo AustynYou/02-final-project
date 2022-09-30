@@ -1,0 +1,370 @@
+/* MOBILE DEVICE VERSION */
+@media (min-width: $smBreakpoint) {
+  /* HEADER SECTION */
+  header {
+    padding-top: $navFixedGap;
+    > article {
+      @include bgPic(
+        "/img/hamster/bg-mobile-header.png",
+        bottom,
+        cover,
+        $mobileBgHeaderHeight
+      );
+      padding: 5%;
+      @include flexBoxColumn;
+      justify-content: space-between;
+      h1 {
+        font-family: $h1FontFamily;
+        justify-self: center;
+        color: white;
+        font-size: 42px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        @include flexRowGap(1vh);
+      }
+      li {
+        display: flex;
+        width: 100%;
+      }
+
+      a {
+        width: 100%;
+        @include flexAlignCenter;
+        column-gap: 2.5vh;
+        background-color: $headerBgMenuColor;
+        padding: 4%;
+        color: white;
+        text-transform: capitalize;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+  h1 {
+    > span {
+      color: $titleGreenColor;
+    }
+    i {
+      color: $darkIconColor;
+    }
+  }
+  .container-fluid {
+    > ul {
+      display: none;
+    }
+  }
+  .offcanvas-body {
+    a {
+      text-transform: capitalize;
+    }
+  }
+  /*  HEADER SECTION END */
+
+  /* MAIN SECTION */
+  main {
+    padding: 0 5%;
+    padding-bottom: 5vh;
+    > section {
+      @include flexRowGap(7vh);
+      padding-top: $navFixedGap;
+      > section {
+        @include flexRowGap(5vh);
+      }
+    }
+  }
+  .title {
+    @include flexRowGap(3vh);
+    h2 {
+      color: $titleGreenColor;
+    }
+    p {
+      text-align: center;
+      line-height: 2;
+    }
+  }
+  h3 {
+    text-align: center;
+  }
+
+  /* CARE SECTION */
+  .care {
+    > .title {
+      a {
+        color: $aFontColor;
+        text-decoration: underline;
+      }
+    }
+    > figure {
+      @include bgPic("/img/hamster/bg-care.png", center, cover, 23vw);
+    }
+    > section {
+      article {
+        @include flexRowGap(3vh);
+      }
+      figure {
+        display: flex;
+        justify-content: space-between;
+      }
+      img {
+        width: 49%;
+      }
+    }
+    li {
+      line-height: 2;
+    }
+  }
+  /* CARE SECTION END */
+  /* BEHAVIOR SECTION */
+  .behavior {
+    > section {
+      @include flexRowGap(0vh);
+    }
+    img {
+      height: 55vw;
+    }
+    > p {
+      text-align: center;
+    }
+  }
+  .accordion {
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(217, 76, 102, 0.5);
+    --bs-accordion-btn-icon: none;
+    --bs-accordion-btn-active-icon: none;
+  }
+  .accordion-button {
+    display: flex;
+    column-gap: 1.5vh;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: $lightPinkColor;
+    color: $darkPinkColor;
+  }
+
+  /* BEHAVIOR SECTION END */
+  /* SPECIES SECTION */
+  .species {
+    img {
+      width: 100%;
+    }
+    > section {
+      padding: 0 10%;
+      article {
+        @include flexRowGap(2vh);
+      }
+    }
+    aside {
+      @include flexRowGap(1vh);
+    }
+    h3 {
+      text-align: left;
+      margin: 0;
+    }
+    h4 {
+      color: $regularPinkColor;
+      font-size: 18px;
+      margin: 0;
+    }
+    ul {
+      @include flexMenu;
+      width: fit-content;
+      padding-left: 2%;
+      column-gap: 2vh;
+    }
+    a {
+      text-align: center;
+      color: dimgray;
+      padding: 5% 0;
+      font-size: 24px;
+      width: 40%;
+      text-transform: capitalize;
+      background-color: white;
+    }
+  }
+  /* SPECIES SECTION END */
+  /* FOOD SECTION */
+  .food {
+    > section {
+      align-items: center;
+    }
+    > figure {
+      @include bgPic("/img/hamster/bg-food.png", center, cover, 15vh);
+    }
+    > ul {
+      padding: 0;
+      @include flexBoxColumn;
+      li {
+        @include flexBoxColumn;
+
+        align-items: center;
+        text-align: center;
+      }
+      i {
+        padding: 20%;
+        font-size: 72px;
+        color: $lightIconColor;
+      }
+      p {
+        padding-bottom: 3vh;
+      }
+
+      a {
+        padding: 3% 8%;
+        font-size: 18px;
+        color: white;
+        text-transform: capitalize;
+      }
+    }
+    [href="#apple"] {
+      background-color: $buttonBlueColor;
+    }
+    [href="#seed"] {
+      background-color: $buttonGreenColor;
+    }
+    [href="#shop"] {
+      background-color: $buttonRedColor;
+    }
+  }
+
+  /* CARD SLIDER SECTION */
+  /* CSS Reference: https://www.codinglabweb.com/2022/05/responsive-card-slider-javascript.html */
+  .slide-container {
+    max-width: 1120px;
+    width: 55vw;
+    padding-bottom: 40px;
+  }
+  .card {
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid $cardBorderColor;
+    h2,
+    p {
+      text-align: left;
+      width: 100%;
+    }
+  }
+  .image-content,
+  .card-content {
+    @include flexBoxColumn;
+    align-items: center;
+    padding: 10px 14px;
+  }
+  .image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+  .card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+  }
+  .card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .name {
+    font-size: 18px;
+    font-weight: 500;
+    color: $darkGrayFontColor;
+  }
+  .description {
+    font-size: 14px;
+    color: $lightGrayFontColor;
+    text-align: center;
+  }
+  .button {
+    border: none;
+    font-size: 16px;
+    color: $darkPinkColor;
+    padding: 8px 16px;
+    background-color: $regularPinkColor;
+    background-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+  }
+  .button:hover {
+    background: $regularPinkColor;
+    color: white;
+  }
+  .swiper-initialized,
+  .swiper-pagination,
+  .swiper-navBtn {
+    display: none;
+  }
+
+  /* CSS Reference: https://www.codinglabweb.com/2022/05/responsive-card-slider-javascript.html */
+  /* CARD SLIDER SECTION END */
+  /* FOOD SECTION END */
+  /* HISTORY SECTION */
+  .history {
+    > section {
+      > figure {
+        @include bgPic("/img/hamster/bg-history.png", top, cover, 42vw);
+      }
+    }
+  }
+  .chronology {
+    ul {
+      margin: 0;
+      padding: 0;
+      @include flexRowGap(3vh);
+      align-items: center;
+    }
+    li {
+      margin: 0;
+      padding: 0;
+      width: 70%;
+      @include flexRowGap(0vh);
+      align-items: center;
+      &:first-child {
+        figure {
+          height: 50vh;
+          overflow-y: hidden;
+        }
+      }
+    }
+    article {
+      padding-top: 5vh;
+      border-top: 2px solid $regularPinkColor;
+      @include flexRowGap(1vh);
+    }
+
+    img {
+      width: 100%;
+    }
+    p {
+      line-height: 2;
+    }
+  }
+  time {
+    @include flexAlignCenter;
+    justify-content: center;
+    border-radius: 50%;
+    width: 17vw;
+    height: 17vw;
+    border: none;
+    background-color: $regularPinkColor;
+    color: white;
+    transform: translateY(7vw);
+  }
+
+  /* HISTORY SECTION END */
+  /* MAIN SECTION END */
+
+  /* FOOTER SECTION END */
+  footer {
+    text-align: center;
+    font-size: 18px;
+    padding: 5%;
+  }
+  /* FOOTER SECTION END */
+}
