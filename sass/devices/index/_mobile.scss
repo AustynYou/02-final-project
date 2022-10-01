@@ -4,7 +4,7 @@
   header {
     padding-top: $navFixedGap;
     > article {
-      @include bgPic("/img/index/bg-mobile-header.jpg", right, cover, 152vw);
+      @include bgPicture("/img/index/bg-mobile-header.jpg", right, cover, 152vw);
       padding: 5%;
       display: flex;
       flex-direction: column;
@@ -118,7 +118,7 @@
     }
   }
   .bg-section-01 {
-    @include bgPic("/img/index/bg-section-01.jpg", center, cover, 20vh);
+    @include bgPicture("/img/index/bg-section-01.jpg", center, cover, 20vh);
   }
 
   /* WHAT SECTION END */

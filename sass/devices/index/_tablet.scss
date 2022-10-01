@@ -4,7 +4,7 @@
   header {
     > article {
       justify-content: center;
-      @include bgPic("/img/index/bg-header.jpg", left, cover, 70vw);
+      @include bgPicture("/img/index/bg-header.jpg", left, cover, 70vw);
       a {
         width: 49%;
         column-gap: 1vh;
