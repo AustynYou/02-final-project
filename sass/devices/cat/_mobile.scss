@@ -1,5 +1,6 @@
 @media(min-width: "300px"){
 
+   /* catHeader*/
    .catHeader{
       @include catTopbg('/img/cat/cat_bg_header.jpg',center,cover);
       font-family: $givenFont2;
@@ -8,6 +9,7 @@
       height: 80vh;
    }
 
+   /* h2*/
    h2{
       font-family: $givenFont1;
       color:$catH2FontColor;
@@ -20,32 +22,53 @@
       padding-top: 4%;
    }
 
-
+   /* Section: Social media */
    .big_bottom {
         display: none;
-        border: 10px solid red;
    }
 
+   /* Section: Social media:  p-4*/
    .p-4{
-    border: 10px solid green;
+      border: 10px solid green;
    }
 
+
+   /* Common cat behavior issues*/
+   /* cat_alert*/
    #cat_alert{
       width: 48vh;
-      height: 55vh;
-
+      height: 75vh;
    }
 
-   .behavior img{
-      width: 42vh;
-      height: 30vh;
+   /* Common cat behavior issues*/
+   /* catRecommend*/
+   .catRecommend{
+      @include flexBoxColumn;
+      align-items: center;
+      text-align: center;
+      font-family: $defaultFontFamily;
    }
 
+
+   /* common cat behavior issues*/
+   .behavior{
+      @include flexBoxColumn;
+      align-items: center;
+      text-align: center;
+
+      img{
+         width: 42vh;
+         height: 30vh;
+      }
+   }
+      
+   /* 10Most popular cat breeds : catCarouselImg */
    #catCarouselImg{
       width: 42vh;
       height: 30vh;
    }
 
+   /* Best vet recommended cat food: cardCat */
    .cardCat{
       width: 48vh;
       height: 70vh;

@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather|Josefin+Slab|Osw');
 
 
-$givenFont1          : 'Merriweather', 'Helvetica', sans-serif;
+$defaultFontFamily   : "Open Sans", sans-serif;
+$givenFont1          : 'open sans';
 $givenFont2          : 'Bree Serif', 'Helvetica', sans-serif;
 $fontColor           :  rgb(144, 131, 131);
 $catH2FontColor      :  rgb(97, 85, 85);
