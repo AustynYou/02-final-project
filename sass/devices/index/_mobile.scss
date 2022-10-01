@@ -303,5 +303,76 @@
   }
 
   // End of the contact section
+  // pets section 
+  .pets{
+    align-items: center;
+    > section{
+      border-radius: 6px;
+      width: 70%;
+      
+    }
+    p{
+      color: $sectionColor;
+      text-align: justify;
+    }
+    article{
+      padding: 15%;
+      @include dspyBox(column, space-between, center);
+      row-gap:2vh;
+      height: 100%;
+    }
+    h3{
+      color: mediumseagreen;
+    }
+    a{
+      background-color: $buttonRedColor;
+      padding: 4%;
+      color: $sectionColor;
+    }
+ 
+  }
+  #squareC{
+    background-color: $niceBrown;
+  }
+  #squareH{
+    background-color: $darkGreen;
+  }
+  #squareF{
+    background-color: $deepBlue;
+  }
+  
+
+
+  // end of pet section 
+  // adopt section 
+  #adopt{
+    > section{
+      align-items: center
+    }
+    li{
+      width: 90%  
+    }
+    ol{
+      @include dspyBox(column, unset, center);
+      row-gap: 3vh;
+      border: 1px solid $cardBorderColor;
+      border-radius: 6px;
+      padding: 2%;
+    }
+    h3{
+      padding-bottom: 2%;
+    }
+    aside{
+      @include imgBg(
+        "/img/index/adopt-i.jpg",
+        35vh,
+        50vh,
+      );
+      border-radius: 6px;
+    }
+  }
+
+  
+  // end of section 
   /* MAIN SECTION END */
 }

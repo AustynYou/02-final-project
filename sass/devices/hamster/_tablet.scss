@@ -33,9 +33,6 @@
     @include flexRowGap(5vh);
     > section {
       row-gap: 7vh;
-      > section {
-        // row-gap: 5vh;
-      }
     }
   }
   .title {
