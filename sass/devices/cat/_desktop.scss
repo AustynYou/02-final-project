@@ -1,5 +1,48 @@
 @media(min-width:1000px){
 
+    // header
+    header{
+        h2 {
+            display: none;
+        }
+    }
+
+    // navi
+    nav {
+        position: relative;
+        height: 80vh;
+        width: 100%;
+        @include catTopbg(
+            "/img/cat/cat_bg_header.jpg",
+            cover
+            );
+
+    > ul {
+        width: 40%;
+        border-bottom: 6px solid $otherColor3;
+
+        >li {
+            @include flexBoxColumn;
+            padding: 4%;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: whitesmoke;
+        justify-content: space-evenly;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: $givenFont1;
+
+        &:hover{
+            color: $otherColor2;
+
+        }
+    }
+
+    }
+
     /* Common Cat Behavior issues*/
     /* behavior*/
     .behavior{
