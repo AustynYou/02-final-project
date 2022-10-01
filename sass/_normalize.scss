@@ -13,3 +13,56 @@ body {
    @include flexBoxColumn;
 }
 
+.accordion-header i {
+   color: $catIcodionFontColor;
+   font-size: 14px;
+}
+
+.accordion-item button{
+   background-color: $otherColor2;
+
+   ::after{
+      background-color: $accordionHoverColor;
+      color: $otherColor1; 
+   }
+}
+
+.catBlockQuote{
+   font-family: $givenFont1;
+}
+
+.cardCat a{
+   background-color: $otherColor2;
+   border-color: $otherColor3;
+
+
+   &:hover{
+      background-color: $accordionHoverColor;
+   }
+}
+
+#catTable{
+
+   >thead{
+      font-size: 16px;
+      font-weight: 600;
+      font-family: $givenFont1;
+   }
+
+   i:hover{
+      color: whitesmoke;
+   }
+
+
+   td{
+      font-family: $givenFont2;
+      font-size: 16px;
+      font-weight: 300;
+
+      &:hover{
+         color: whitesmoke;
+      }
+   }
+
+   
+}

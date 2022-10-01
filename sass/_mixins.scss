@@ -3,13 +3,13 @@
     flex-direction: column;
  }
 
- @mixin topBgImg(
-    $img,
+ @mixin catTopbg(
+    $imgRoot,
     $imgPosition : center,
-    $imgSize : cover,
+    $imgSize : contain,
     $imgRepeat : no-repeat
 ){
-    background: url($img);
+    background: url($imgRoot);
     background-position: $imgPosition;
     background-size: $imgSize;
     background-repeat: $imgRepeat;
