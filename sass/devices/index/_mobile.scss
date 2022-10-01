@@ -1,200 +1,378 @@
-@media (min-width: 300px) {
-
-    // Start of the benefits section
-    .benefits {
-
-        >section {
-            @include flexBoxColumn;
-            align-items: center;
-        }
-
-        h2{
-            font-size: 22px;
-            font-weight: 600;
-            padding: 2%;
-            text-transform: capitalize;
-            text-align: center;
-            color: dimgray;
-        }
-        
-    }
-    
-    .benefitsTitle{
-        width: 100%;
-
-        > figure {
-            @include flexBoxColumn;
-            
-            > img {
-                width: 45vh;
-                height: 25vh;
-                align-items: center;
-            }
-        }
-        
-    }
-
-    .withPet {
-        display: none;
-    }
-
-    .g-0 {
-        @include flexBoxColumn;
-        flex-direction: row;
-        width: 95%;
-        align-items: center;
-    }
-    
-    .col-md-4{
-        width: 65%;
-        flex-direction: row;
-        justify-content: left;
-        
-        img{
-            border-radius: 85%;
-            width: 50vh;
-            height: 30vh;
-            align-items: center;
-
-        }
-    }
-
-    .col-md-8{
-        width: 35%;
-
-        h5{
-            font-size: 14px;
-            font-weight: 600;
-            text-align: left;
-            text-transform: uppercase;
-            color: rgb(154, 145, 145);
-        }
-
-    }
-
-    blockquote{
-        width: 90%;
-    }
-
-    .card-text{
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 2;
-        text-align: center;
-        color: rgb(72, 16, 125);
-    }
-    // End of the benefits section
-
-    // Start of the contact section
-
-    .contact {
-        
-        article{
-            @include flexBoxColumn;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 15vh;
-            
-        }
-        
-        h2{
-            font-size: 22px;
-            font-weight: 600;
-            text-transform: capitalize;
-            text-align: center;
-            line-height: 2;
-            color: dimgray;
-        }
-
-    }
-
-    form{
-        @include flexBoxColumn;
+/* MOBILE DEVICE VERSION */
+@media (min-width: $smBreakpoint) {
+  /* HEADER SECTION */
+  header {
+    padding-top: $navFixedGap;
+    > article {
+      @include bgPicture("/img/index/bg-mobile-header.jpg", right, cover, 152vw);
+      padding: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      h1 {
+        font-family: $h1FontFamily;
+        justify-self: center;
+        color: white;
+        font-size: 42px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
         flex-direction: column;
+        row-gap: 1vh;
+      }
+      li {
+        display: flex;
+        width: 100%;
+      }
+      a {
+        width: 100%;
+        display: flex;
         align-items: center;
-        width: 85%;
-        line-height: 2;
-
-        aside{
-            margin-top: 2vh;
+        column-gap: 2.5vh;
+        background-color: $headerBgMenuColor;
+        padding: 4%;
+        color: white;
+        text-transform: capitalize;
+        &:hover {
+          color: white;
         }
+      }
+    }
+  }
+  h1 {
+    > span {
+      color: mediumseagreen;
+    }
+    i {
+      color: #797979;
+    }
+  }
+  .container-fluid {
+    > ul {
+      display: none;
+    }
+  }
+  .offcanvas-body {
+    a {
+      text-transform: capitalize;
+    }
+  }
+  /*  HEADER SECTION END */
+  /* MAIN SECTION */
+  main {
+    padding: 0 5%;
+    padding-bottom: 5vh;
+    > section {
+      @include flexRowGap(5vh);
+      padding-top: $navFixedGap;
+      > section {
+        @include flexRowGap(3vh);
+      }
+    }
+  }
+  .title {
+    @include flexRowGap(3vh);
+    p {
+      text-align: center;
+    }
+  }
+  h3 {
+    text-align: center;
+  }
+  /* WHAT SECTION */
+  .what {
+    blockquote {
+      color: $blockquoteFontColor;
+      font-style: italic;
+      font-weight: $semiBold;
+      text-align: center;
+    }
+    summary {
+      border: 1px solid $cardBorderColor;
+      padding: 3%;
+      border-radius: 6px;
+    }
+    details {
+      > *:not(:first-child) {
+        padding: 3%;
+      }
+    }
+    ul {
+      li {
+        list-style-type: square;
+      }
+    }
+  }
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    figure {
+      width: 49%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .bg-section-01 {
+    @include bgPicture("/img/index/bg-section-01.jpg", center, cover, 20vh);
+  }
+
+  /* WHAT SECTION END */
+  // Start of the benefits section
+  .benefits {
+    > section {
+      @include flexBoxColumn;
+      align-items: center;
     }
 
-    label{
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 600;
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+      padding: 2%;
+      text-transform: capitalize;
+      text-align: center;
+      color: dimgray;
+    }
+  }
+
+  .benefitsTitle {
+    width: 90%;
+
+    > figure {
+      @include flexBoxColumn;
+
+      > img {
+        width: 45vh;
+        height: 25vh;
+        align-items: center;
+      }
+    }
+  }
+
+  .withPet {
+    display: none;
+  }
+
+  .g-0 {
+    @include flexBoxColumn;
+    flex-direction: row;
+    width: 95%;
+    align-items: center;
+  }
+
+  .col-md-4 {
+    width: 65%;
+    flex-direction: row;
+    justify-content: left;
+
+    img {
+      border-radius: 85%;
+      width: 50vh;
+      height: 30vh;
+      align-items: center;
+    }
+  }
+
+  .col-md-8 {
+    width: 35%;
+
+    h5 {
+      font-size: 14px;
+      font-weight: 600;
+      text-align: left;
+      text-transform: uppercase;
+      color: rgb(154, 145, 145);
+    }
+  }
+
+  blockquote {
+    width: 90%;
+  }
+
+  .card-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2;
+    text-align: center;
+    color: rgb(72, 16, 125);
+  }
+  // End of the benefits section
+
+  // Start of the contact section
+
+  .contact {
+    article {
+      @include flexBoxColumn;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 15vh;
     }
 
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"] 
-    {
-        width: 31vh;
-        height: 5vh;
-        font-size: 14px;
-        font-weight: 400;
-        column-gap: 2;
-        line-height: 2;
-        padding-left: 2%;
-        padding-top: 2%;
-        border: 1px solid rgb(69, 1, 69);
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+      text-transform: capitalize;
+      text-align: center;
+      line-height: 2;
+      color: dimgray;
+    }
+  }
+
+  form {
+    @include flexBoxColumn;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    line-height: 2;
+
+    aside {
+      margin-top: 2vh;
+    }
+  }
+
+  label {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 31vh;
+    height: 5vh;
+    font-size: 14px;
+    font-weight: 400;
+    column-gap: 2;
+    line-height: 2;
+    padding-left: 2%;
+    padding-top: 2%;
+    border: 1px solid rgb(69, 1, 69);
+  }
+
+  textarea {
+    width: 31vh;
+    height: 30vh;
+    padding-left: 2%;
+    padding-top: 2%;
+    border: 1px solid rgb(69, 1, 69);
+  }
+
+  input[type="submit"] {
+    width: 20vh;
+    height: 5vh;
+    font-size: 14px;
+    font-weight: 400;
+    row-gap: 2vh;
+    padding: 2%;
+    background-color: rgb(98, 6, 98);
+    color: whitesmoke;
+  }
+
+  .mb-3 {
+    align-items: baseline;
+    margin-top: 3vh;
+
+    > h4 {
+      font-size: 36px;
+      font-weight: 600;
     }
 
-    textarea{
-        width: 31vh;
-        height: 30vh;
-        padding-left: 2%;
-        padding-top: 2%;
-        border: 1px solid rgb(69, 1, 69);
+    > iframe {
+      width: 95%;
+      height: 40vh;
     }
 
-    input[type="submit"]    
-    {
-        width: 20vh;
-        height: 5vh;
-        font-size: 14px;
-        font-weight: 400;
-        row-gap: 2vh;
-        padding: 2%;
-        background-color: rgb(98, 6, 98);
+    > aside {
+      color: white;
+      border: 1px solid white;
+
+      p {
         color: whitesmoke;
+        text-align: left;
+      }
+
+      i {
+        padding: 2%;
+      }
     }
+  }
 
-    .mb-3{
-        align-items: baseline;
-        margin-top: 3vh;
-
-
-        >h4{
-            font-size: 36px;
-            font-weight: 600;
-        }
-
-        >iframe{
-            width: 95%;
-            height: 40vh;
-            
-        }
-
-        >aside{
-            color: white;
-            border: 1px solid white;
-
-            p{
-                color: whitesmoke;
-                text-align: left;
-            }
-
-            i{
-                padding: 2%;
-            }
-
-        }
+  // End of the contact section
+  // pets section 
+  .pets{
+    align-items: center;
+    > section{
+      border-radius: 6px;
+      width: 70%;
+      
     }
+    p{
+      color: $sectionColor;
+      text-align: justify;
+    }
+    article{
+      padding: 15%;
+      @include dspyBox(column, space-between, center);
+      row-gap:2vh;
+      height: 100%;
+    }
+    h3{
+      color: mediumseagreen;
+    }
+    a{
+      background-color: $buttonRedColor;
+      padding: 4%;
+      color: $sectionColor;
+    }
+ 
+  }
+  #squareC{
+    background-color: $niceBrown;
+  }
+  #squareH{
+    background-color: $darkGreen;
+  }
+  #squareF{
+    background-color: $deepBlue;
+  }
+  
 
 
+  // end of pet section 
+  // adopt section 
+  #adopt{
+    > section{
+      align-items: center
+    }
+    li{
+      width: 90%  
+    }
+    ol{
+      @include dspyBox(column, unset, center);
+      row-gap: 3vh;
+      border: 1px solid $cardBorderColor;
+      border-radius: 6px;
+      padding: 2%;
+    }
+    h3{
+      padding-bottom: 2%;
+    }
+    aside{
+      @include imgBg(
+        "/img/index/adopt-i.jpg",
+        35vh,
+        50vh,
+      );
+      border-radius: 6px;
+    }
+  }
 
-    // End of the contact section
-    
+  
+  // end of section 
+  /* MAIN SECTION END */
 }

@@ -20,6 +20,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Swiper CSS Reference: https://www.codinglabweb.com/2022/05/responsive-card-slider-javascript.html -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/hamster.css" />
   </head>
   <body>
@@ -59,30 +61,37 @@
             <aside class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Home</a>
+                  <a class="nav-link active" href="index.html" target="_blank"
+                    >Home</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="cat.html">cat</a>
+                  <a class="nav-link active" target="_blank" href="cat.html"
+                    >cat</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-link active"
                     aria-current="page"
+                    target="_blank"
                     href="hamster.html"
                     >hamster</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="fish.html">fish</a>
+                  <a class="nav-link active" target="_blank" href="fish.html"
+                    >fish</a
+                  >
                 </li>
               </ul>
             </aside>
           </article>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cat.html">cat</a></li>
-            <li><a href="hamster.html">hamster</a></li>
-            <li><a href="fish.html">fish</a></li>
+            <li><a target="_blank" href="index.html">Home</a></li>
+            <li><a target="_blank" href="cat.html">cat</a></li>
+            <li><a target="_blank" href="hamster.html">hamster</a></li>
+            <li><a target="_blank" href="fish.html">fish</a></li>
           </ul>
         </section>
       </nav>
@@ -131,6 +140,7 @@
             The average hamster lifespan is relatively short, around 1-2 years,
             but they can live up to 5 years. Hamsters are typically nocturnal
             animals that like to burrow and hoard <a href="#food">food</a>.
+            <!-- Reference: https://www.petmd.com/exotic/care/evr_ex_hm_how-to-care-for-your-hamster -->
           </p>
         </article>
         <figure></figure>
@@ -166,7 +176,9 @@
               </li>
             </ol>
           </article>
+          <!-- Reference: https://www.petmd.com/exotic/care/evr_ex_hm_how-to-give-your-hamster-a-bath -->
         </section>
+        <a href="#behavior"><i class="fa-solid fa-angle-down"></i></a>
       </section>
       <!-- CARE SECTION END -->
       <!-- BEHAVIOR SECTION -->
@@ -177,229 +189,228 @@
             Hamsters use body language much as we do. They can display a range
             of emotions that include being: happy, afraid, threatened, curious,
             startled, angry, and many other emotions.
+            <!-- Reference: https://www.caringpets.org/how-to-take-care-of-a-hamster/behavior-body-language/ -->
           </p>
         </article>
-        <section
-          id="carouselExampleInterval"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <article class="carousel-inner">
-            <aside class="carousel-item active" data-bs-interval="10000">
-              <img
-                src="/img/hamster/behavior-01.png"
-                class="d-block w-100"
-                alt="Behavior-01"
-              />
-            </aside>
-            <aside class="carousel-item" data-bs-interval="2000">
-              <img
-                src="/img/hamster/behavior-02.png"
-                class="d-block w-100"
-                alt="Behavior-02"
-              />
-            </aside>
-            <aside class="carousel-item">
-              <img
-                src="/img/hamster/behavior-03.png"
-                class="d-block w-100"
-                alt="Behavior-03"
-              />
-            </aside>
-            <aside class="carousel-item">
-              <img
-                src="/img/hamster/behavior-04.png"
-                class="d-block w-100"
-                alt="Behavior-04"
-              />
-            </aside>
-            <aside class="carousel-item">
-              <img
-                src="/img/hamster/behavior-05.png"
-                class="d-block w-100"
-                alt="Behavior-05"
-              />
-            </aside>
-          </article>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleInterval"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleInterval"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        <section class="gallery">
+          <figure>
+            <img
+              src="/img/hamster/behavior-01.png"
+              class="d-block w-100"
+              alt="Behavior-01"
+            />
+            <!-- IMG Reference: https://www.reddit.com/r/hamsters/comments/vdw50i/what_is_she_doing_lmao_shes_digging_out_the/ -->
+          </figure>
+          <figure>
+            <img
+              src="/img/hamster/behavior-02.png"
+              class="d-block w-100"
+              alt="Behavior-02"
+            />
+            <!-- IMG Reference: https://www.scmp.com/yp/discover/lifestyle/article/3143807/burrowing-stretching-heres-what-your-hamsters-behaviour-means -->
+          </figure>
+          <figure>
+            <img
+              src="/img/hamster/behavior-03.png"
+              class="d-block w-100"
+              alt="Behavior-03"
+            />
+            <!-- IMG Reference: https://www.pinterest.co.kr/pin/589267932485514521/?nic_v3=1a1ck8VVd -->
+          </figure>
+          <figure>
+            <img
+              src="/img/hamster/behavior-04.png"
+              class="d-block w-100"
+              alt="Behavior-04"
+            />
+            <!-- IMG Reference: https://www.123rf.com/photo_127136445_white-hamster-eating-a-piece-of-cheese-from-his-food-plate-inside-his-cage-.html?vti=me6btd4pr316u51u8m-1-3 -->
+          </figure>
+          <figure>
+            <img
+              src="/img/hamster/behavior-05.png"
+              class="d-block w-100"
+              alt="Behavior-05"
+            />
+            <!-- IMG Reference: https://www.moneybeach.co.uk/the-boardwalk/can-you-insure-a-hamster/ -->
+          </figure>
         </section>
-        <h3>meanings inside of gestures</h3>
-        <p>
-          They even use sign language to a small extent when conversing with
-          others. Babies use ultrasonic sounds to call for their mothers,
-          females have mating calls to attract a mate.
-        </p>
-        <section class="accordion accordion-flush" id="accordionFlushExample">
-          <article class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
-                aria-expanded="false"
-                aria-controls="flush-collapseOne"
+        <article class="title">
+          <h3>meanings inside of gestures</h3>
+          <p>
+            They even use sign language to a small extent when conversing with
+            others. Babies use ultrasonic sounds to call for their mothers,
+            females have mating calls to attract a mate.
+            <!-- Reference: https://www.caringpets.org/how-to-take-care-of-a-hamster/behavior-body-language/ -->
+          </p>
+        </article>
+        <section class="meaning">
+          <figure class="bg-meaning">
+            <img src="/img/hamster/bg-meaning.png" alt="Bg-Meaning" />
+          </figure>
+          <!-- IMG Reference: https://www.pinterest.co.kr/pin/303993043583557824/?nic_v3=1a1ck8VVd -->
+          <section class="accordion accordion-flush" id="accordionFlushExample">
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  <i class="fa-solid fa-plus"></i>Burrowing in bedding
+                </button>
+              </h2>
+              <aside
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
               >
-                <i class="fa-solid fa-plus"></i>Burrowing in bedding
-              </button>
-            </h2>
-            <aside
-              id="flush-collapseOne"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingOne"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <p class="accordion-body">
-                Hamsters burrow to hide and stay safe when they are asleep. This
-                behaviour is common when fresh bedding is put inside their
-                cages. If the bedding is deep enough, you'll probably find your
-                hamster has created tunnels and covered areas for its food
-                stashes. But if it is burrowing and hiding at night when these
-                nocturnal creatures are supposed to be awake, it may be a sign
-                of stress. This can happen if another pet is constantly watching
-                your hamster.
-              </p>
-            </aside>
-          </article>
-          <article class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo"
-                aria-expanded="false"
-                aria-controls="flush-collapseTwo"
+                <p class="accordion-body">
+                  Hamsters burrow to hide and stay safe when they are asleep.
+                  This behaviour is common when fresh bedding is put inside
+                  their cages. If the bedding is deep enough, you'll probably
+                  find your hamster has created tunnels and covered areas for
+                  its food stashes. But if it is burrowing and hiding at night
+                  when these nocturnal creatures are supposed to be awake, it
+                  may be a sign of stress. This can happen if another pet is
+                  constantly watching your hamster.
+                  <!-- Reference: https://www.scmp.com/yp/discover/lifestyle/article/3143807/burrowing-stretching-heres-what-your-hamsters-behaviour-means -->
+                </p>
+              </aside>
+            </article>
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  <i class="fa-solid fa-plus"></i>Chattering teeth
+                </button>
+              </h2>
+              <aside
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
               >
-                <i class="fa-solid fa-plus"></i>Chattering teeth
-              </button>
-            </h2>
-            <aside
-              id="flush-collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingTwo"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <p class="accordion-body">
-                Hamsters usually grind their teeth when they feel irritated or
-                just need some space. It can also be a warning that they are
-                about to bite, so it is best to keep your fingers away. Male
-                hamsters also chatter to warn other hamsters to stay away from
-                their territory. It is considered an aggressive warning, and if
-                the advancing hamster does not heed it, a fight is likely to
-                break out. If this happens, quickly move one hamster into
-                another cage. Wear thick gloves when you separate them to avoid
-                getting bitten or scratched.
-              </p>
-            </aside>
-          </article>
-          <article class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree"
-                aria-expanded="false"
-                aria-controls="flush-collapseThree"
+                <p class="accordion-body">
+                  Hamsters usually grind their teeth when they feel irritated or
+                  just need some space. It can also be a warning that they are
+                  about to bite, so it is best to keep your fingers away. Male
+                  hamsters also chatter to warn other hamsters to stay away from
+                  their territory. It is considered an aggressive warning, and
+                  if the advancing hamster does not heed it, a fight is likely
+                  to break out. If this happens, quickly move one hamster into
+                  another cage. Wear thick gloves when you separate them to
+                  avoid getting bitten or scratched.
+                  <!-- Reference: https://www.scmp.com/yp/discover/lifestyle/article/3143807/burrowing-stretching-heres-what-your-hamsters-behaviour-means -->
+                </p>
+              </aside>
+            </article>
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  <i class="fa-solid fa-plus"></i>Stuffing their cheeks
+                </button>
+              </h2>
+              <aside
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample"
               >
-                <i class="fa-solid fa-plus"></i>Stuffing their cheeks
-              </button>
-            </h2>
-            <aside
-              id="flush-collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingThree"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <p class="accordion-body">
-                Storing food and supplies quickly is a natural instinct for
-                hamsters. In the wild, they forage for food and bedding
-                material, which they stuff into their cheek pouches to bring
-                back to their burrows. Sometimes, they stuff both cheeks, and
-                other times, they only store food on one side. Pet hamsters do
-                the same - some will hoard and then hide their food stashes in a
-                special corner of the cage. Talk about saving for a rainy day!
-              </p>
-            </aside>
-          </article>
-          <article class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingFour">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseFour"
-                aria-expanded="false"
-                aria-controls="flush-collapseFour"
+                <p class="accordion-body">
+                  Storing food and supplies quickly is a natural instinct for
+                  hamsters. In the wild, they forage for food and bedding
+                  material, which they stuff into their cheek pouches to bring
+                  back to their burrows. Sometimes, they stuff both cheeks, and
+                  other times, they only store food on one side. Pet hamsters do
+                  the same - some will hoard and then hide their food stashes in
+                  a special corner of the cage. Talk about saving for a rainy
+                  day!
+                  <!-- Reference: https://www.scmp.com/yp/discover/lifestyle/article/3143807/burrowing-stretching-heres-what-your-hamsters-behaviour-means -->
+                </p>
+              </aside>
+            </article>
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  <i class="fa-solid fa-plus"></i>Quickly emptying food from
+                  cheek pouches
+                </button>
+              </h2>
+              <aside
+                id="flush-collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample"
               >
-                <i class="fa-solid fa-plus"></i>Quickly emptying food from cheek
-                pouches
-              </button>
-            </h2>
-            <aside
-              id="flush-collapseFour"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingFour"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <p class="accordion-body">
-                Hamsters may quickly empty their cheek pouches if they find
-                themselves in danger. In the wild, offloading the excess weight
-                means they can make their way to safety much more quickly. Pet
-                hamsters might do this when they are startled - for example, if
-                someone approaches them suddenly.
-              </p>
-            </aside>
-          </article>
-          <article class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingFive">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseFive"
-                aria-expanded="false"
-                aria-controls="flush-collapseFive"
+                <p class="accordion-body">
+                  Hamsters may quickly empty their cheek pouches if they find
+                  themselves in danger. In the wild, offloading the excess
+                  weight means they can make their way to safety much more
+                  quickly. Pet hamsters might do this when they are startled -
+                  for example, if someone approaches them suddenly.
+                  <!-- Reference: https://www.scmp.com/yp/discover/lifestyle/article/3143807/burrowing-stretching-heres-what-your-hamsters-behaviour-means -->
+                </p>
+              </aside>
+            </article>
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFive"
+                >
+                  <i class="fa-solid fa-plus"></i>Creeping along the sides of a
+                  cage
+                </button>
+              </h2>
+              <aside
+                id="flush-collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingFive"
+                data-bs-parent="#accordionFlushExample"
               >
-                <i class="fa-solid fa-plus"></i>Creeping along the sides of a
-                cage
-              </button>
-            </h2>
-            <aside
-              id="flush-collapseFive"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingFive"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <p class="accordion-body">
-                Just as we humans all have our favourite home routines, hamsters
-                have their own too. This may be the safest path in the cage. But
-                if you have recently made changes to your hammy’s environment,
-                it is probably walking along the sides of its cage because it is
-                unsure of its surroundings and is familiarising itself with the
-                new tunnel or toy you have just added.
-              </p>
-            </aside>
-          </article>
+                <p class="accordion-body">
+                  Just as we humans all have our favourite home routines,
+                  hamsters have their own too. This may be the safest path in
+                  the cage. But if you have recently made changes to your
+                  hammy's environment, it is probably walking along the sides of
+                  its cage because it is unsure of its surroundings and is
+                  familiarising itself with the new tunnel or toy you have just
+                  added.
+                  <!-- Reference: https://www.scmp.com/yp/discover/lifestyle/article/3143807/burrowing-stretching-heres-what-your-hamsters-behaviour-means -->
+                </p>
+              </aside>
+            </article>
+          </section>
         </section>
+        <a href="#species"><i class="fa-solid fa-angle-down"></i></a>
       </section>
       <!-- BEHAVIOR SECTION END -->
       <!-- SPECIES SECTION -->
@@ -411,6 +422,7 @@
             furry creatures are easily recognized by their stout body, furry
             ears, short tail, and full cheek pouches. Hamsters are playful and
             intelligent, which makes them a popular choice among pet parents.
+            <!-- Reference: https://www.petmd.com/exotic/evr_ex_hm_five-most-popular-hamster-breeds -->
           </p>
         </article>
         <section>
@@ -518,9 +530,7 @@
                 The Campbell's Russian Dwarf Hamster is named after explorer
                 C.W. Campbell, who was one of the first to report this species
                 of hamster in Mongolia in 1902. This breed is similar to the
-                Winter White Russian Dwarf hamster in that it features a stripe
-                that runs down their back, though their stripe is generally
-                darker and shorter.
+                Winter White Russian Dwarf hamster in that it features a stripe.
               </p>
               <ul>
                 <li>
@@ -540,7 +550,9 @@
               </ul>
             </aside>
           </article>
+          <!-- Reference: https://www.petmd.com/exotic/evr_ex_hm_five-most-popular-hamster-breeds -->
         </section>
+        <a href="#food"><i class="fa-solid fa-angle-down"></i></a>
       </section>
       <!-- SPECIES SECTION END -->
       <!-- FOOD SECTION -->
@@ -552,6 +564,7 @@
             plants and insects. The best diet for you hamster is one that's
             similar to what they would eat in the wild, including fresh veg and
             protein-packed treats like mealworms.
+            <!-- Reference: https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/small-pets/your-hamsters-diet -->
           </p>
         </article>
         <figure></figure>
@@ -562,6 +575,7 @@
               Carrot contains a chemical called beta-carotene. Beta-carotene
               might act as an antioxidant and help to prevent cancer.Carrot also
               contains dietary fiber.
+              <!-- Reference: https://www.webmd.com/vitamins/ai/ingredientmono-1472/carrot#:~:text=Carrot%20also%20contains%20dietary%20fiber,such%20as%20diarrhea%20or%20constipation. -->
             </p>
             <a href="#apple">view more</a>
           </li>
@@ -571,6 +585,7 @@
               Eating them is linked to a lower risk of many chronic conditions,
               including diabetes, heart disease, and cancer. Apples may also
               promote weight loss and improve gut and brain health.
+              <!-- Reference: https://www.healthline.com/nutrition/10-health-benefits-of-apples#:~:text=Eating%20them%20is%20linked%20to,improve%20gut%20and%20brain%20health. -->
             </p>
             <a href="#seed">view more</a>
           </li>
@@ -580,21 +595,28 @@
               Feeding seeds that are packaged for humans can lead to health
               problems like obesity and diabetes in hamsters, because additives
               such as salt and sugar are often present.
+              <!-- Reference: https://animals.mom.com/seeds-can-hamsters-eat-1091.html -->
             </p>
             <a href="#shop">view more</a>
           </li>
         </ul>
-        <h3>shop hamster food</h3>
-        <section id="shop">
-          <article class="card">
-            <img
-              src=" /img/hamster/food-01.png"
-              class="card-img-top"
-              alt=" Food-01"
-            />
-            <aside class="card-body">
-              <h5 class="card-title">Science Selective Hamster Food</h5>
-              <p class="card-text">
+        <!-- CARD SLIDER SECTION -->
+        <!-- HTML Reference: https://www.codinglabweb.com/2022/05/responsive-card-slider-javascript.html  -->
+        <section class="slide-container swiper">
+          <h3>shop hamster food</h3>
+          <article class="card swiper-slide">
+            <aside class="image-content">
+              <figure class="card-image">
+                <img
+                  src="/img/hamster/food-01.png"
+                  alt="Food-01"
+                  class="card-img"
+                />
+              </figure>
+            </aside>
+            <aside class="card-content">
+              <h2 class="name">Science Selective Hamster Food</h2>
+              <p class="description">
                 Selective Science Hamster Food is a unique, baked product,
                 specially formulated for a hamster's nutritional needs. Made
                 from high-quality natural ingredients.
@@ -602,22 +624,24 @@
               <a
                 target="_blank"
                 href="https://www.petvalu.ca/product/science-selective- food/SCM09437CA?force_store=ON"
-                class="btn btn-secondary"
+                class="button"
                 >Go Shop</a
-              >
+              ><!-- This href link is Reference as well -->
             </aside>
           </article>
-          <article class="card">
-            <img
-              src=" /img/hamster/food-02.png"
-              class="card-img-top"
-              alt=" Food-01"
-            />
-            <aside class="card-body">
-              <h5 class="card-title">
-                Oxbow Essentials Hamster & Gerbil Food - 1 lb
-              </h5>
-              <p class="card-text">
+          <article class="card swiper-slide">
+            <aside class="image-content">
+              <figure class="card-image">
+                <img
+                  src="/img/hamster/food-02.png"
+                  alt="Food-02"
+                  class="card-img"
+                />
+              </figure>
+            </aside>
+            <aside class="card-content">
+              <h2 class="name">Oxbow Essentials Hamster & Gerbil Food</h2>
+              <p class="description">
                 Hamsters and gerbils love this blend of timothy hay, oats and
                 barley. Healthy Handfuls - Hamster and Gerbil Food is a
                 complete, stabilized feed.
@@ -625,20 +649,24 @@
               <a
                 target="_blank"
                 href="https://www.petsmart.ca/small-pet/food-treats-and-hay/food/oxbow-essentials- and-gerbil-food-5173696.html"
-                class="btn btn-secondary"
+                class="button"
                 >Go Shop</a
-              >
+              ><!-- This href link is Reference as well -->
             </aside>
           </article>
-          <article class="card">
-            <img
-              src=" /img/hamster/food-03.png"
-              class="card-img-top"
-              alt=" Food-01"
-            />
-            <aside class="card-body">
-              <h5 class="card-title">Nature</h5>
-              <p class="card-text">
+          <article class="card swiper-slide">
+            <aside class="image-content">
+              <figure class="card-image">
+                <img
+                  src="/img/hamster/food-03.png"
+                  alt="Food-03"
+                  class="card-img"
+                />
+              </figure>
+            </aside>
+            <aside class="card-content">
+              <h2 class="name">Hamster Food | Nature</h2>
+              <p class="description">
                 Versele-Laga Hamster Nature is a balanced diet adapted to the
                 nutritional needs of all hamsters. It includes all the essential
                 nutrients, vitamins, minerals and amino acids to provide your
@@ -647,12 +675,412 @@
               <a
                 target="_blank"
                 href="https://ca.miscota.com/small-animals/versele-laga/versele-laga-mixture-for-hamsters- nature?r=5410340614181"
-                class="btn btn-secondary"
+                class="button"
                 >Go Shop</a
-              >
+              ><!-- This href link is Reference as well -->
             </aside>
           </article>
+          <article class="card swiper-slide">
+            <aside class="image-content">
+              <figure class="card-image">
+                <img
+                  src="/img/hamster/food-04.png"
+                  alt="Food-04"
+                  class="card-img"
+                />
+              </figure>
+            </aside>
+            <aside class="card-content">
+              <h2 class="name">
+                Great Value Hamster & Gerbil Food Great Value
+              </h2>
+              <p class="description">
+                Great Value Hamster and Gerbil Food has been formulated as a
+                100% complete and balanced diet for all adult Hamsters and
+                Gerbils.
+              </p>
+              <a
+                target="_blank"
+                href="https://www.walmart.ca/en/ip/great-value-hamster-gerbil-food/6000001838576?skuId=10043560&offerId=10043560&region_id=206100"
+                class="button"
+                >Go Shop</a
+              ><!-- This href link is Reference as well -->
+            </aside>
+          </article>
+          <article class="card swiper-slide">
+            <aside class="image-content">
+              <figure class="card-image">
+                <img
+                  src="/img/hamster/food-05.png"
+                  alt="Food-05"
+                  class="card-img"
+                />
+              </figure>
+            </aside>
+            <aside class="card-content">
+              <h2 class="name">Gourmet Recipe Hamster & Gerbil Food</h2>
+              <p class="description">
+                Premium blend of pellets, fruits, vegetables, nuts and grains
+                fortified with vitamins and balanced Omega-3 fatty acids to
+                create a GourmetRecipe. Naturally preserved for ideal freshness.
+              </p>
+              <a
+                target="_blank"
+                href="https://www.walmart.ca/en/ip/kaytee-gourmet-recipe-hamster-and-gerbil-food/6000190447673?skuId=6000190447674&offerId=6000190447674&region_id=206100"
+                class="button"
+                >Go Shop</a
+              ><!-- This href link is Reference as well -->
+            </aside>
+          </article>
+          <article class="card swiper-slide">
+            <aside class="image-content">
+              <figure class="card-image">
+                <img
+                  src="/img/hamster/food-06.png"
+                  alt="Food-06"
+                  class="card-img"
+                />
+              </figure>
+            </aside>
+            <aside class="card-content">
+              <h2 class="name">Little Friends Hamster & Gerbil Food</h2>
+              <p class="description">
+                Little Friends Hamster & Gerbil Food is a unique product
+                formulated to help your pet live a long and healthy life
+                ensuring adequate intake of all essential vitamins and minerals.
+              </p>
+              <a
+                target="_blank"
+                href="https://www.petsmart.ca/small-pet/food-treats-and-hay/food/little-friends-hamster-and-gerbil-food-5299555.html"
+                class="button"
+                >Go Shop</a
+              ><!-- This href link is Reference as well -->
+            </aside>
+          </article>
+          <article class="card swiper-slide">
+            <aside class="image-content">
+              <figure class="card-image">
+                <img
+                  src="/img/hamster/food-07.png"
+                  alt="Food-07"
+                  class="card-img"
+                />
+              </figure>
+            </aside>
+            <aside class="card-content">
+              <h2 class="name">Brown's Tropical Carnival Gourmet</h2>
+              <p class="description">
+                A vitamin, nutrient and fortified food and treat -- all in one.
+                This super premium gourmet food is specifically formulated for
+                the daily dietary needs of hamsters and gerbils and is
+                jam-packed with a medley of delicacies.
+              </p>
+              <a
+                target="_blank"
+                href="https://www.google.com/shopping/product/16957365953599561100?q=hamster+food&prds=eto:11601648596147287232_0;6263011553847109975_0;1964810938076023397_0,pid:14672094144635232648,rsk:PC_1535812259365575420&sa=X&ved=0ahUKEwjdt4zlprj6AhUFGDQIHQeSDmgQ9pwGCAY"
+                class="button"
+                >Go Shop</a
+              ><!-- This href link is Reference as well -->
+            </aside>
+          </article>
+          <article class="card swiper-slide">
+            <aside class="image-content">
+              <figure class="card-image">
+                <img
+                  src="/img/hamster/food-08.png"
+                  alt="Food-08"
+                  class="card-img"
+                />
+              </figure>
+            </aside>
+            <aside class="card-content">
+              <h2 class="name">Vitakraft Hamster Aroma Menu</h2>
+              <p class="description">
+                Vitakraft is crafted with love for your fur kid! Menu Vital is
+                made with a specially selected and balanced mix that is designed
+                to support peak health.
+              </p>
+              <a
+                target="_blank"
+                href="https://www.google.com/shopping/product/15907441850055963715?q=hamster+food&prds=epd:6951342291815954074,eto:6951342291815954074_0,pid:35988016294873545,rsk:PC_1752967802936307178&sa=X&ved=0ahUKEwi4mu-Hp7j6AhVHCTQIHazfA2IQ9pwGCAg"
+                class="button"
+                >Go Shop</a
+              ><!-- This href link is Reference as well -->
+            </aside>
+          </article>
+          <article class="card swiper-slide">
+            <aside class="image-content">
+              <figure class="card-image">
+                <img
+                  src="/img/hamster/food-09.png"
+                  alt="Food-09"
+                  class="card-img"
+                />
+              </figure>
+            </aside>
+            <aside class="card-content">
+              <h2 class="name">
+                Care+ Extruded Dwarf Hamster Food 700 ml Beaphar
+              </h2>
+              <p class="description">
+                Beaphar Care+ Hamster Beaphar Care+ Hamster is a tasty premium
+                pet food for hamsters. Care+ pellets are created through an
+                "extrusion" (heating) process to facilitate the digestion of
+                proteins for hamsters.
+              </p>
+              <a
+                target="_blank"
+                href="https://www.google.com/shopping/product/5689339399795120666?q=hamster+food&prds=epd:17874848746117031958,eto:17874848746117031958_0,pid:3788492366736660030,rsk:PC_13816965767642348858&sa=X&ved=0ahUKEwih-OCqp7j6AhXRIzQIHW9oBpYQ9pwGCAk"
+                class="button"
+                >Go Shop</a
+              ><!-- This href link is Reference as well -->
+            </aside>
+          </article>
+          <section class="slide-content">
+            <section class="card-wrapper swiper-wrapper">
+              <article class="card swiper-slide">
+                <aside class="image-content">
+                  <figure class="card-image">
+                    <img
+                      src="/img/hamster/food-01.png"
+                      alt="Food-01"
+                      class="card-img"
+                    />
+                  </figure>
+                </aside>
+                <aside class="card-content">
+                  <h2 class="name">Science Selective Hamster Food</h2>
+                  <p class="description">
+                    Selective Science Hamster Food is a unique, baked product,
+                    specially formulated for a hamster's nutritional needs. Made
+                    from high-quality natural ingredients.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://www.petvalu.ca/product/science-selective- food/SCM09437CA?force_store=ON"
+                    class="button"
+                    >Go Shop</a
+                  ><!-- This href link is Reference as well -->
+                </aside>
+              </article>
+              <article class="card swiper-slide">
+                <aside class="image-content">
+                  <figure class="card-image">
+                    <img
+                      src="/img/hamster/food-02.png"
+                      alt="Food-02"
+                      class="card-img"
+                    />
+                  </figure>
+                </aside>
+                <aside class="card-content">
+                  <h2 class="name">Oxbow Essentials Hamster & Gerbil Food</h2>
+                  <p class="description">
+                    Hamsters and gerbils love this blend of timothy hay, oats
+                    and barley. Healthy Handfuls - Hamster and Gerbil Food is a
+                    complete, stabilized feed.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://www.petsmart.ca/small-pet/food-treats-and-hay/food/oxbow-essentials- and-gerbil-food-5173696.html"
+                    class="button"
+                    >Go Shop</a
+                  ><!-- This href link is Reference as well -->
+                </aside>
+              </article>
+              <article class="card swiper-slide">
+                <aside class="image-content">
+                  <figure class="card-image">
+                    <img
+                      src="/img/hamster/food-03.png"
+                      alt="Food-03"
+                      class="card-img"
+                    />
+                  </figure>
+                </aside>
+                <aside class="card-content">
+                  <h2 class="name">Hamster Food | Nature</h2>
+                  <p class="description">
+                    Versele-Laga Hamster Nature is a balanced diet adapted to
+                    the nutritional needs of all hamsters. It includes all the
+                    essential nutrients, vitamins, minerals and amino acids to
+                    provide your pet.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://ca.miscota.com/small-animals/versele-laga/versele-laga-mixture-for-hamsters- nature?r=5410340614181"
+                    class="button"
+                    >Go Shop</a
+                  ><!-- This href link is Reference as well -->
+                </aside>
+              </article>
+              <article class="card swiper-slide">
+                <aside class="image-content">
+                  <figure class="card-image">
+                    <img
+                      src="/img/hamster/food-04.png"
+                      alt="Food-04"
+                      class="card-img"
+                    />
+                  </figure>
+                </aside>
+                <aside class="card-content">
+                  <h2 class="name">
+                    Great Value Hamster & Gerbil Food Great Value
+                  </h2>
+                  <p class="description">
+                    Great Value Hamster and Gerbil Food has been formulated as a
+                    100% complete and balanced diet for all adult Hamsters and
+                    Gerbils.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://www.walmart.ca/en/ip/great-value-hamster-gerbil-food/6000001838576?skuId=10043560&offerId=10043560&region_id=206100"
+                    class="button"
+                    >Go Shop</a
+                  ><!-- This href link is Reference as well -->
+                </aside>
+              </article>
+              <article class="card swiper-slide">
+                <aside class="image-content">
+                  <figure class="card-image">
+                    <img
+                      src="/img/hamster/food-05.png"
+                      alt="Food-05"
+                      class="card-img"
+                    />
+                  </figure>
+                </aside>
+                <aside class="card-content">
+                  <h2 class="name">Gourmet Recipe Hamster & Gerbil Food</h2>
+                  <p class="description">
+                    Premium blend of pellets, fruits, vegetables, nuts and
+                    grains fortified with vitamins and balanced Omega-3 fatty
+                    acids to create a GourmetRecipe. Naturally preserved for
+                    ideal freshness.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://www.walmart.ca/en/ip/kaytee-gourmet-recipe-hamster-and-gerbil-food/6000190447673?skuId=6000190447674&offerId=6000190447674&region_id=206100"
+                    class="button"
+                    >Go Shop</a
+                  ><!-- This href link is Reference as well -->
+                </aside>
+              </article>
+              <article class="card swiper-slide">
+                <aside class="image-content">
+                  <figure class="card-image">
+                    <img
+                      src="/img/hamster/food-06.png"
+                      alt="Food-06"
+                      class="card-img"
+                    />
+                  </figure>
+                </aside>
+                <aside class="card-content">
+                  <h2 class="name">Little Friends Hamster & Gerbil Food</h2>
+                  <p class="description">
+                    Little Friends Hamster & Gerbil Food is a unique product
+                    formulated to help your pet live a long and healthy life
+                    ensuring adequate intake of all essential vitamins and
+                    minerals.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://www.petsmart.ca/small-pet/food-treats-and-hay/food/little-friends-hamster-and-gerbil-food-5299555.html"
+                    class="button"
+                    >Go Shop</a
+                  ><!-- This href link is Reference as well -->
+                </aside>
+              </article>
+              <article class="card swiper-slide">
+                <aside class="image-content">
+                  <figure class="card-image">
+                    <img
+                      src="/img/hamster/food-07.png"
+                      alt="Food-07"
+                      class="card-img"
+                    />
+                  </figure>
+                </aside>
+                <aside class="card-content">
+                  <h2 class="name">Brown's Tropical Carnival Gourmet</h2>
+                  <p class="description">
+                    A vitamin, nutrient and fortified food and treat -- all in
+                    one. This super premium gourmet food is specifically
+                    formulated for the daily dietary needs of hamsters and
+                    gerbils and is jam-packed with a medley of delicacies.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://www.google.com/shopping/product/16957365953599561100?q=hamster+food&prds=eto:11601648596147287232_0;6263011553847109975_0;1964810938076023397_0,pid:14672094144635232648,rsk:PC_1535812259365575420&sa=X&ved=0ahUKEwjdt4zlprj6AhUFGDQIHQeSDmgQ9pwGCAY"
+                    class="button"
+                    >Go Shop</a
+                  ><!-- This href link is Reference as well -->
+                </aside>
+              </article>
+              <article class="card swiper-slide">
+                <aside class="image-content">
+                  <figure class="card-image">
+                    <img
+                      src="/img/hamster/food-08.png"
+                      alt="Food-08"
+                      class="card-img"
+                    />
+                  </figure>
+                </aside>
+                <aside class="card-content">
+                  <h2 class="name">Vitakraft Hamster Aroma Menu</h2>
+                  <p class="description">
+                    Vitakraft is crafted with love for your fur kid! Menu Vital
+                    is made with a specially selected and balanced mix that is
+                    designed to support peak health.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://www.google.com/shopping/product/15907441850055963715?q=hamster+food&prds=epd:6951342291815954074,eto:6951342291815954074_0,pid:35988016294873545,rsk:PC_1752967802936307178&sa=X&ved=0ahUKEwi4mu-Hp7j6AhVHCTQIHazfA2IQ9pwGCAg"
+                    class="button"
+                    >Go Shop</a
+                  ><!-- This href link is Reference as well -->
+                </aside>
+              </article>
+              <article class="card swiper-slide">
+                <aside class="image-content">
+                  <figure class="card-image">
+                    <img
+                      src="/img/hamster/food-09.png"
+                      alt="Food-09"
+                      class="card-img"
+                    />
+                  </figure>
+                </aside>
+                <aside class="card-content">
+                  <h2 class="name">
+                    Care+ Extruded Dwarf Hamster Food 700 ml Beaphar
+                  </h2>
+                  <p class="description">
+                    Beaphar Care+ Hamster Beaphar Care+ Hamster is a tasty
+                    premium pet food for hamsters. Care+ pellets are created
+                    through an "extrusion" (heating) process to facilitate the
+                    digestion of proteins for hamsters.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://www.google.com/shopping/product/5689339399795120666?q=hamster+food&prds=epd:17874848746117031958,eto:17874848746117031958_0,pid:3788492366736660030,rsk:PC_13816965767642348858&sa=X&ved=0ahUKEwih-OCqp7j6AhXRIzQIHW9oBpYQ9pwGCAk"
+                    class="button"
+                    >Go Shop</a
+                  ><!-- This href link is Reference as well -->
+                </aside>
+              </article>
+            </section>
+          </section>
+          <aside class="swiper-button-next swiper-navBtn"></aside>
+          <aside class="swiper-button-prev swiper-navBtn"></aside>
+          <aside class="swiper-pagination"></aside>
         </section>
+        <!-- HTML Reference: https://www.codinglabweb.com/2022/05/responsive-card-slider-javascript.html  -->
+        <!-- CARD SLIDER SECTION END-->
+        <a href="#history"><i class="fa-solid fa-angle-down"></i></a>
       </section>
       <!-- FOOD SECTION END -->
       <!-- HISTORY SECTION -->
@@ -733,6 +1161,7 @@
                 </p>
               </article>
             </li>
+            <!-- Reference: https://en.wikipedia.org/wiki/Hamster#:~:text=Tscherskia%20was%20basal.-,History,and%20domesticate%20hamsters%20until%201939. -->
           </ul>
         </section>
       </section>
@@ -750,5 +1179,10 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <!-- Swiper JS Reference: https://www.codinglabweb.com/2022/05/responsive-card-slider-javascript.html  -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- JS Reference: https://www.codinglabweb.com/2022/05/responsive-card-slider-javascript.html  -->
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,18 +1,65 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
-
 * {
-   padding: 0;
-   margin: 0;
+  margin: 0;
+  padding: 0;
+  font-family: $defaultFontFamily;
 }
 
 html {
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-   @include flexBoxColumn;
+  background-color: white;
 }
 
+/* Austyn's normalize */
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+li,
+a,
+figure,
+p {
+  /* Sanitize Bootstrap */
+  margin: 0;
+}
+
+h1 {
+  font-weight: $semiBold;
+  font-size: 30px;
+}
+
+h2 {
+  color: $titleGreenColor;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 28px;
+}
+
+h3 {
+  color: $subTitleBlueColor;
+  text-transform: capitalize;
+  font-size: 22px;
+}
+
+a {
+  color: $darkGrayFontColor;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+p {
+  color: $darkGrayFontColor;
+  line-height: 1.5;
+}
+
+/* Austyn's normalize END */
+
+
+/* Tina's normalize */
 .accordion-header i {
    color: $catIcodionFontColor;
    font-size: 14px;
@@ -63,6 +110,27 @@ body {
          color: whitesmoke;
       }
    }
+/* Tina's normalize END */
+   
 
    
+/* Angel's normalize */
+.headerF,
+.mainF,
+.footerF {
+  font-family: "Raleway", sans-serif;
 }
+.headerF p,
+.mainF p,
+.footerF p {
+  color: $textColor;
+  font-weight: 300;
+  text-align: justify;
+}
+.mainF {
+  padding: 5vh 0%;
+  @include dspyBox(column, unset, center);
+  row-gap: 5vh;
+}
+/* Angel's normalize END */
+

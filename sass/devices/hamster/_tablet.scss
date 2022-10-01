@@ -1,0 +1,229 @@
+/* TABLET DEVICE VERSION */
+@media (min-width: $mdBreakpoint) {
+  /* HEADER SECTION */
+  header {
+    > article {
+      @include bgPicture(
+        "/img/hamster/bg-header.png",
+        left,
+        cover,
+        $tabletBgHeaderHeight
+      );
+      a {
+        width: 49%;
+        column-gap: 1vh;
+        padding: 3%;
+        transition: $second;
+        &:hover {
+          filter: brightness(1.25);
+          color: white;
+        }
+      }
+    }
+  }
+  .offcanvas-body {
+    a {
+      @include navHoverChange;
+    }
+  }
+  /* HEADER SECTION END */
+
+  /* MAIN SECTION */
+  main {
+    @include flexRowGap(5vh);
+    > section {
+      row-gap: 7vh;
+    }
+  }
+  .title {
+    width: 80%;
+    align-self: center;
+  }
+
+  .social {
+    @include socialMediaHover;
+  }
+  .fa-angle-down {
+    width: 5vw;
+    height: 5vw;
+  }
+  /* CARE SECTION */
+  .care {
+    > section {
+      article {
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      figure {
+        flex-direction: column;
+        row-gap: 1vh;
+        justify-content: space-around;
+        width: 34%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    ol {
+      width: 64%;
+    }
+  }
+  /* CARE SECTION END */
+  /* BEHAVIOR SECTION */
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vh;
+    figure {
+      width: 48%;
+      height: 25vw;
+      overflow-y: hidden;
+    }
+    a {
+      transition: $second;
+      &:hover {
+        color: $regularPinkColor;
+      }
+    }
+  }
+  .meaning {
+    @include flexDirRowJustifyBetween(wrap);
+  }
+  .bg-meaning {
+    width: 39%;
+  }
+  .accordion {
+    width: 59%;
+  }
+  /* BEHAVIOR SECTION END */
+  /* SPECIES SECTION */
+  .species {
+    > section {
+      row-gap: 5vh;
+      padding: 0;
+      > article {
+        @include flexDirRowJustifyBetween(wrap);
+      }
+    }
+    figure {
+      width: 37%;
+    }
+    aside {
+      width: 60%;
+    }
+    a {
+      width: 25%;
+      padding: 1vw;
+    }
+    > a {
+      width: 100%;
+    }
+  }
+  /* SPECIES SECTION END */
+  /* FOOD SECTION */
+
+  .food {
+    > section {
+      align-self: center;
+      @include flexDirRowJustifyBetween(wrap);
+    }
+    > figure {
+      height: 20vh;
+    }
+    > ul {
+      row-gap: 5vh;
+      i {
+        padding: 7%;
+      }
+      a {
+        font-size: $defaultFontSize;
+        padding: 2% 5%;
+        transition: $second;
+        &:hover {
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+
+  /* CARD SLIDER SECTION */
+  /* CSS Reference: https://www.codinglabweb.com/2022/05/responsive-card-slider-javascript.html */
+  .slide-container > .card {
+    display: none;
+  }
+  .swiper-initialized,
+  .swiper-pagination,
+  .swiper-navBtn {
+    display: initial;
+  }
+  .slide-container {
+    max-width: 1120px;
+    width: 100%;
+    padding-bottom: 40px;
+    h3 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .name {
+    height: 8vh;
+    overflow-y: hidden;
+  }
+  .description {
+    height: 20vh;
+    overflow-y: hidden;
+  }
+  .swiper-navBtn {
+    color: $lightNavBtnColor;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover {
+    color: $darkNavBtnColor;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 35px;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-pagination-bullet {
+    background-color: $regularPinkColor;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $darkPinkColor;
+  }
+  /* CSS Reference: https://www.codinglabweb.com/2022/05/responsive-card-slider-javascript.html */
+  /* CARD SLIDER SECTION END */
+  /* FOOD SECTION END */
+  /* HISTORY SECTION */
+  .history {
+    > section {
+      > figure {
+        height: 30vw;
+      }
+    }
+  }
+  .chronology {
+    li {
+      width: 50%;
+    }
+    time {
+      width: 9vw;
+      height: 9vw;
+      transform: translateY(4vw);
+    }
+  }
+  /* HISTORY SECTION END */
+  /* MAIN SECTION END */
+}
