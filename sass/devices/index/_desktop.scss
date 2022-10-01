@@ -148,5 +148,85 @@
         }
     }
     // End of the contact section
+  // pet section 
+  .pets{
+    justify-content: center;
+    > section{
+      height: 60vh;
+      width: 33vh;
+      transition: 0.8s;
+    }
+    a{
+      transition: 0.4s;
+    }
+    a:hover{
+      background-color: $sectionColor;
+      color: $buttonRedColor;
+    }
+  }
+  #squareC{
+    
+     > aside{
+    @include imgBg(
+      "/img/index/cat-i.jpg",
+       33vh,
+       60vh
+      );
+      position: absolute;
+      border-radius: 6px;
+      
+    }
+    &:hover{
+      transition: 0.8s;
+      > aside{
+        display: none;
+      }
+    }
+  }
+  #squareH{
+     > aside{
+    @include imgBg(
+      "/img/index/hamster-i.jpg",
+       33vh,
+       60vh
+      );
+      position: absolute;
+      border-radius: 6px;
+      
+    }
+    &:hover{
+      transition: 0.8s;
+      > aside{
+        display: none;
+      }
+    }
+  }
+  #squareF{
+     > aside{
+    @include imgBg(
+      "/img/index/fish-i.jpg",
+       33vh,
+       60vh
+      );
+      position: absolute;
+      border-radius: 6px;
+      
+    }
+    &:hover{
+      transition: 0.8s;
+      > aside{
+        display: none;
+      }
+    }
+  }
+  // end of pet section 
+  // adopt section 
+  #adopt{
+    aside{
+      width: 40vh;
+      height: 82vh;
+    }
+  }
+  // end of adopt section 
   /* MAIN SECTION END */
 }

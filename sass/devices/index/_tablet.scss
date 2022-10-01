@@ -164,5 +164,50 @@
         font-weight: 600;
     }
     // End of the contact section
-    /* MAIN SECTION END */
+//  pets section 
+main{
+  .pets{
+    flex-direction: row;
+
+  }
+  .adopt{
+    > section{
+    flex-direction: row;
+    column-gap: 1vh;
+    justify-content: center;
+    }
+  }
+}
+.pets{
+  flex-wrap: wrap;
+  column-gap: 3vh;
+  h2{
+    width: 100%;
+  }
+  > section{
+    justify-content: space-between;
+    width: 18vh;
+    height: 55vh;
+  }
+  article{
+    height: 100%;
+  }
+
+}
+// end of pet section 
+// adopt section 
+  #adopt{
+    h2{
+      width: 100%;
+    }
+    ol{
+      width: 60%;
+    }
+    aside{
+      width: 25vh;
+      height: 60vh;
+    }
+  }
+// end of adopt section 
+  /* MAIN SECTION END */
 }
