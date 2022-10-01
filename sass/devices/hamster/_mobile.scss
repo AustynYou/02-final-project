@@ -151,6 +151,12 @@
     --bs-accordion-btn-icon: none;
     --bs-accordion-btn-active-icon: none;
   }
+  .accordion-header i {
+    color: black; 
+  }
+  .accordion-item button {
+    background-color: white;
+  }
   .accordion-button {
     display: flex;
     column-gap: 1.5vh;
