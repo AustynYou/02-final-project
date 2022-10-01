@@ -1,3 +1,45 @@
 @media(min-width:1000px){
+
+    /* Common Cat Behavior issues*/
+    /* behavior*/
+    .behavior{
+        @include flexBoxColumn;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-evenly;
+        padding-left: 5%;
+        margin-top: 5%;
+        
+    }
     
+    /* Common Cat Behavior issues*/
+    /* cat_alert*/
+    #cat_alert{
+        height: 64vh;
+    }
+
+   /* 10Most popular cat breeds : catCarouselImg */
+   #catCarouselImg{
+        width: 42vh;
+        height: 80vh;
+    }
+
+
+    /* food section: cardCat*/
+    .catRecommend{
+        @include flexBoxColumn;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-left: 5%;
+        margin-top: 5%;
+    }
+
+    
+     /* food section: cardCat*/
+     .cardCat{
+        height: 85vh;
+     }
+
 }

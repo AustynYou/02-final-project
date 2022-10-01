@@ -54,13 +54,26 @@
   display: flex;
   li {
     display: flex;
-    width: 100%;
+      width: 100%;
   }
   a {
     width: 100%;
     text-align: center;
   }
 }
+
+ @mixin catTopbg(
+    $imgRoot,
+    $imgPosition : center,
+    $imgSize : contain,
+    $imgRepeat : no-repeat
+){
+    background: url($imgRoot);
+    background-position: $imgPosition;
+    background-size: $imgSize;
+    background-repeat: $imgRepeat;
+}
+ 
 
 @mixin topBgImg(
   $img,

@@ -2,6 +2,24 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Combo&family=Open+Sans:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather|Josefin+Slab|Osw');
+
+/* Tina's  VARIABLES */
+$defaultFontFamily   : "Open Sans", sans-serif;
+$givenFont1          : 'open sans';
+$givenFont2          : 'Bree Serif', 'Helvetica', sans-serif;
+$fontColor           :  rgb(144, 131, 131);
+$catH2FontColor      :  rgb(97, 85, 85);
+$catPFontColor       :  rgb(101, 94, 94);
+$catEmFontColor      :  rgb(122, 115, 115);
+$catStrongFontColor  :  rgb(50, 47, 47);
+$catIcodionFontColor :  #20dbce;
+$accordionBgColor    :  #4adf9f;
+$accordionHoverColor :  #8a0a16;
+$otherColor1         :  #a90e0c;
+$otherColor2         :  #b6760c;
+$otherColor3         :  #3b2604;
+/* Tina's  VARIABLES END */
 
 /* Angel's VARIABLES */
 $navColor: #728f80;
@@ -19,7 +37,7 @@ $ulBg: rgba(69, 90, 100, 0.5);
 $niceBrown: #5b4d49;
 $deepBlue: #1c3547;
 $darkGreen: #504f1b;
-/* FISH PAGE VARIABLES END */
+/* Angel's VARIABLES END */
 
 /* Austyn's VARIABLES */
 $defaultFontFamily: "Open Sans", sans-serif;
@@ -72,13 +90,4 @@ $lightGrayFontColor: #707070;
 
 $darkNavBtnColor: #777;
 $lightNavBtnColor: #acacac;
-/* HAMSTER PAGE VARIABLES END */
-
-/* CAT PAGE VARIABLES */
-// $defaultFont : 'Work Sans', sans-serif;
-$fontColor: rgb(144, 131, 131);
-// $footerBg           : #20dbce;
-// $contactBg        : #4adf9f;
-// $defaultFontColor : #8a0a16;
-// $defaultOrange    : #a90e0c;
-/* CAT PAGE VARIABLES END */
+/* Austyn's VARIABLES END */
