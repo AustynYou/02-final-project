@@ -1,0 +1,331 @@
+@media(min-width: 200px){
+
+    .headerF{
+        background-color: black;
+        > nav{
+            padding: 2%;
+            @include dspyBox(row, space-between, center);
+            background-color: whitesmoke;
+            ul{
+                @include dspyBox(column);
+                background-color: whitesmoke;
+                justify-content: center;
+                width:30.55%;
+                column-gap: 0vh;
+                position: absolute;
+                height: 20vh;
+                row-gap: 2vh;
+            }
+            a{
+                color: $navColor;
+            }
+            a:hover{
+                color: $aHover;
+            }
+            > ul{
+                display: none
+            }
+        }
+        ul{
+            @include dspyBox(row,center);
+            column-gap: 4vh;
+            row-gap: 1vh;
+            flex-wrap: wrap
+        }
+
+        li{
+            @include dspyBox;
+        }
+
+        > article{
+            @include imgBg(
+            "/img/headerBgF.jpg",
+            100%,
+            100%,
+            contain,
+            left
+            );
+            height: 20vh;
+            @include dspyBox(row, center, center);
+
+        }
+        h1{
+            color: whitesmoke;
+            letter-spacing: 3px;
+            font-size: 40px;
+        }
+        a{
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        h2{
+            font-size: 30px;
+            // border: 1px solid red;
+            > a{
+                color: $textColor;
+            }
+            > a:hover{
+                color: $niceBlue;
+            }
+            span{
+                color: green;
+            }
+        }
+        details{
+            width: 30%;
+            @include dspyBox(row, right, center);
+            > summary{
+                padding-right: 5%;
+                text-align: right;
+                // position: absolute;
+            }
+            a{
+                padding: 4%;
+                width: 100%;
+                height: 100%;
+            }
+            li{
+                display: flex;
+                
+            }
+        }
+        > section{
+            padding: 1%;
+            padding-bottom: 3%;
+            a{
+             color: $headerA; 
+            }
+            a:hover{
+                color: $headerAhover;
+            }
+            i{
+                display: none
+            }
+        }
+    }
+    .mainF{
+        @include imgBg(
+            "/img/bodyBgF.jpg",
+            100%,
+            100%,
+        );
+        > section{
+            background-color: $sectionColor;
+            padding: 5%;
+            @include dspyBox(column);
+            width: 80%;
+            row-gap: 3vh;
+        }
+        h3{
+            text-align: center;
+            font-size: 24px;
+            text-transform: capitalize;
+            background-color: $niceBlue;
+            width: 100%;
+            color: whitesmoke;
+            padding: 2%;
+        }
+    }
+    .aboutF{
+        aside:first-child{
+            @include imgBg(
+                "/img/fish-3.jpg",
+                100%,
+                40vh
+            );
+        }
+        aside:last-child{
+            @include imgBg(
+                "/img/fish-2.jpg",
+                100%,
+                40vh
+            );
+        }
+        > article{
+            @include dspyBox(column, unset, center);
+            row-gap: 2vh;
+        }
+
+    }
+    .careF{
+        align-items: center;
+        > article{
+            @include dspyBox(column, unset, center);
+            row-gap: 2vh;
+            > p{
+                width: 90%;
+            }
+        }
+        > section{
+            @include dspyBox(row, center);
+
+        }
+        ul{
+            width: 80%;
+            @include dspyBox(column);
+            row-gap: 2vh;
+        }
+        li{
+            @include dspyBox(column);
+            row-gap: 2vh;
+        }
+        > aside{
+            @include imgBg(
+                "/img/fish-1.jpg",
+                100%,
+                40vh
+            );
+        }
+        a{
+            text-decoration: none;
+            color: $aHover;
+            font-weight: 400;
+            &:hover{
+                color: $niceBlue;
+                text-decoration: underline;
+                font-weight: 500
+            }
+        }
+    }
+    .behaviourF{
+        > article{
+            @include dspyBox(row, center);
+        }
+        > section, ul{
+            @include dspyBox(column);
+            row-gap: 3vh;
+        }
+        > section{
+            align-items: center;
+        }
+        ul{
+            width: 85%;
+            padding: 7%;
+            background-color: $ulBg;
+        }
+        li{
+            @include dspyBox(column);
+            row-gap: 2vh;
+        }
+        aside{
+            width: 80%;
+            height: 1.5vh;
+            background-color: $asideBg;
+        }
+        h4{
+            color: $headerAhover;
+        }
+        p{
+            color: gainsboro;
+        }
+    }
+    .speciesF{
+        img{
+            width: 100%
+        }
+        > article{
+            @include dspyBox(row, center);
+        }
+        > section{
+            @include dspyBox(column, unset, center);
+            row-gap: 3vh;
+        }
+        figure{
+            @include dspyBox(column, unset, center);
+            row-gap: 3vh;
+            padding: 10%;
+            &:nth-child(even){
+                background-color: $figEven;
+            }
+            &:nth-child(odd){
+                background-color: $figOdd;
+            }
+        }   
+        figure:nth-child(odd){
+            p{
+                color: gainsboro;
+            }
+        }
+        figcaption{
+            @include dspyBox(column, unset, center);
+            row-gap: 3vh;
+        }
+        a{
+            @include dspyBox(row, center, center);
+            background-color: $navColor;
+            width: 100%;
+            height: 5vh;
+            text-decoration: none;
+            color: $headerAhover;
+            &:hover{
+                background-color: $asideBg;
+                color: $sectionColor;
+            }
+        }
+        h4{
+            font-size: 24px;
+            
+        }
+    }
+    .foodF{
+       > article, > section{
+            @include dspyBox(column, unset, center);
+            row-gap: 2vh;
+       }
+       aside{
+        @include imgBg(
+                "/img/fish-4.jpg",
+                100%,
+                40vh
+            );
+       }
+       ul{
+        @include dspyBox(column);
+        row-gap: 3vh;
+        width: 90%;
+
+       }
+       span{
+        font-weight: 600;
+       }
+    }
+    .historyF{
+        > h3{
+            align-self: center
+        }
+        > article{
+            @include dspyBox(column);
+            row-gap: 3vh;
+        }
+        > aside:nth-child(3){
+            @include imgBg(
+                "/img/historyF-1.jpg",
+                100%,
+                40vh
+            );
+        }
+        > aside:last-child{
+            @include imgBg(
+                "/img/historyF-2.jpg",
+                100%,
+                40vh
+            );
+        }
+    }
+    .footerF{
+        @include dspyBox(row, space-between, center);
+        background-color: $footerBg;
+        height: 30vh;
+        padding: 2%;
+        > article{
+            width: 50%;
+        }
+        a{
+            text-decoration: none;
+            color: $headerAhover;
+        }
+        ul{
+            padding-left: 14%;
+        }
+    }
+}
